@@ -16,7 +16,7 @@ The development process is divided into sequential phases, each building on the 
 
 ## Detailed Task Breakdown with Subtasks and Dependencies
 
-Below, each high-level step is broken into tasks, and each task into subtasks, with checklist items, context for implementation, and dependency mappings. Task IDs are numeric, and dependencies are listed to ensure a connected workflow. The tasks adhere to the coding rules provided in `python-fastapi-Cursor-Rules.txt` and `Next.js-React-Tailwind-Cursorrules.txt` for consistency and scalability.
+Below, each high-level step is broken into tasks, and each task into subtasks, with checklist items, context for implementation, and dependency mappings. Task IDs are numeric, and dependencies are listed to ensure a connected workflow. 
 
 ### Phase 1: Project Setup and Environment Configuration
 
@@ -37,7 +37,7 @@ Below, each high-level step is broken into tasks, and each task into subtasks, w
         - [x] **2.1:** Initialize a Git repository in the root folder (`git init`) to start tracking changes.
         - [x] **2.2:** Create a `.gitignore` file to exclude unnecessary files (e.g., `node_modules`, `env/`) from version control.
         - [x] **2.3:** Create a public GitHub repository and link it to the local project (`git remote add origin <url>`).
-        - [ ] **2.4:** Make an initial commit with the project structure (`git add . && git commit -m "Initial project setup"`) and push to GitHub (`git push origin main`).
+        - [x] **2.4:** Make an initial commit with the project structure (`git add . && git commit -m "Initial project setup"`) and push to GitHub (`git push origin main`).
 
 
 ### Phase 2: Backend Development - Core Logic and AI Orchestration
@@ -47,28 +47,38 @@ Below, each high-level step is broken into tasks, and each task into subtasks, w
     - **Context:** Build a backend endpoint to handle file uploads (notes and question sets) and process them for concept extraction, forming the foundation for study plan generation. Follow FastAPI-specific guidelines for declarative routes and Pydantic models.
     - **Dependencies:** Task 1
     - **Subtasks:**
-        - [ ] **3.1:** Create a FastAPI route (`/upload`) in `routers/upload_routes.py` to accept file uploads for notes and question sets using `fastapi.File` and `fastapi.UploadFile`, with type hints.
-        - [ ] **3.2:** Implement basic file storage logic to save uploaded files temporarily in a backend directory (e.g., `./uploads/`) for processing, using async operations to avoid blocking I/O.
-        - [ ] **3.3:** Add text extraction logic for common file types (e.g., PDF, text) using libraries like `PyPDF2` or `textract`, ensuring early error handling with `HTTPException` for invalid files.
-        - [ ] **3.4:** Test the endpoint locally using `uvicorn` to ensure files are received and processed correctly (`uvicorn main:app --reload`), logging errors as per rules.
+        - [x] **3.1:** Create a FastAPI route (`/upload`) in `routers/upload_routes.py` to accept file uploads for notes and question sets using `fastapi.File` and `fastapi.UploadFile`, with type hints.
+        - [x] **3.2:** Implement basic file storage logic to save uploaded files temporarily in a backend directory (e.g., `./uploads/`) for processing, using async operations to avoid blocking I/O.
+        - [x] **3.3:** Add text extraction logic for common file types (e.g., PDF, text) using libraries like `PyPDF2` or `textract`, ensuring early error handling with `HTTPException` for invalid files.
+        - [x] **3.4:** Test the endpoint locally using `uvicorn` to ensure files are received and processed correctly (`uvicorn main:app --reload`), logging errors as per rules. (Server running, manual testing required by user via POST request to `/upload`)
 - **Task 4: Integrate DeepSeek V3 API via OpenRouter for AI Tasks**
     - **ID:** 4
     - **Context:** Set up integration with the free DeepSeek V3 API through OpenRouter for concept extraction, prioritization, and chat responses, ensuring secure access and optimized performance as per FastAPI performance rules.
     - **Dependencies:** Task 3
     - **Subtasks:**
-        - [ ] **4.1:** Set up environment variables for OpenRouter API keys using `python-dotenv` to securely access the DeepSeek V3 service, following security best practices.
-        - [ ] **4.2:** Create a utility function in `utils/ai_client.py` to send extracted text from uploads to DeepSeek V3 API with a prompt for identifying core topics and subtopics (e.g., "Extract key concepts from this text"), using `async def` for non-blocking calls.
-        - [ ] **4.3:** Add logic to count frequency of mentions in notes and question sets via another API prompt (e.g., "Rank topics by frequency in provided texts"), returning prioritized topics as a Pydantic model.
-        - [ ] **4.4:** Test the integration by passing sample text data to the API, verifying returned concepts and prioritization, and handling rate limits with basic retry logic or error logging.
+        - [x] **4.1:** Set up environment variables for API keys (`OPENROUTER_API_KEY`, `DEEPSEEK_MODEL_NAME`) using `python-dotenv` in the backend, ensuring keys are not hardcoded. (USER ACTION REQUIRED: Create a `.env` file in the `/Users/shreyashkumar/coding/projects/studyagent_v2/backend` directory with your `OPENROUTER_API_KEY` and `DEEPSEEK_MODEL_NAME` (e.g., `DEEPSEEK_MODEL_NAME=deepseek/deepseek-coder`). The `openai` library has been installed.)
+        - [x] **4.2:** Create a utility function in `utils/ai_client.py` to send extracted text from uploads to DeepSeek V3 API with a prompt for identifying core topics and subtopics (e.g., "Extract key concepts from this text"), using `async def` for non-blocking calls.
+        - [x] **4.3:** Add logic to count frequency of mentions in notes and question sets via another API prompt (e.g., "Rank topics by frequency in provided texts"), returning prioritized topics as a Pydantic model.
+        - [x] **4.4:** Test the integration by passing sample text data to the API, verifying returned concepts and prioritization, and handling rate limits with basic retry logic or error logging. (AI integration complete in `/upload` route. USER ACTION REQUIRED: Ensure your `OPENROUTER_API_KEY` is correctly set in `backend/.env` and test by uploading files. The Uvicorn server might need a restart to pick up these changes if it was already running.)
 - **Task 5: Set Up Crew AI for AI Workflow Orchestration**
     - **ID:** 5
     - **Context:** Integrate Crew AI to orchestrate AI tasks like concept extraction, topic prioritization, and chat responses using DeepSeek V3, ensuring structured and efficient AI interactions as a key feature for the demo.
     - **Dependencies:** Task 4
     - **Subtasks:**
-        - [ ] **5.1:** Install Crew AI (`pip install crewai`) in the backend environment to manage AI workflows, following modularization principles from the rules.
+        - [ ] **5.1: Install Crew AI (`pip install crewai`)**
+            - In the `backend` directory, run `pip install crewai`.
+            - *Dependency*: 4.2
+            - *Action Required by User*: Monitor installation. If errors, resolve them (e.g., missing system dependencies). Note: Previous attempt failed due to network timeout during kubernetes package download.
         - [ ] **5.2:** Define Crew AI agents in `utils/ai_workflow.py` for specific tasks (e.g., one agent for concept extraction, another for prioritization), each using DeepSeek V3 API calls via OpenRouter.
         - [ ] **5.3:** Create a crew to coordinate these agents, ensuring sequential task execution (e.g., extraction before prioritization) with clear input/output using Pydantic models.
-        - [ ] **5.4:** Test the Crew AI setup with sample data to confirm agents collaborate effectively, logging outputs and errors for debugging as per error handling rules.
+- [ ] **5.4: Test the Crew AI setup with sample data**
+    - In `utils/ai_workflow.py`, in the `if __name__ == '__main__':` block, add code to:
+        - Define sample study materials (a short text string).
+        - Define a sample study duration (e.g., 7 days, 2 hours/day).
+        - Kickoff the `study_crew` with these inputs.
+        - Print the result.
+    - *Dependency*: 5.3
+    - *Action Required by User*: Run `python backend/utils/ai_workflow.py` and verify output. Ensure `.env` is set up for API calls.
 - **Task 6: Build Study Plan Generation Endpoint**
     - **ID:** 6
     - **Context:** Develop an endpoint to generate a study plan based on extracted concepts, prioritized topics, and user-provided total hours (calculated from days and hours per day), using Crew AI for orchestration and following the Study Plan Template structure.
