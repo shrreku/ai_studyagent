@@ -149,11 +149,26 @@ studyagent_v2/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Future Enhancements
+
+### Short-term Goals
+- **Progress Tracking**: Add functionality to track study progress and adjust plans dynamically
+- **Mobile App**: Develop a companion mobile application for on-the-go study planning
+- **Subject-Specific Templates**: Create specialized templates for different subjects (e.g., Mathematics, History, Science)
+- **Gamification**: Add achievement badges and progress rewards to boost motivation
+
+### Long-term Vision
+- **AI-Powered Q&A**: Integrate an AI tutor for answering subject-specific questions
+- **Collaborative Study**: Enable group study planning and progress sharing
+- **Adaptive Learning**: Implement ML algorithms to adjust study plans based on performance
+- **Offline Mode**: Add support for offline access to study materials and plans
+- **Integration with Calendars**: Sync study schedule with Google Calendar, Apple Calendar, etc.
+
 ## License
 
-[Specify your license here, e.g., MIT]
+[MIT]
 
 ## Contact
 
-[Your Name] - [Your Email]
+[Shreyash Kumar] - [kshreyash12345@gmail.com]
 Project Link: [https://github.com/shrreku/ai_studyagent](https://github.com/shrreku/ai_studyagent)
