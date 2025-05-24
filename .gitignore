@@ -27,6 +27,7 @@ venv.bak
 *.swp
 *.swo
 
+
 # Operating System files
 .DS_Store
 Thumbs.db
@@ -35,6 +36,11 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+
+# Local directories to ignore
+docs/
+test/
+backend/test_data/
 
 # Next.js specific
 .next/
