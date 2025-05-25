@@ -1,0 +1,644 @@
+{
+  "overall_goal": "Master the fundamental concepts of convection heat and mass transfer, focusing on boundary layer theory, convection coefficients, dimensionless parameters, analogies between transfer processes, and practical applications.",
+  "total_study_day": 7,
+  "hour_per_day": 2.0,
+  "core_concepts": [
+    {
+      "name": "Boundary Layer Fundamentals",
+      "explanation": "Study of velocity, thermal, and concentration boundary layers, including their development and characteristics in laminar vs turbulent flow.",
+      "importance": "Foundation for understanding convective transport phenomena in various engineering applications.",
+      "related_concepts": [
+        "Reynolds number",
+        "Prandtl number"
+      ],
+      "examples": null,
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Convection Coefficients",
+      "explanation": "Local vs average heat/mass transfer coefficients and their relationship to flow conditions.",
+      "importance": "Key parameters for quantifying convective transfer rates in engineering systems.",
+      "related_concepts": [
+        "Nusselt number",
+        "Sherwood number"
+      ],
+      "examples": null,
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Dimensionless Parameters",
+      "explanation": "Key dimensionless groups (Prandtl, Schmidt, Lewis numbers) that characterize transport phenomena.",
+      "importance": "Enable scaling and comparison of different transport processes across systems.",
+      "related_concepts": [
+        "Thermal diffusivity",
+        "Mass diffusivity"
+      ],
+      "examples": null,
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Heat-Mass Transfer Analogies",
+      "explanation": "Mathematical relationships between momentum, heat, and mass transfer processes.",
+      "importance": "Allows prediction of one transport process from knowledge of another.",
+      "related_concepts": [
+        "Reynolds analogy",
+        "Chilton-Colburn analogy"
+      ],
+      "examples": null,
+      "difficulty_level": "advanced"
+    },
+    {
+      "name": "Practical Applications",
+      "explanation": "Implementation of convective transport theory in real-world engineering systems.",
+      "importance": "Direct relevance to industrial processes and equipment design.",
+      "related_concepts": [
+        "Evaporative cooling",
+        "Equipment design"
+      ],
+      "examples": null,
+      "difficulty_level": "advanced"
+    }
+  ],
+  "daily_schedule": [
+    {
+      "day": 1,
+      "date": null,
+      "focus_area": "Boundary Layer Fundamentals",
+      "study_item": [
+        {
+          "topic": "Velocity boundary layer development",
+          "description": "Study the development of velocity boundary layers and their characteristics in different flow conditions.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Chapter 6, Sections 6.1-6.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers boundary layer fundamentals and characteristics."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the concept of velocity boundary layer",
+            "Identify factors affecting boundary layer development"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Thermal and concentration boundary layers",
+          "description": "Explore the similarities and differences between thermal and concentration boundary layers.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Chapter 6, Sections 6.1-6.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Discusses thermal and concentration boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Differentiate between thermal and concentration boundary layers",
+            "Understand their practical implications"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Laminar vs turbulent flow characteristics",
+          "description": "Compare and contrast laminar and turbulent flow characteristics in boundary layers.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Chapter 6, Sections 6.1-6.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Explains laminar and turbulent flow characteristics."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Identify key differences between laminar and turbulent flows",
+            "Understand transition criteria between flow regimes"
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Learned about boundary layer development, including velocity, thermal, and concentration layers, and differences between laminar and turbulent flows.",
+      "learning_goals": [
+        "Understand boundary layer fundamentals",
+        "Differentiate between flow regimes"
+      ],
+      "review_topics": []
+    },
+    {
+      "day": 2,
+      "date": null,
+      "focus_area": "Convection Coefficients",
+      "study_item": [
+        {
+          "topic": "Local vs average coefficients",
+          "description": "Study the differences between local and average convection coefficients.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Chapter 6, Sections 6.2 and 6.4",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers convection coefficients concepts."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand local vs average coefficients",
+            "Learn how to calculate each"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Nusselt number ratios",
+          "description": "Work through Problem 6.35 to understand Nusselt number relationships.",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Problem 6.35",
+              "type": "problem_set",
+              "url": null,
+              "description": "Practice problem on Nusselt number ratios."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply Nusselt number concepts to problems",
+            "Understand ratio relationships"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Boundary layer thickness ratios",
+          "description": "Solve Problem 6.36 to calculate \u03b4/\u03b4t ratio for ethylene glycol.",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Problem 6.36",
+              "type": "problem_set",
+              "url": null,
+              "description": "Problem on boundary layer thickness ratios."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Calculate boundary layer thickness ratios",
+            "Understand fluid property effects"
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Explored convection coefficients, including local vs average values, and practiced calculations with Nusselt numbers and boundary layer thickness ratios.",
+      "learning_goals": [
+        "Understand convection coefficient concepts",
+        "Apply knowledge to practical problems"
+      ],
+      "review_topics": [
+        "Boundary layer fundamentals"
+      ]
+    },
+    {
+      "day": 3,
+      "date": null,
+      "focus_area": "Dimensionless Parameters",
+      "study_item": [
+        {
+          "topic": "Reynolds, Prandtl, Schmidt numbers",
+          "description": "Study the definitions and significance of key dimensionless numbers.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Chapter 6, Sections 6.5-6.6",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers dimensionless parameters."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand definitions of key dimensionless numbers",
+            "Learn their physical interpretations"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Pr values comparison",
+          "description": "Create comparison table of Pr values for different fluids.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Fluid property tables",
+              "type": "reference",
+              "url": null,
+              "description": "Source for fluid properties."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Compare Pr values across fluids",
+            "Understand implications for heat transfer"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Boundary layers comparison",
+          "description": "Solve Problem 6.38 comparing boundary layers for air vs oil.",
+          "duration_minutes": 50,
+          "resource": [
+            {
+              "title": "Problem 6.38",
+              "type": "problem_set",
+              "url": null,
+              "description": "Problem comparing boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply dimensionless numbers to practical problems",
+            "Compare fluid behavior"
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "Learned about key dimensionless parameters and their physical meanings, and practiced applying them to compare fluid behaviors.",
+      "learning_goals": [
+        "Master dimensionless parameters",
+        "Apply concepts to fluid comparisons"
+      ],
+      "review_topics": [
+        "Convection coefficients"
+      ]
+    },
+    {
+      "day": 4,
+      "date": null,
+      "focus_area": "Heat-Mass Transfer Analogy",
+      "study_item": [
+        {
+          "topic": "Heat-mass transfer similarity",
+          "description": "Study the analogy between heat and mass transfer processes.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Section 6.7.1",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers heat-mass transfer analogy."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the similarity between heat and mass transfer",
+            "Learn the Nu/Pr^n = Sh/Sc^n relationship"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Water evaporation example",
+          "description": "Work through Example 6.7 on water evaporation.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.7",
+              "type": "example",
+              "url": null,
+              "description": "Demonstrates heat-mass transfer analogy."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply analogy to practical example",
+            "Understand evaporation processes"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Deriving analogies",
+          "description": "Practice deriving the analogy from governing equations.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Section 6.7.1 equations",
+              "type": "textbook",
+              "url": null,
+              "description": "Governing equations for analogies."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand mathematical basis of analogies",
+            "Practice derivation skills"
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Explored the analogy between heat and mass transfer, applied it to practical examples, and practiced deriving the relationships.",
+      "learning_goals": [
+        "Understand heat-mass transfer analogy",
+        "Apply analogy to problems"
+      ],
+      "review_topics": [
+        "Dimensionless parameters"
+      ]
+    },
+    {
+      "day": 5,
+      "date": null,
+      "focus_area": "Reynolds Analogy & Applications",
+      "study_item": [
+        {
+          "topic": "Reynolds and Chilton-Colburn analogies",
+          "description": "Study the Reynolds analogy and its modified versions.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Sections 6.7.2-6.7.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers analogies."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand Reynolds analogy",
+            "Learn Chilton-Colburn modifications"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Beverage cooling example",
+          "description": "Solve Example 6.8 on beverage cooling.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.8",
+              "type": "example",
+              "url": null,
+              "description": "Demonstrates practical application of analogies."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply analogies to cooling problems",
+            "Understand practical implications"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Relationship between Cf, St, and Stm",
+          "description": "Derive the relationship between skin friction coefficient, Stanton number, and mass Stanton number.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Section 6.7 equations",
+              "type": "textbook",
+              "url": null,
+              "description": "Relevant equations for derivation."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand parameter relationships",
+            "Practice mathematical derivations"
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Learned about Reynolds and Chilton-Colburn analogies, applied them to practical cooling problems, and explored parameter relationships.",
+      "learning_goals": [
+        "Master analogies between transfer processes",
+        "Apply to practical scenarios"
+      ],
+      "review_topics": [
+        "Heat-mass transfer analogy"
+      ]
+    },
+    {
+      "day": 6,
+      "date": null,
+      "focus_area": "Comprehensive Problem Solving",
+      "study_item": [
+        {
+          "topic": "Electronic cooling problem",
+          "description": "Solve Problem 6.39 on electronic cooling.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Problem 6.39",
+              "type": "problem_set",
+              "url": null,
+              "description": "Electronic cooling application."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply concepts to electronics cooling",
+            "Practice comprehensive problem solving"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Windshield defroster problem",
+          "description": "Solve Problem 6.43 on windshield defrosters.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Problem 6.43",
+              "type": "problem_set",
+              "url": null,
+              "description": "Windshield defroster application."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand automotive applications",
+            "Practice multi-concept problems"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Circuit board cooling problem",
+          "description": "Solve Problem 6.51 on circuit board cooling.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Problem 6.51",
+              "type": "problem_set",
+              "url": null,
+              "description": "Circuit board cooling application."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply concepts to electronics packaging",
+            "Integrate multiple concepts"
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "Practiced comprehensive problem solving by applying all learned concepts to practical engineering applications.",
+      "learning_goals": [
+        "Integrate all concepts",
+        "Solve complex problems"
+      ],
+      "review_topics": [
+        "All previous topics"
+      ]
+    },
+    {
+      "day": 7,
+      "date": null,
+      "focus_area": "Final Review and Applications",
+      "study_item": [
+        {
+          "topic": "Key equations review",
+          "description": "Review all key equations and dimensionless parameters.",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Chapter 6 summary",
+              "type": "textbook",
+              "url": null,
+              "description": "Key equations summary."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Recall key equations",
+            "Understand their applications"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Boundary layer review",
+          "description": "Review boundary layer development concepts.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Sections 6.1-6.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Boundary layer fundamentals."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Consolidate boundary layer understanding",
+            "Connect to other concepts"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Species evaporation problem",
+          "description": "Work Problem 6.56 on species evaporation.",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Problem 6.56",
+              "type": "problem_set",
+              "url": null,
+              "description": "Species evaporation application."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply concepts to mass transfer problem",
+            "Integrate all learning"
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "Conducted comprehensive review of all concepts and applied them to a final practical problem.",
+      "learning_goals": [
+        "Consolidate all learning",
+        "Prepare for assessments"
+      ],
+      "review_topics": [
+        "All course topics"
+      ]
+    }
+  ],
+  "general_tip": [
+    "Visualize concepts by sketching boundary layer development for different flow conditions",
+    "Organize key equations with their assumptions and limitations",
+    "Always verify units and physical plausibility of calculated results",
+    "Relate theoretical concepts to real-world engineering applications",
+    "Use active recall techniques to reinforce understanding after study sessions"
+  ],
+  "key_formulas": [
+    {
+      "name": "Nusselt Number",
+      "formula": "Nu = hL/k",
+      "description": "Dimensionless parameter relating convective to conductive heat transfer",
+      "usage_context": "Used to calculate convective heat transfer coefficients in forced convection problems",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Sherwood Number",
+      "formula": "Sh = hmL/DAB",
+      "description": "Dimensionless parameter relating convective to diffusive mass transfer",
+      "usage_context": "Used in mass transfer calculations analogous to the Nusselt number in heat transfer",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Reynolds Analogy",
+      "formula": "St = Cf/2",
+      "description": "Relates momentum transfer to heat transfer in turbulent flow",
+      "usage_context": "Approximate relationship useful for estimating heat transfer coefficients from friction factors",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Chilton-Colburn Analogy",
+      "formula": "St Pr^{2/3} = Cf/2",
+      "description": "Modified Reynolds analogy accounting for Prandtl number effects",
+      "usage_context": "More accurate than Reynolds analogy for fluids with Pr \u2260 1",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Prandtl Number",
+      "formula": "Pr = \u03bd/\u03b1",
+      "description": "Ratio of momentum diffusivity to thermal diffusivity",
+      "usage_context": "Characterizes relative thickness of velocity and thermal boundary layers",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Schmidt Number",
+      "formula": "Sc = \u03bd/DAB",
+      "description": "Ratio of momentum diffusivity to mass diffusivity",
+      "usage_context": "Characterizes relative thickness of velocity and concentration boundary layers",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Local Heat Transfer Coefficient",
+      "formula": "hx = -k(\u2202T/\u2202y)|y=0 / (Ts - T\u221e)",
+      "description": "Defines heat transfer at a specific point on a surface",
+      "usage_context": "Used in boundary layer analysis for laminar flow over flat plates",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Boundary Layer Thickness (Laminar)",
+      "formula": "\u03b4 \u2248 5x/\u221a(Rex)",
+      "description": "Approximate thickness of velocity boundary layer",
+      "usage_context": "Estimating boundary layer development in laminar flow over flat plates",
+      "variables": null,
+      "examples": null
+    }
+  ],
+  "resources": null,
+  "assessments": null,
+  "prerequisites": null,
+  "difficulty_level": null,
+  "estimated_completion_time": null
+}

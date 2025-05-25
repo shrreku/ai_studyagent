@@ -1,0 +1,591 @@
+{
+  "overall_goal": "Master the fundamentals of convection heat and mass transfer, focusing on boundary layers, dimensionless parameters, and analogies.",
+  "total_study_day": 7,
+  "hour_per_day": 2.0,
+  "core_concepts": [
+    {
+      "name": "Boundary Layers",
+      "explanation": "Velocity, thermal, and concentration boundary layers describe the regions near a surface where flow properties change significantly.",
+      "importance": "Critical for understanding heat and mass transfer mechanisms in fluid flow.",
+      "related_concepts": [
+        "Laminar vs. turbulent flow",
+        "Shear stress"
+      ],
+      "examples": [
+        "Velocity profile in pipe flow",
+        "Temperature gradient near a heated plate"
+      ],
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Dimensionless Parameters",
+      "explanation": "Parameters like Reynolds (Re), Prandtl (Pr), Schmidt (Sc), and Nusselt (Nu) numbers characterize flow and transport phenomena.",
+      "importance": "Enable scaling and comparison of different systems.",
+      "related_concepts": [
+        "Similarity analysis",
+        "Dimensional analysis"
+      ],
+      "examples": [
+        "Re = \u03c1UL/\u03bc (inertia vs. viscous forces)",
+        "Pr = \u03bd/\u03b1 (momentum vs. thermal diffusivity)"
+      ],
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Heat and Mass Transfer Analogies",
+      "explanation": "Relationships between heat and mass transfer coefficients based on similarity of governing equations.",
+      "importance": "Simplifies analysis when both heat and mass transfer occur.",
+      "related_concepts": [
+        "Sherwood number",
+        "Lewis number"
+      ],
+      "examples": [
+        "Nu/Pr^n \u2248 Sh/Sc^n analogy",
+        "Evaporative cooling systems"
+      ],
+      "difficulty_level": "advanced"
+    }
+  ],
+  "daily_schedule": [
+    {
+      "day": 1,
+      "date": null,
+      "focus_area": "Introduction to Boundary Layers",
+      "study_item": [
+        {
+          "topic": "Velocity, Thermal, and Concentration Boundary Layers",
+          "description": "Study the definition and significance of velocity, thermal, and concentration boundary layers.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Sections 6.1\u20136.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers the fundamentals of boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the concept of boundary layers.",
+            "Differentiate between velocity, thermal, and concentration boundary layers."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Laminar vs. Turbulent Flow",
+          "description": "Compare laminar and turbulent flow characteristics in boundary layers.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Sections 6.1\u20136.3",
+              "type": "textbook",
+              "url": null,
+              "description": "Explains flow characteristics in boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Identify the differences between laminar and turbulent flow.",
+            "Understand the implications of flow type on boundary layers."
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Problem-Solving: Example 6.1",
+          "description": "Solve Example 6.1 on local vs. average heat transfer coefficients.",
+          "duration_minutes": 60,
+          "resource": [
+            {
+              "title": "Example 6.1",
+              "type": "textbook",
+              "url": null,
+              "description": "Illustrates the application of boundary layer concepts in heat transfer."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply boundary layer concepts to solve practical problems.",
+            "Calculate local and average heat transfer coefficients."
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "Learned the fundamentals of boundary layers and their significance in heat and mass transfer. Solved problems to apply theoretical concepts.",
+      "learning_goals": [
+        "Grasp the basic concepts of boundary layers.",
+        "Differentiate between laminar and turbulent flow characteristics."
+      ],
+      "review_topics": []
+    },
+    {
+      "day": 2,
+      "date": null,
+      "focus_area": "Boundary Layer Equations & Similarity",
+      "study_item": [
+        {
+          "topic": "Governing Equations for Laminar Boundary Layers",
+          "description": "Study the governing equations for laminar boundary layers (Section 6.4).",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Section 6.4",
+              "type": "textbook",
+              "url": null,
+              "description": "Details the governing equations for laminar boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the mathematical formulation of boundary layer equations.",
+            "Identify key variables and terms in the equations."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Normalized Equations and Similarity Parameters",
+          "description": "Learn about normalized equations and similarity parameters (Re, Pr, Sc).",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Section 6.4",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers normalized equations and dimensionless parameters."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the role of Reynolds, Prandtl, and Schmidt numbers.",
+            "Derive dimensionless forms of governing equations."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem-Solving: Example 6.5",
+          "description": "Solve Example 6.5 on Nusselt number application.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Example 6.5",
+              "type": "textbook",
+              "url": null,
+              "description": "Demonstrates the application of Nusselt number in boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply Nusselt number to practical problems.",
+            "Interpret results in the context of boundary layer theory."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Explored the governing equations for laminar boundary layers and learned about normalized equations and similarity parameters. Applied knowledge to solve problems involving the Nusselt number.",
+      "learning_goals": [
+        "Understand the mathematical basis of boundary layer theory.",
+        "Master the use of dimensionless parameters in boundary layer analysis."
+      ],
+      "review_topics": [
+        "Velocity, thermal, and concentration boundary layers."
+      ]
+    },
+    {
+      "day": 3,
+      "date": null,
+      "focus_area": "Physical Interpretation of Parameters",
+      "study_item": [
+        {
+          "topic": "Reynolds Number",
+          "description": "Study the Reynolds number and its significance in boundary layers.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Table 6.2",
+              "type": "textbook",
+              "url": null,
+              "description": "Lists dimensionless groups and their significance."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the physical meaning of Reynolds number.",
+            "Relate Reynolds number to inertia and viscous forces."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Prandtl and Schmidt Numbers",
+          "description": "Learn about Prandtl and Schmidt numbers and their roles in boundary layers.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Table 6.2",
+              "type": "textbook",
+              "url": null,
+              "description": "Explains diffusivity ratios in boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the significance of Prandtl and Schmidt numbers.",
+            "Interpret diffusivity ratios in thermal and concentration boundary layers."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem-Solving: Problem 6.35",
+          "description": "Solve Problem 6.35 on thermal vs. velocity boundary layers.",
+          "duration_minutes": 60,
+          "resource": [
+            {
+              "title": "Problem 6.35",
+              "type": "textbook",
+              "url": null,
+              "description": "Illustrates the comparison between thermal and velocity boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply knowledge of dimensionless parameters to solve problems.",
+            "Compare thermal and velocity boundary layers."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Gained a deeper understanding of dimensionless parameters like Reynolds, Prandtl, and Schmidt numbers. Applied these concepts to solve problems comparing thermal and velocity boundary layers.",
+      "learning_goals": [
+        "Master the interpretation of dimensionless parameters.",
+        "Apply dimensionless parameters to boundary layer problems."
+      ],
+      "review_topics": [
+        "Governing equations for laminar boundary layers."
+      ]
+    },
+    {
+      "day": 4,
+      "date": null,
+      "focus_area": "Heat and Mass Transfer Analogies",
+      "study_item": [
+        {
+          "topic": "Heat-Mass Transfer Analogy",
+          "description": "Study the heat-mass transfer analogy (Section 6.7.1).",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Section 6.7.1",
+              "type": "textbook",
+              "url": null,
+              "description": "Explains the analogy between heat and mass transfer."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the analogy between heat and mass transfer.",
+            "Identify similarities in governing equations."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Sherwood and Lewis Numbers",
+          "description": "Learn about Sherwood (Sh) and Lewis (Le) numbers.",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Section 6.7.1",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers Sherwood and Lewis numbers in mass transfer."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the role of Sherwood and Lewis numbers.",
+            "Apply these numbers in mass transfer problems."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem-Solving: Example 6.7",
+          "description": "Solve Example 6.7 on concentration boundary layer.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Example 6.7",
+              "type": "textbook",
+              "url": null,
+              "description": "Demonstrates the application of mass transfer analogy."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply heat-mass transfer analogy to practical problems.",
+            "Solve problems involving concentration boundary layers."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Explored the analogy between heat and mass transfer, focusing on Sherwood and Lewis numbers. Applied these concepts to solve problems involving concentration boundary layers.",
+      "learning_goals": [
+        "Understand the heat-mass transfer analogy.",
+        "Apply Sherwood and Lewis numbers in problem-solving."
+      ],
+      "review_topics": [
+        "Prandtl and Schmidt numbers."
+      ]
+    },
+    {
+      "day": 5,
+      "date": null,
+      "focus_area": "Reynolds Analogy & Evaporative Cooling",
+      "study_item": [
+        {
+          "topic": "Reynolds Analogy",
+          "description": "Study the Reynolds analogy (Equation 6.69) and its modifications.",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Equation 6.69",
+              "type": "textbook",
+              "url": null,
+              "description": "Details the Reynolds analogy and its variants."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the Reynolds analogy and its significance.",
+            "Explore modifications to the analogy."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Evaporative Cooling",
+          "description": "Learn about evaporative cooling (Equation 6.65).",
+          "duration_minutes": 45,
+          "resource": [
+            {
+              "title": "Equation 6.65",
+              "type": "textbook",
+              "url": null,
+              "description": "Explains the principles of evaporative cooling."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the mechanism of evaporative cooling.",
+            "Apply the concept to practical scenarios."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem-Solving: Example 6.8",
+          "description": "Solve Example 6.8 on cooling effect calculation.",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "Example 6.8",
+              "type": "textbook",
+              "url": null,
+              "description": "Illustrates the calculation of cooling effects."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply Reynolds analogy to cooling problems.",
+            "Calculate cooling effects using boundary layer theory."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Studied the Reynolds analogy and its applications, including evaporative cooling. Solved problems to apply these concepts in practical scenarios.",
+      "learning_goals": [
+        "Master the Reynolds analogy and its modifications.",
+        "Understand and apply evaporative cooling principles."
+      ],
+      "review_topics": [
+        "Heat-mass transfer analogy."
+      ]
+    },
+    {
+      "day": 6,
+      "date": null,
+      "focus_area": "Problem-Solving Practice",
+      "study_item": [
+        {
+          "topic": "Problem 6.39",
+          "description": "Solve Problem 6.39 on chip cooling.",
+          "duration_minutes": 60,
+          "resource": [
+            {
+              "title": "Problem 6.39",
+              "type": "textbook",
+              "url": null,
+              "description": "Applies boundary layer theory to chip cooling."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply boundary layer theory to cooling problems.",
+            "Solve practical engineering problems."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem 6.44",
+          "description": "Solve Problem 6.44 on microscale detector.",
+          "duration_minutes": 60,
+          "resource": [
+            {
+              "title": "Problem 6.44",
+              "type": "textbook",
+              "url": null,
+              "description": "Illustrates boundary layer applications in microscale devices."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply boundary layer concepts to microscale problems.",
+            "Understand the role of Nu = f(Re, Pr) correlations."
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "Focused on problem-solving, applying boundary layer theory to practical scenarios like chip cooling and microscale detectors.",
+      "learning_goals": [
+        "Strengthen problem-solving skills in boundary layer theory.",
+        "Apply theoretical knowledge to real-world applications."
+      ],
+      "review_topics": [
+        "Reynolds analogy and evaporative cooling."
+      ]
+    },
+    {
+      "day": 7,
+      "date": null,
+      "focus_area": "Review and Application",
+      "study_item": [
+        {
+          "topic": "Key Equations Review",
+          "description": "Review key equations (Cf, Nu, Sh) and their applications.",
+          "duration_minutes": 60,
+          "resource": [
+            {
+              "title": "Chapter 6 Summary",
+              "type": "textbook",
+              "url": null,
+              "description": "Summarizes key equations and concepts."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Reinforce understanding of key boundary layer equations.",
+            "Apply equations to various contexts."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Real-World Applications",
+          "description": "Explore real-world applications (e.g., turbine blades, circuit boards).",
+          "duration_minutes": 60,
+          "resource": [
+            {
+              "title": "Chapter 6 Applications",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers practical applications of boundary layer theory."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand how boundary layer theory applies to real-world scenarios.",
+            "Identify key engineering applications."
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "Reviewed key equations and explored real-world applications of boundary layer theory. Reinforced learning through practical examples.",
+      "learning_goals": [
+        "Consolidate knowledge of boundary layer theory.",
+        "Understand its applications in engineering."
+      ],
+      "review_topics": [
+        "All key concepts covered in the study plan."
+      ]
+    }
+  ],
+  "general_tip": [
+    "Active Learning: Derive equations instead of memorizing.",
+    "Visual Aids: Sketch boundary layer profiles to visualize concepts.",
+    "Time Management: Balance theory (1 hour) and problem-solving (1 hour) each day."
+  ],
+  "key_formulas": [
+    {
+      "name": "Reynolds Number (Re)",
+      "formula": "Re = (\u03c1 * u * L) / \u03bc",
+      "description": "Ratio of inertial forces to viscous forces in fluid flow.",
+      "usage_context": "Used to predict flow regimes (laminar/turbulent) and analyze boundary layer behavior.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Prandtl Number (Pr)",
+      "formula": "Pr = (\u03bc * c_p) / k",
+      "description": "Ratio of momentum diffusivity to thermal diffusivity.",
+      "usage_context": "Determines relative thickness of velocity and thermal boundary layers.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Schmidt Number (Sc)",
+      "formula": "Sc = \u03bc / (\u03c1 * D_AB)",
+      "description": "Ratio of momentum diffusivity to mass diffusivity.",
+      "usage_context": "Analyzes mass transfer problems and concentration boundary layers.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Nusselt Number (Nu)",
+      "formula": "Nu = (h * L) / k",
+      "description": "Ratio of convective to conductive heat transfer at a boundary.",
+      "usage_context": "Quantifies heat transfer enhancement due to convection.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Reynolds Analogy",
+      "formula": "St = (Cf / 2)",
+      "description": "Relates momentum transfer to heat transfer in turbulent flow.",
+      "usage_context": "Simplifies calculation of heat transfer coefficients from friction factors.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Sherwood Number (Sh)",
+      "formula": "Sh = (h_m * L) / D_AB",
+      "description": "Mass transfer equivalent of the Nusselt number.",
+      "usage_context": "Quantifies mass transfer enhancement due to convection.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Lewis Number (Le)",
+      "formula": "Le = Sc / Pr",
+      "description": "Ratio of thermal diffusivity to mass diffusivity.",
+      "usage_context": "Relates heat and mass transfer boundary layers in simultaneous processes.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Evaporative Cooling Effect",
+      "formula": "q'' = m''_evap * h_fg",
+      "description": "Heat flux due to phase change at a surface.",
+      "usage_context": "Calculates cooling effects in applications like sweating or anti-icing systems.",
+      "variables": null,
+      "examples": null
+    }
+  ],
+  "resources": null,
+  "assessments": null,
+  "prerequisites": null,
+  "difficulty_level": null,
+  "estimated_completion_time": null
+}

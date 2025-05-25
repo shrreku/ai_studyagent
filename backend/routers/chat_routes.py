@@ -3,6 +3,7 @@ from pydantic import BaseModel, Field
 from typing import Optional, Dict, Any
 import logging
 import os
+import asyncio
 
 from crewai import Agent, Task, Crew, Process
 from crewai.crews.crew_output import CrewOutput
@@ -22,6 +23,7 @@ class ChatRequest(BaseModel):
     session_id: str = Field(..., description="A unique session identifier to track conversation history or context.")
     study_materials_context: Optional[str] = Field(None, description="Context from uploaded study materials.")
     study_plan_context: Optional[str] = Field(None, description="Optional context from the current study plan.")
+    stream: Optional[bool] = Field(False, description="Whether to stream the response or return it as a single JSON object.")
 
 class ChatResponse(BaseModel):
     ai_response: str = Field(..., description="The AI's response to the user's query.")
@@ -114,17 +116,27 @@ async def run_chat_crew(user_query: str, study_materials_context: Optional[str],
         logger.error(f"Error during chat crew execution: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Error processing chat request with AI: {str(e)}")
 
-@router.post("/chat", response_model=ChatResponse) # Keep existing path /chat
+from fastapi.responses import StreamingResponse
+import json
+
+@router.post("/chat", response_model=ChatResponse)
 async def handle_chat(request: ChatRequest):
     """
     Handles a user's chat message, processes it with the Chat Crew AI,
-    and returns an AI-generated response.
+    and returns an AI-generated response. Supports both streaming and non-streaming responses.
     """
-    logger.info(f"Received chat request: Query='{request.user_query}', SessionID='{request.session_id}', Study Plan Context Provided='{request.study_plan_context is not None}', Study Materials Context Provided='{request.study_materials_context is not None}'")
+    logger.info(f"Received chat request: Query='{request.user_query}', SessionID='{request.session_id}', Stream={request.stream}")
 
     try:
-        # Call the async chat crew execution function
-        crew_response_data = await run_chat_crew( # Added await
+        # If streaming is requested, handle it differently
+        if request.stream:
+            return StreamingResponse(
+                content=stream_chat_response(request),
+                media_type="text/event-stream"
+            )
+        
+        # Standard non-streaming response
+        crew_response_data = await run_chat_crew(
             user_query=request.user_query,
             study_materials_context=request.study_materials_context,
             study_plan_context=request.study_plan_context
@@ -132,11 +144,79 @@ async def handle_chat(request: ChatRequest):
         
         return ChatResponse(
             ai_response=crew_response_data["ai_response"],
-            session_id=request.session_id, # Echo back session_id
+            session_id=request.session_id,
             debug_info=crew_response_data.get("debug_info")
         )
-    except HTTPException as http_exc: # Catch HTTPExceptions raised by run_chat_crew or this handler
+    except HTTPException as http_exc:
         raise http_exc
     except Exception as e:
         logger.error(f"Unhandled error in handle_chat endpoint: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"An unexpected server error occurred: {str(e)}")
+
+async def stream_chat_response(request: ChatRequest):
+    """
+    Generator function that streams the AI response chunk by chunk.
+    """
+    try:
+        # Send initial message to confirm connection
+        yield json.dumps({"status": "processing"}) + "\n"
+        
+        # Call the async chat crew execution function
+        crew_response_data = await run_chat_crew(
+            user_query=request.user_query,
+            study_materials_context=request.study_materials_context,
+            study_plan_context=request.study_plan_context
+        )
+        
+        # Get the full response
+        full_response = crew_response_data["ai_response"]
+        
+        # For empty responses, send a fallback message
+        if not full_response or not full_response.strip():
+            full_response = "I'm sorry, I couldn't generate a specific response for that. Could you try rephrasing your question?"
+            yield json.dumps({"chunk": full_response}) + "\n"
+            yield json.dumps({"done": True}) + "\n"
+            return
+        
+        # Stream the response in small chunks - adaptive chunk size based on response length
+        total_length = len(full_response)
+        
+        # Use smaller chunks for shorter responses, larger for longer ones
+        if total_length < 100:
+            chunk_size = 5  # Very small chunks for short responses
+        elif total_length < 500:
+            chunk_size = 10  # Small chunks for medium responses
+        else:
+            chunk_size = 15  # Larger chunks for long responses
+        
+        # Add a small initial delay to make it feel more natural
+        await asyncio.sleep(0.2)
+        
+        # Stream the response
+        for i in range(0, total_length, chunk_size):
+            chunk = full_response[i:i+chunk_size]
+            # Format as JSON and add newline (required for event stream parsing)
+            yield json.dumps({"chunk": chunk}) + "\n"
+            
+            # Adaptive delay - slower at punctuation for more natural reading
+            if chunk and chunk[-1] in ['.', '!', '?', ':', ';']:
+                await asyncio.sleep(0.1)  # Longer pause at sentence breaks
+            else:
+                await asyncio.sleep(0.05)  # Standard delay
+        
+        # Add a small delay before completion
+        await asyncio.sleep(0.2)
+        
+        # Signal completion
+        yield json.dumps({"done": True}) + "\n"
+        
+    except HTTPException as http_exc:
+        logger.error(f"HTTP error in streaming response: {http_exc.detail}", exc_info=True)
+        # Send formatted error message
+        yield json.dumps({"error": f"Error: {http_exc.detail}"}) + "\n"
+        yield json.dumps({"done": True}) + "\n"
+    except Exception as e:
+        logger.error(f"Unexpected error in streaming response: {str(e)}", exc_info=True)
+        # Send error message
+        yield json.dumps({"error": f"An unexpected error occurred: {str(e)}"}) + "\n"
+        yield json.dumps({"done": True}) + "\n"

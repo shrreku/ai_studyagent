@@ -1,0 +1,158 @@
+```json
+{
+  "overall_goal": "Master the fundamental concepts of heat transfer, including conduction, convection, and radiation, and apply them to solve practical problems using key formulas and analytical techniques.",
+  "core_concepts": [
+    {
+      "name": "Heat Conduction",
+      "explanation": "Transfer of heat through a solid or stationary fluid due to temperature differences.",
+      "importance": "high",
+      "related_concepts": ["Fourier's Law", "Thermal Conductivity"],
+      "examples": ["Heat flow through a metal rod", "Insulation materials"]
+    },
+    {
+      "name": "Heat Convection",
+      "explanation": "Heat transfer between a surface and a moving fluid, involving both conduction and fluid motion.",
+      "importance": "high",
+      "related_concepts": ["Newton's Law of Cooling", "Nusselt Number"],
+      "examples": ["Cooling of a hot plate by air", "Heat exchangers"]
+    },
+    {
+      "name": "Thermal Radiation",
+      "explanation": "Heat transfer via electromagnetic waves, independent of a medium.",
+      "importance": "high",
+      "related_concepts": ["Stefan-Boltzmann Law", "Blackbody Radiation"],
+      "examples": ["Solar heating", "Radiative cooling"]
+    },
+    {
+      "name": "Steady-State vs. Transient Heat Transfer",
+      "explanation": "Steady-state: temperature doesn't change over time; transient: temperature changes with time.",
+      "importance": "medium",
+      "related_concepts": ["Heat Diffusion Equation", "Biot Number"],
+      "examples": ["Steady: Pipe insulation", "Transient: Heating a metal block"]
+    },
+    {
+      "name": "Thermal Resistance",
+      "explanation": "Analogy to electrical resistance, quantifying resistance to heat flow.",
+      "importance": "medium",
+      "related_concepts": ["Composite Walls", "Overall Heat Transfer Coefficient"],
+      "examples": ["Layered insulation", "Heat sink design"]
+    }
+  ],
+  "daily_focus": [
+    {
+      "day": 1,
+      "focus_area": "Fundamentals of Heat Conduction",
+      "topics": ["Fourier's Law", "Thermal Conductivity", "1D Steady-State Conduction"],
+      "subtopics": {
+        "Fourier's Law": ["Mathematical form", "Assumptions"],
+        "Thermal Conductivity": ["Material dependence", "Measurement methods"],
+        "1D Steady-State Conduction": ["Planar systems", "Cylindrical systems"]
+      },
+      "time_allocation": {
+        "Fourier's Law": "60",
+        "Thermal Conductivity": "60",
+        "1D Steady-State Conduction": "120"
+      }
+    },
+    {
+      "day": 2,
+      "focus_area": "Heat Convection and Boundary Layers",
+      "topics": ["Newton's Law of Cooling", "Forced vs. Natural Convection", "Boundary Layer Theory"],
+      "subtopics": {
+        "Newton's Law of Cooling": ["Definition", "Applications"],
+        "Forced vs. Natural Convection": ["Driving forces", "Examples"],
+        "Boundary Layer Theory": ["Velocity/Thermal boundary layers", "Prandtl Number"]
+      },
+      "time_allocation": {
+        "Newton's Law of Cooling": "60",
+        "Forced vs. Natural Convection": "90",
+        "Boundary Layer Theory": "90"
+      }
+    },
+    {
+      "day": 3,
+      "focus_area": "Radiation and Combined Modes",
+      "topics": ["Stefan-Boltzmann Law", "Blackbody Radiation", "Combined Conduction-Convection"],
+      "subtopics": {
+        "Stefan-Boltzmann Law": ["Formula derivation", "Real surfaces"],
+        "Blackbody Radiation": ["Emissivity", "Spectral distribution"],
+        "Combined Conduction-Convection": ["Fins analysis", "Overall heat transfer coefficient"]
+      },
+      "time_allocation": {
+        "Stefan-Boltzmann Law": "90",
+        "Blackbody Radiation": "90",
+        "Combined Conduction-Convection": "60"
+      }
+    },
+    {
+      "day": 4,
+      "focus_area": "Transient Heat Transfer and Practical Applications",
+      "topics": ["Lumped Capacitance Method", "Heat Exchangers", "Dimensional Analysis"],
+      "subtopics": {
+        "Lumped Capacitance Method": ["Biot Number", "Applications"],
+        "Heat Exchangers": ["Types (parallel/counterflow)", "Log Mean Temperature Difference"],
+        "Dimensional Analysis": ["Buckingham Pi Theorem", "Nusselt Number correlation"]
+      },
+      "time_allocation": {
+        "Lumped Capacitance Method": "90",
+        "Heat Exchangers": "120",
+        "Dimensional Analysis": "30"
+      }
+    },
+    {
+      "day": 5,
+      "focus_area": "Problem-Solving and Review",
+      "topics": ["Practice Problems", "Formula Review", "Concept Integration"],
+      "subtopics": {
+        "Practice Problems": ["Conduction problems", "Radiation problems"],
+        "Formula Review": ["Key equations", "Unit consistency"],
+        "Concept Integration": ["Multi-mode problems", "Real-world cases"]
+      },
+      "time_allocation": {
+        "Practice Problems": "120",
+        "Formula Review": "60",
+        "Concept Integration": "60"
+      }
+    }
+  ],
+  "key_formulas": [
+    {
+      "name": "Fourier's Law",
+      "formula": "q = -k * A * (dT/dx)",
+      "description": "Calculates heat flux in conduction",
+      "application": "Heat loss through a wall"
+    },
+    {
+      "name": "Newton's Law of Cooling",
+      "formula": "q = h * A * (T_s - T_inf)",
+      "description": "Calculates convective heat transfer",
+      "application": "Cooling of electronic components"
+    },
+    {
+      "name": "Stefan-Boltzmann Law",
+      "formula": "E = εσT^4",
+      "description": "Calculates radiant heat flux",
+      "application": "Solar panel heating"
+    },
+    {
+      "name": "Lumped Capacitance",
+      "formula": "T(t) - T_inf = (T_i - T_inf) * exp(-t/τ)",
+      "description": "Simplified transient analysis",
+      "application": "Quenching of metal parts"
+    },
+    {
+      "name": "Log Mean Temperature Difference",
+      "formula": "ΔT_lm = (ΔT1 - ΔT2)/ln(ΔT1/ΔT2)",
+      "description": "Effective temperature difference in heat exchangers",
+      "application": "Shell-and-tube heat exchanger design"
+    }
+  ],
+  "study_tips": [
+    "Create concept maps linking different heat transfer modes to visualize relationships",
+    "Practice deriving key formulas from first principles to deepen understanding",
+    "Solve problems using both SI and Imperial units to build unit conversion skills",
+    "Compare real-world examples (e.g., thermos flask, car radiator) to theoretical models",
+    "Use the 'teach back' method by explaining concepts aloud as if teaching someone else"
+  ]
+}
+```

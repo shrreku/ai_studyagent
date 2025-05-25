@@ -1,0 +1,735 @@
+{
+  "overall_goal": "## Overview\nThis 7-day study plan provides a structured approach to mastering convection heat and mass transfer concepts from Chapter 6, focusing on boundary layer theory, dimensionless parameters, and analogies. Each day includes exactly 2.0 hours of study time, divided between conceptual learning and problem-solving practice.",
+  "total_study_day": 7,
+  "hour_per_day": 2.0,
+  "core_concepts": [
+    {
+      "name": "Velocity, thermal, and concentration boundary layers",
+      "explanation": "Velocity, thermal, and concentration boundary layers",
+      "importance": null,
+      "related_concepts": null,
+      "examples": null,
+      "difficulty_level": null
+    },
+    {
+      "name": "Local vs. average convection coefficients",
+      "explanation": "Local vs. average convection coefficients",
+      "importance": null,
+      "related_concepts": null,
+      "examples": null,
+      "difficulty_level": null
+    },
+    {
+      "name": "Laminar vs. turbulent flow characteristics",
+      "explanation": "Laminar vs. turbulent flow characteristics",
+      "importance": null,
+      "related_concepts": null,
+      "examples": null,
+      "difficulty_level": null
+    },
+    {
+      "name": "Boundary layer equations and similarity parameters (Re, Pr, Sc)",
+      "explanation": "Boundary layer equations and similarity parameters (Re, Pr, Sc)",
+      "importance": null,
+      "related_concepts": null,
+      "examples": null,
+      "difficulty_level": null
+    },
+    {
+      "name": "Heat and mass transfer analogies",
+      "explanation": "Heat and mass transfer analogies",
+      "importance": null,
+      "related_concepts": null,
+      "examples": null,
+      "difficulty_level": null
+    },
+    {
+      "name": "Reynolds analogy and evaporative cooling",
+      "explanation": "Reynolds analogy and evaporative cooling",
+      "importance": null,
+      "related_concepts": null,
+      "examples": null,
+      "difficulty_level": null
+    }
+  ],
+  "daily_schedule": [
+    {
+      "day": 1,
+      "date": null,
+      "focus_area": "Boundary Layer Fundamentals (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "0 hr: Study velocity boundary layer development and characteristics",
+          "description": "0 hr: Study velocity boundary layer development and characteristics",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Learn about thermal and concentration boundary layers",
+          "description": "5 hr: Learn about thermal and concentration boundary layers",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Solve Problems",
+          "description": "5 hr: Solve Problems",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "1 and",
+          "description": "1 and",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "2 (calculating boundary layer parameters)",
+          "description": "2 (calculating boundary layer parameters)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 1: Boundary Layer Fundamentals (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    },
+    {
+      "day": 2,
+      "date": null,
+      "focus_area": "Convection Coefficients (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "75 hr: Understand local vs. average coefficients",
+          "description": "75 hr: Understand local vs. average coefficients",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "75 hr: Work through Examples",
+          "description": "75 hr: Work through Examples",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "4 and",
+          "description": "4 and",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5",
+          "description": "5",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Solve Problem",
+          "description": "5 hr: Solve Problem",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "35 (Nusselt number calculations)",
+          "description": "35 (Nusselt number calculations)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 2: Convection Coefficients (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    },
+    {
+      "day": 3,
+      "date": null,
+      "focus_area": "Laminar vs. Turbulent Flow (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "0 hr: Study transition mechanisms and critical Reynolds number",
+          "description": "0 hr: Study transition mechanisms and critical Reynolds number",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Analyze Problem",
+          "description": "5 hr: Analyze Problem",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "38 (boundary layer thickness comparisons)",
+          "description": "38 (boundary layer thickness comparisons)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Work on Problem",
+          "description": "5 hr: Work on Problem",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "37 (sketching boundary layer development)",
+          "description": "37 (sketching boundary layer development)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 3: Laminar vs. Turbulent Flow (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    },
+    {
+      "day": 4,
+      "date": null,
+      "focus_area": "Boundary Layer Equations (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "0 hr: Study simplified boundary layer equations",
+          "description": "0 hr: Study simplified boundary layer equations",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Analyze Table",
+          "description": "5 hr: Analyze Table",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "1 (dimensionless forms)",
+          "description": "1 (dimensionless forms)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Work through Example",
+          "description": "5 hr: Work through Example",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "6 (similarity solutions)",
+          "description": "6 (similarity solutions)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 4: Boundary Layer Equations (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    },
+    {
+      "day": 5,
+      "date": null,
+      "focus_area": "Dimensionless Parameters (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "0 hr: Master Re, Pr, Sc, and their physical interpretations",
+          "description": "0 hr: Master Re, Pr, Sc, and their physical interpretations",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Study Table",
+          "description": "5 hr: Study Table",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "2 (all dimensionless groups)",
+          "description": "2 (all dimensionless groups)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Solve Problem",
+          "description": "5 hr: Solve Problem",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "41 (using similarity parameters)",
+          "description": "41 (using similarity parameters)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 5: Dimensionless Parameters (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    },
+    {
+      "day": 6,
+      "date": null,
+      "focus_area": "Analogies (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "0 hr: Learn heat",
+          "description": "0 hr: Learn heat",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "mass transfer analogy",
+          "description": "mass transfer analogy",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Study Reynolds analogy and modifications",
+          "description": "5 hr: Study Reynolds analogy and modifications",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Work through Example",
+          "description": "5 hr: Work through Example",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "7 and Problem",
+          "description": "7 and Problem",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "45",
+          "description": "45",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 6: Analogies (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    },
+    {
+      "day": 7,
+      "date": null,
+      "focus_area": "Applications & Review (2.0 hours)",
+      "study_item": [
+        {
+          "topic": "0 hours)",
+          "description": "0 hours)",
+          "duration_minutes": 0,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "75 hr: Study evaporative cooling (Example",
+          "description": "75 hr: Study evaporative cooling (Example",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "8)",
+          "description": "8)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "75 hr: Solve Problem",
+          "description": "75 hr: Solve Problem",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "51 (practical application)",
+          "description": "51 (practical application)",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "description": "",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 hr: Review all key concepts and practice problems",
+          "description": "5 hr: Review all key concepts and practice problems",
+          "duration_minutes": 30,
+          "resource": null,
+          "is_completed": false,
+          "learning_objectives": null,
+          "priority": null
+        }
+      ],
+      "summary": "Day 7: Applications & Review (2.0 hours)",
+      "learning_goals": null,
+      "review_topics": null
+    }
+  ],
+  "general_tip": [
+    "Create concept maps to visualize relationships between parameters",
+    "Use dimensional analysis to verify problem solutions",
+    "Focus on physical interpretations rather than just equations",
+    "Work through all examples before attempting problems",
+    "Compare laminar and turbulent cases side",
+    "by",
+    "side",
+    "Relate mathematical solutions to real",
+    "world applications",
+    "Review the summary questions in Section",
+    "8 for self",
+    "assessment\n\nRemember to maintain strict time management",
+    "each day's study session must be exactly",
+    "0 hours. The plan progresses from fundamental concepts to practical applications while reinforcing learning through problem",
+    "solving."
+  ],
+  "key_formulas": null,
+  "resources": null,
+  "assessments": null,
+  "prerequisites": null,
+  "difficulty_level": null,
+  "estimated_completion_time": null
+}

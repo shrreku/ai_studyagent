@@ -1,0 +1,714 @@
+{
+  "overallGoal": "Master the key concepts of convection heat transfer, focusing on boundary layer theory, dimensionless parameters, and analogies between heat, mass, and momentum transfer.",
+  "totalStudyDays": 7,
+  "hoursPerDay": 2.0,
+  "keyConcepts": [
+    {
+      "concept": "Boundary Layer Development",
+      "explanation": "The development of velocity, thermal, and concentration boundary layers in convective flows, which are thin regions near surfaces where gradients are significant."
+    },
+    {
+      "concept": "Local vs. Average Convection Coefficients",
+      "explanation": "Local coefficients vary along the surface while average coefficients represent overall heat/mass transfer performance."
+    },
+    {
+      "concept": "Dimensionless Parameters",
+      "explanation": "Dimensionless groups (Reynolds, Prandtl, Nusselt, Schmidt, Sherwood numbers) that characterize convective transport phenomena."
+    },
+    {
+      "concept": "Boundary Layer Equations",
+      "explanation": "Conservation equations (mass, momentum, energy, species) simplified for boundary layer flows with appropriate assumptions."
+    },
+    {
+      "concept": "Boundary Layer Analogies",
+      "explanation": "Relationships between heat, mass, and momentum transfer processes in boundary layers."
+    }
+  ],
+  "dailyBreakdown": [
+    {
+      "day": 1,
+      "daySummary": "Gained foundational understanding of convection heat transfer and boundary layers, practiced calculating convection coefficients.",
+      "focusArea": "Fundamentals of Convection and Boundary Layers",
+      "learningGoals": [
+        "Master basic convection concepts",
+        "Understand boundary layer development"
+      ],
+      "reviewTopics": [],
+      "items": [
+        {
+          "topic": "Definition of convection and boundary layers",
+          "details": "Study the basic concepts of convection heat transfer and the development of velocity, thermal, and concentration boundary layers.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Sections 6.1-6.2 covering convection fundamentals"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the physical meaning of convection",
+            "Identify different types of boundary layers"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Local vs. average convection coefficients",
+          "details": "Learn the difference between local and average convection coefficients and their applications.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Sections 6.1-6.2 covering convection coefficients"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Differentiate between local and average convection coefficients",
+            "Apply these concepts to simple problems"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Example 6.1 and Practice Question 6.35",
+          "details": "Solve Example 6.1 (calculating average heat transfer coefficients) and Practice Question 6.35 (Nusselt number ratio).",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "Example problems from the textbook"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply boundary layer concepts to calculations",
+            "Practice problem-solving techniques"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Summary",
+          "details": "Gained foundational understanding of convection heat transfer and boundary layers, practiced calculating convection coefficients.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Master basic convection concepts",
+            "Understand boundary layer development"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "daySummary": "Learned to distinguish between laminar and turbulent flow characteristics and applied this knowledge to solve transition problems.",
+      "focusArea": "Laminar and Turbulent Flow Characteristics",
+      "learningGoals": [
+        "Understand flow transition mechanisms",
+        "Analyze boundary layer profiles"
+      ],
+      "reviewTopics": [
+        "Boundary layer development from Day 1"
+      ],
+      "items": [
+        {
+          "topic": "Differences between laminar and turbulent flow",
+          "details": "Study the characteristics and differences between laminar and turbulent flow in boundary layers.",
+          "durationMinutes": 40,
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.3 covering flow characteristics"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Identify laminar and turbulent flow characteristics",
+            "Understand transition criteria"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Boundary layer profiles",
+          "details": "Examine velocity and temperature profiles in laminar and turbulent boundary layers.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.3 covering boundary layer profiles"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand boundary layer profile development",
+            "Compare laminar and turbulent profiles"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Example 6.4 and Practice Question 6.36",
+          "details": "Solve Example 6.4 (transition location calculations) and Practice Question 6.36 (boundary layer thickness ratios).",
+          "durationMinutes": 50,
+          "estimatedTimeHours": 0.8333333333333334,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "Example problems from the textbook"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply transition criteria calculations",
+            "Practice boundary layer thickness analysis"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned to distinguish between laminar and turbulent flow characteristics and applied this knowledge to solve transition problems.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand flow transition mechanisms",
+            "Analyze boundary layer profiles"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "daySummary": "Studied boundary layer conservation equations and practiced deriving their dimensionless forms, understanding compressibility effects.",
+      "focusArea": "Boundary Layer Equations",
+      "learningGoals": [
+        "Master boundary layer equations",
+        "Practice dimensional analysis"
+      ],
+      "reviewTopics": [
+        "Laminar/turbulent characteristics from Day 2"
+      ],
+      "items": [
+        {
+          "topic": "Conservation equations for boundary layers",
+          "details": "Study the conservation of mass, momentum, energy, and species equations for boundary layers.",
+          "durationMinutes": 40,
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.4 covering conservation equations"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the conservation equations",
+            "Learn simplifying assumptions"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Compressible vs. incompressible flow",
+          "details": "Examine the differences between compressible and incompressible flow in boundary layers.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.4 covering flow types"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Differentiate compressible and incompressible flow",
+            "Understand implications for boundary layers"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Deriving dimensionless forms",
+          "details": "Practice deriving dimensionless forms of the boundary layer equations.",
+          "durationMinutes": 50,
+          "estimatedTimeHours": 0.8333333333333334,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "Section 6.4 derivation exercises"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Learn dimensional analysis techniques",
+            "Practice equation manipulation"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Studied boundary layer conservation equations and practiced deriving their dimensionless forms, understanding compressibility effects.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Master boundary layer equations",
+            "Practice dimensional analysis"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "daySummary": "Learned key dimensionless parameters and similarity principles, applying them to practical thermal analysis problems.",
+      "focusArea": "Dimensionless Parameters I",
+      "learningGoals": [
+        "Master dimensionless parameter usage",
+        "Apply similarity principles"
+      ],
+      "reviewTopics": [
+        "Boundary layer equations from Day 3"
+      ],
+      "items": [
+        {
+          "topic": "Reynolds, Prandtl, and Nusselt numbers",
+          "details": "Study the definitions, physical meanings, and applications of these key dimensionless parameters.",
+          "durationMinutes": 40,
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.5 covering dimensionless parameters"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand each parameter's physical meaning",
+            "Learn typical ranges and applications"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Similarity principles",
+          "details": "Learn about similarity principles and how they apply to convection problems.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.5 covering similarity"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand geometric, kinematic, and dynamic similarity",
+            "Apply similarity to problem solving"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Example 6.5 and Practice Question 6.41",
+          "details": "Solve Example 6.5 (similarity analysis) and Practice Question 6.41 (chip temperature calculations).",
+          "durationMinutes": 50,
+          "estimatedTimeHours": 0.8333333333333334,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "Example problems from the textbook"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply dimensionless parameters to problems",
+            "Practice thermal analysis"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned key dimensionless parameters and similarity principles, applying them to practical thermal analysis problems.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Master dimensionless parameter usage",
+            "Apply similarity principles"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "daySummary": "Extended understanding of dimensionless parameters to mass transfer and examined boundary layer thickness relationships, applying knowledge to practical problems.",
+      "focusArea": "Dimensionless Parameters II",
+      "learningGoals": [
+        "Understand mass transfer parameters",
+        "Analyze boundary layer relationships"
+      ],
+      "reviewTopics": [
+        "Dimensionless parameters from Day 4"
+      ],
+      "items": [
+        {
+          "topic": "Schmidt and Lewis numbers",
+          "details": "Study these mass transfer parameters and their relationship to heat transfer parameters.",
+          "durationMinutes": 40,
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.6 covering mass transfer parameters"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand Schmidt and Lewis numbers",
+            "Relate to heat transfer parameters"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Relative boundary layer thicknesses",
+          "details": "Learn how different boundary layers (velocity, thermal, concentration) relate to each other.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.6 covering boundary layer relationships"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand boundary layer thickness relationships",
+            "Predict relative growth rates"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Example 6.6 and Practice Question 6.45",
+          "details": "Solve Example 6.6 (scaling with different fluids) and Practice Question 6.45 (heat transfer from flat plate).",
+          "durationMinutes": 50,
+          "estimatedTimeHours": 0.8333333333333334,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "Example problems from the textbook"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply scaling analysis",
+            "Solve flat plate convection problems"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Extended understanding of dimensionless parameters to mass transfer and examined boundary layer thickness relationships, applying knowledge to practical problems.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand mass transfer parameters",
+            "Analyze boundary layer relationships"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "daySummary": "Learned about important boundary layer analogies between different transfer processes and applied them to practical problems including evaporative cooling.",
+      "focusArea": "Boundary Layer Analogies",
+      "learningGoals": [
+        "Master heat-mass transfer analogy",
+        "Understand Reynolds analogy"
+      ],
+      "reviewTopics": [
+        "Dimensionless parameters from Day 5"
+      ],
+      "items": [
+        {
+          "topic": "Heat-mass transfer analogy",
+          "details": "Study the analogy between heat and mass transfer processes in boundary layers.",
+          "durationMinutes": 40,
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.7 covering analogies"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the heat-mass transfer analogy",
+            "Apply to practical problems"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Reynolds analogy",
+          "details": "Learn about the Reynolds analogy between momentum and heat transfer.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            {
+              "title": "Chapter 6: Introduction to Convection",
+              "type": "textbook",
+              "url": null,
+              "description": "Section 6.7 covering Reynolds analogy"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the Reynolds analogy",
+            "Apply to turbulent flow situations"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Example 6.7 and Example 6.8",
+          "details": "Solve Example 6.7 (mass transfer calculations) and Example 6.8 (evaporative cooling).",
+          "durationMinutes": 50,
+          "estimatedTimeHours": 0.8333333333333334,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "Example problems from the textbook"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply analogies to solve problems",
+            "Understand evaporative cooling"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned about important boundary layer analogies between different transfer processes and applied them to practical problems including evaporative cooling.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Master heat-mass transfer analogy",
+            "Understand Reynolds analogy"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "daySummary": "Reviewed all key convection heat transfer concepts, applied knowledge to integrated problems, and created a conceptual framework of relationships.",
+      "focusArea": "Review and Applications",
+      "learningGoals": [
+        "Master all key concepts",
+        "Apply to complex problems"
+      ],
+      "reviewTopics": [
+        "All previous topics from Days 1-6"
+      ],
+      "items": [
+        {
+          "topic": "Comprehensive review",
+          "details": "Review all key concepts from the week, focusing on areas needing reinforcement.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Chapter 6 Summary",
+              "type": "review",
+              "url": null,
+              "description": "Key points from all sections"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Consolidate understanding of all topics",
+            "Identify weak areas"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Practice Questions 6.51-6.56",
+          "details": "Work through integrated practice problems covering all sections.",
+          "durationMinutes": 40,
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            {
+              "title": "Chapter 6 Problems",
+              "type": "practice_problems",
+              "url": null,
+              "description": "End-of-chapter problems"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply knowledge to complex problems",
+            "Practice integrated thinking"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Concept mapping",
+          "details": "Create a concept map showing relationships between all topics studied.",
+          "durationMinutes": 20,
+          "estimatedTimeHours": 0.3333333333333333,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Visualize connections between concepts",
+            "Synthesize knowledge"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Summary",
+          "details": "Reviewed all key convection heat transfer concepts, applied knowledge to integrated problems, and created a conceptual framework of relationships.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Master all key concepts",
+            "Apply to complex problems"
+          ],
+          "priority": "high"
+        }
+      ]
+    }
+  ],
+  "generalTips": [
+    "Active Learning: Don't just read - work through examples and derive equations yourself",
+    "Visualization: Sketch boundary layer profiles and flow situations",
+    "Dimensional Analysis: Always check units when solving problems",
+    "Time Management: Use 45-minute focused study sessions with 15-minute breaks"
+  ],
+  "keyFormulas": [
+    {
+      "formula_name": "Reynolds Number",
+      "formula": "Re = (\u03c1 * u * L)/\u03bc",
+      "description": "Dimensionless number representing the ratio of inertial forces to viscous forces",
+      "usage_context": "Used to predict flow regimes (laminar vs. turbulent) and characterize boundary layer development",
+      "variables": {
+        "\u03c1": "fluid density",
+        "u": "flow velocity",
+        "L": "characteristic length",
+        "\u03bc": "dynamic viscosity"
+      },
+      "examples": [
+        "Determining transition from laminar to turbulent flow (Re \u2248 5\u00d710^5 for flat plate)",
+        "Scaling flow conditions between different systems"
+      ]
+    },
+    {
+      "formula_name": "Prandtl Number",
+      "formula": "Pr = \u03bd/\u03b1 = (\u03bc * cp)/k",
+      "description": "Dimensionless number representing the ratio of momentum diffusivity to thermal diffusivity",
+      "usage_context": "Used to characterize relative thickness of velocity and thermal boundary layers",
+      "variables": {
+        "\u03bd": "kinematic viscosity",
+        "\u03b1": "thermal diffusivity",
+        "\u03bc": "dynamic viscosity",
+        "cp": "specific heat at constant pressure",
+        "k": "thermal conductivity"
+      },
+      "examples": [
+        "Comparing boundary layer development in different fluids",
+        "Determining appropriate heat transfer correlations"
+      ]
+    },
+    {
+      "formula_name": "Nusselt Number",
+      "formula": "Nu = (h * L)/k",
+      "description": "Dimensionless number representing the ratio of convective to conductive heat transfer",
+      "usage_context": "Used to calculate convection heat transfer coefficients and characterize heat transfer efficiency",
+      "variables": {
+        "h": "convective heat transfer coefficient",
+        "L": "characteristic length",
+        "k": "thermal conductivity"
+      },
+      "examples": [
+        "Calculating heat transfer rates from flat plates",
+        "Designing heat exchangers"
+      ]
+    },
+    {
+      "formula_name": "Sherwood Number",
+      "formula": "Sh = (hm * L)/D",
+      "description": "Dimensionless number representing the ratio of convective to diffusive mass transfer",
+      "usage_context": "Used in mass transfer problems analogous to Nusselt number in heat transfer",
+      "variables": {
+        "hm": "convective mass transfer coefficient",
+        "L": "characteristic length",
+        "D": "mass diffusivity"
+      },
+      "examples": [
+        "Analyzing evaporation processes",
+        "Designing mass transfer equipment"
+      ]
+    },
+    {
+      "formula_name": "Reynolds Analogy",
+      "formula": "St = Cf/2",
+      "description": "Relates skin friction coefficient to Stanton number for momentum and heat transfer",
+      "usage_context": "Used when Pr \u2248 1 to estimate heat transfer from momentum transfer data",
+      "variables": {
+        "St": "Stanton number (Nu/(Re * Pr))",
+        "Cf": "skin friction coefficient"
+      },
+      "examples": [
+        "Estimating heat transfer coefficients from known friction factors",
+        "Designing cooling systems for turbulent flow"
+      ]
+    }
+  ]
+}

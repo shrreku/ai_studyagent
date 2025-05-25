@@ -1,0 +1,661 @@
+{
+  "overall_goal": "Master the fundamental concepts of convection heat and mass transfer, focusing on boundary layers, convection coefficients, flow regimes, boundary layer equations, and dimensionless parameters.",
+  "total_study_day": 7,
+  "hour_per_day": 2.0,
+  "core_concepts": [
+    {
+      "name": "Boundary Layers",
+      "explanation": "Layers of fluid where velocity, thermal, and concentration gradients are significant, including velocity (\u03b4), thermal (\u03b4\u209c), and concentration (\u03b4_c) boundary layers.",
+      "importance": "Critical for understanding how heat and mass transfer occur near surfaces.",
+      "related_concepts": [
+        "Convection Coefficients",
+        "Flow Regimes"
+      ],
+      "examples": null,
+      "difficulty_level": "basic"
+    },
+    {
+      "name": "Convection Coefficients",
+      "explanation": "Local and average coefficients (h for heat, hm for mass) quantify the rate of heat or mass transfer at a surface.",
+      "importance": "Essential for calculating heat flux (q'') and mass flux (N_A) in practical applications.",
+      "related_concepts": [
+        "Boundary Layers",
+        "Dimensionless Parameters"
+      ],
+      "examples": null,
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Flow Regimes",
+      "explanation": "Classification of fluid flow as laminar or turbulent, determined by the Reynolds number (Re).",
+      "importance": "Different flow regimes significantly affect heat and mass transfer rates.",
+      "related_concepts": [
+        "Boundary Layers",
+        "Boundary Layer Equations"
+      ],
+      "examples": null,
+      "difficulty_level": "basic"
+    },
+    {
+      "name": "Boundary Layer Equations",
+      "explanation": "Simplified governing equations (mass, momentum, energy, species) for fluid flow near a surface.",
+      "importance": "Foundation for analyzing convective heat and mass transfer problems.",
+      "related_concepts": [
+        "Flow Regimes",
+        "Dimensionless Parameters"
+      ],
+      "examples": null,
+      "difficulty_level": "advanced"
+    },
+    {
+      "name": "Dimensionless Parameters",
+      "explanation": "Key parameters (Re, Pr, Sc, Nu, Sh, Cf) that characterize convective transport phenomena.",
+      "importance": "Enable scaling and comparison of different systems and conditions.",
+      "related_concepts": [
+        "Convection Coefficients",
+        "Analogies"
+      ],
+      "examples": null,
+      "difficulty_level": "intermediate"
+    }
+  ],
+  "daily_schedule": [
+    {
+      "day": 1,
+      "date": null,
+      "focus_area": "Boundary Layer Fundamentals",
+      "study_item": [
+        {
+          "topic": "Definitions of boundary layers",
+          "description": "Understand \u03b4 (velocity), \u03b4\u209c (thermal), and \u03b4_c (concentration) boundary layers.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Sections 6.1.1\u20136.1.4",
+              "type": "textbook",
+              "url": null,
+              "description": "Textbook sections covering boundary layer definitions."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Define velocity, thermal, and concentration boundary layers.",
+            "Explain the physical significance of boundary layers."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Boundary layer growth",
+          "description": "Study how boundary layers develop along surfaces.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.1",
+              "type": "textbook",
+              "url": null,
+              "description": "Example problem on local vs. average coefficients."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Describe the growth of boundary layers along surfaces.",
+            "Compare boundary layer thickness for different fluids."
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Visualization activity",
+          "description": "Sketch boundary layer profiles for air and oil.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Study Tip",
+              "type": "activity",
+              "url": null,
+              "description": "Sketching boundary layer profiles to visualize thickness variations."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Visualize boundary layer profiles for different fluids.",
+            "Understand how fluid properties affect boundary layer thickness."
+          ],
+          "priority": "low"
+        }
+      ],
+      "summary": "Introduced the fundamentals of boundary layers, including definitions and growth along surfaces, and practiced visualizing them through sketches.",
+      "learning_goals": [
+        "Understand the physical significance of boundary layers.",
+        "Compare boundary layer thickness for different fluids."
+      ],
+      "review_topics": []
+    },
+    {
+      "day": 2,
+      "date": null,
+      "focus_area": "Convection Coefficients & Problem Solving",
+      "study_item": [
+        {
+          "topic": "Local and average coefficients",
+          "description": "Study heat (h) and mass (hm) transfer coefficients.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Equations 6.4\u20136.9",
+              "type": "textbook",
+              "url": null,
+              "description": "Equations defining heat and mass flux."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Define local and average heat/mass transfer coefficients.",
+            "Understand the equations for heat and mass flux."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem solving",
+          "description": "Solve Example 6.2 on mass transfer calculations.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.2",
+              "type": "textbook",
+              "url": null,
+              "description": "Example problem on mass transfer calculations."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply the concepts of h and hm to solve problems.",
+            "Calculate heat and mass flux using given profiles."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Dimensional analysis",
+          "description": "Verify units of h (W/m\u00b2\u00b7K) and hm (m/s).",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Study Tip",
+              "type": "activity",
+              "url": null,
+              "description": "Dimensional analysis to verify units of coefficients."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Perform dimensional analysis on heat and mass transfer coefficients.",
+            "Understand the units of h and hm."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Focused on understanding and applying local and average heat/mass transfer coefficients, and practiced problem-solving with dimensional analysis.",
+      "learning_goals": [
+        "Master the definitions and applications of h and hm.",
+        "Solve problems involving heat and mass flux."
+      ],
+      "review_topics": [
+        "Boundary layer definitions"
+      ]
+    },
+    {
+      "day": 3,
+      "date": null,
+      "focus_area": "Laminar vs. Turbulent Flow",
+      "study_item": [
+        {
+          "topic": "Critical Reynolds number",
+          "description": "Study the transition criteria (Re_x,c \u2248 5\u00d710\u2075).",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Figure 6.7",
+              "type": "textbook",
+              "url": null,
+              "description": "Velocity profiles for laminar and turbulent flow."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the critical Reynolds number for flow transition.",
+            "Compare velocity profiles in laminar and turbulent flow."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem solving",
+          "description": "Solve Example 6.4 on transition location for water.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.4",
+              "type": "textbook",
+              "url": null,
+              "description": "Example problem on transition location."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Calculate transition location for different temperatures.",
+            "Understand the impact of temperature on flow transition."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Visualization activity",
+          "description": "Watch CFD simulations of boundary layer transition.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "CFD simulations",
+              "type": "video",
+              "url": "YouTube/ANSYS",
+              "description": "Videos showing boundary layer transition."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Visualize laminar to turbulent transition.",
+            "Understand the real-world implications of flow regimes."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Explored the differences between laminar and turbulent flow, including transition criteria and practical implications, and watched CFD simulations for better understanding.",
+      "learning_goals": [
+        "Understand the criteria for flow transition.",
+        "Visualize laminar and turbulent flow regimes."
+      ],
+      "review_topics": [
+        "Local and average coefficients"
+      ]
+    },
+    {
+      "day": 4,
+      "date": null,
+      "focus_area": "Boundary Layer Equations",
+      "study_item": [
+        {
+          "topic": "Simplified governing equations",
+          "description": "Study Equations 6.27\u20136.30 (mass, momentum, energy, species).",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Equations 6.27\u20136.30",
+              "type": "textbook",
+              "url": null,
+              "description": "Simplified boundary layer equations."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the simplified boundary layer equations.",
+            "Explain the assumptions behind these equations."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Pressure gradient",
+          "description": "Study the role of dp/dx in boundary layer equations.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Equation 6.25",
+              "type": "textbook",
+              "url": null,
+              "description": "Equation highlighting negligible x-direction diffusion."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the impact of pressure gradient on boundary layers.",
+            "Simplify equations for flat plate (dp/dx = 0)."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Review activity",
+          "description": "Review Appendix E for full governing equations.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Appendix E",
+              "type": "textbook",
+              "url": null,
+              "description": "Full governing equations for boundary layers."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Compare simplified and full boundary layer equations.",
+            "Understand the context in which simplifications are valid."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Learned the simplified boundary layer equations and the role of pressure gradient, and reviewed the full governing equations for deeper understanding.",
+      "learning_goals": [
+        "Understand the simplified boundary layer equations.",
+        "Explain the assumptions and simplifications."
+      ],
+      "review_topics": [
+        "Laminar vs. turbulent flow"
+      ]
+    },
+    {
+      "day": 5,
+      "date": null,
+      "focus_area": "Dimensionless Parameters",
+      "study_item": [
+        {
+          "topic": "Definitions of dimensionless groups",
+          "description": "Study Re, Pr, Sc, Nu, Sh, Cf from Table 6.2.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Table 6.2",
+              "type": "textbook",
+              "url": null,
+              "description": "Definitions of dimensionless parameters."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Define key dimensionless parameters.",
+            "Understand their physical significance."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem solving",
+          "description": "Solve Example 6.5 using Nu for turbine blade cooling.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.5",
+              "type": "textbook",
+              "url": null,
+              "description": "Example problem using Nu for cooling."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply Nu to solve practical cooling problems.",
+            "Understand the role of dimensionless groups in heat transfer."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Calculation activity",
+          "description": "Calculate Pr for air, water, and mercury.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Study Tip",
+              "type": "activity",
+              "url": null,
+              "description": "Calculating Prandtl numbers for different fluids."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Calculate Pr for common fluids.",
+            "Compare Pr values and their implications."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Explored key dimensionless parameters and their applications, and practiced calculations to understand their physical significance.",
+      "learning_goals": [
+        "Master the definitions and uses of dimensionless groups.",
+        "Apply these parameters to solve practical problems."
+      ],
+      "review_topics": [
+        "Boundary layer equations"
+      ]
+    },
+    {
+      "day": 6,
+      "date": null,
+      "focus_area": "Analogies (Reynolds & Chilton-Colburn)",
+      "study_item": [
+        {
+          "topic": "Reynolds analogy",
+          "description": "Study Eq. 6.69 (Cf/2 = St = Stm).",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Equation 6.69",
+              "type": "textbook",
+              "url": null,
+              "description": "Reynolds analogy equation."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the Reynolds analogy.",
+            "Explain the relationship between friction, heat, and mass transfer."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Heat-mass transfer analogy",
+          "description": "Study Eq. 6.60 and derive j_H and j_m.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Equations 6.60, 6.70\u20136.71",
+              "type": "textbook",
+              "url": null,
+              "description": "Heat-mass transfer analogy equations."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the heat-mass transfer analogy.",
+            "Derive j_H and j_m from given equations."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem solving",
+          "description": "Solve Example 6.7 on evaporation rate using analogy.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.7",
+              "type": "textbook",
+              "url": null,
+              "description": "Example problem using analogies."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply analogies to solve practical problems.",
+            "Calculate evaporation rates using the Chilton-Colburn analogy."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Learned about the Reynolds and Chilton-Colburn analogies, and applied them to solve problems linking friction, heat, and mass transfer.",
+      "learning_goals": [
+        "Understand the analogies between friction, heat, and mass transfer.",
+        "Apply these analogies to practical problems."
+      ],
+      "review_topics": [
+        "Dimensionless parameters"
+      ]
+    },
+    {
+      "day": 7,
+      "date": null,
+      "focus_area": "Applications & Review",
+      "study_item": [
+        {
+          "topic": "Evaporative cooling",
+          "description": "Study Example 6.8 on evaporative cooling.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Example 6.8",
+              "type": "textbook",
+              "url": null,
+              "description": "Example problem on evaporative cooling."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Understand the application of convection in evaporative cooling.",
+            "Solve problems involving evaporative cooling."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Problem solving",
+          "description": "Solve Problem 6.39 on chip cooling with Nu_x correlation.",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Problem 6.39",
+              "type": "textbook",
+              "url": null,
+              "description": "Problem on chip cooling using Nu_x."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Apply Nu_x correlation to solve cooling problems.",
+            "Understand practical applications of convection."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Self-quiz",
+          "description": "Review key terms (e.g., Le = \u03b1/D_AB).",
+          "duration_minutes": 40,
+          "resource": [
+            {
+              "title": "Key terms",
+              "type": "activity",
+              "url": null,
+              "description": "Self-quiz on important concepts and terms."
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "Review and reinforce key concepts.",
+            "Test understanding of dimensionless parameters and analogies."
+          ],
+          "priority": "medium"
+        }
+      ],
+      "summary": "Applied convection concepts to real-world problems like evaporative cooling and chip cooling, and reviewed key terms to reinforce learning.",
+      "learning_goals": [
+        "Apply convection concepts to practical applications.",
+        "Review and consolidate understanding of key topics."
+      ],
+      "review_topics": [
+        "Analogies",
+        "Dimensionless parameters"
+      ]
+    }
+  ],
+  "general_tip": [
+    "Derive equations from first principles to deepen understanding.",
+    "Use visual aids like sketches to illustrate boundary layer growth.",
+    "Practice with both solved examples and new problems to reinforce concepts.",
+    "Compare laminar and turbulent flow effects on transport rates.",
+    "Review dimensionless parameters regularly to build intuition."
+  ],
+  "key_formulas": [
+    {
+      "name": "Reynolds Number (Re)",
+      "formula": "Re = (\u03c1 * u * L) / \u03bc",
+      "description": "Dimensionless number used to predict flow patterns in fluid dynamics.",
+      "usage_context": "Determines whether flow is laminar or turbulent. Critical for boundary layer analysis.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Prandtl Number (Pr)",
+      "formula": "Pr = \u03bc * c_p / k",
+      "description": "Ratio of momentum diffusivity to thermal diffusivity.",
+      "usage_context": "Relates velocity boundary layer to thermal boundary layer in heat transfer problems.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Schmidt Number (Sc)",
+      "formula": "Sc = \u03bc / (\u03c1 * D_AB)",
+      "description": "Ratio of momentum diffusivity to mass diffusivity.",
+      "usage_context": "Relates velocity boundary layer to concentration boundary layer in mass transfer.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Nusselt Number (Nu)",
+      "formula": "Nu = h * L / k",
+      "description": "Ratio of convective to conductive heat transfer.",
+      "usage_context": "Used to calculate heat transfer coefficient in convective systems.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Sherwood Number (Sh)",
+      "formula": "Sh = h_m * L / D_AB",
+      "description": "Ratio of convective to diffusive mass transfer.",
+      "usage_context": "Used to calculate mass transfer coefficient in convective systems.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Skin Friction Coefficient (Cf)",
+      "formula": "Cf = \u03c4_w / (0.5 * \u03c1 * u\u00b2)",
+      "description": "Dimensionless wall shear stress.",
+      "usage_context": "Quantifies drag force in boundary layer flows.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Reynolds Analogy",
+      "formula": "Cf/2 = St = St_m",
+      "description": "Relates friction factor to heat and mass transfer coefficients.",
+      "usage_context": "Simplified model for turbulent flow when Pr \u2248 Sc \u2248 1.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Chilton-Colburn Analogy",
+      "formula": "j_H = j_m = Cf/2",
+      "description": "Extended analogy for heat and mass transfer.",
+      "usage_context": "Applicable when Pr \u2260 1 and Sc \u2260 1, using j-factors.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Local Heat Flux",
+      "formula": "q'' = h * (T_s - T_\u221e)",
+      "description": "Heat transfer rate per unit area.",
+      "usage_context": "Calculates convective heat transfer at a specific location.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Mass Flux",
+      "formula": "N_A = h_m * (C_A,s - C_A,\u221e)",
+      "description": "Mass transfer rate per unit area.",
+      "usage_context": "Calculates convective mass transfer at a specific location.",
+      "variables": null,
+      "examples": null
+    }
+  ],
+  "resources": null,
+  "assessments": null,
+  "prerequisites": null,
+  "difficulty_level": null,
+  "estimated_completion_time": null
+}

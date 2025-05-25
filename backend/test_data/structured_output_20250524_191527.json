@@ -1,0 +1,322 @@
+{
+  "raw_response": "CORE:\n```json\n{\n  \"overall_goal\": \"Master the fundamental concepts of convection heat transfer, focusing on boundary layer theory, dimensionless parameters, and practical applications.\",\n  \"total_study_day\": \"7\",\n  \"hour_per_day\": \"2.0\",\n  \"core_concepts\": [\n    {\n      \"name\": \"Velocity, Thermal, and Concentration Boundary Layers\",\n      \"explanation\": \"Understanding the layers where velocity, temperature, and concentration gradients exist near a surface.\",\n      \"importance\": \"Critical for analyzing heat and mass transfer in fluid flows.\"\n    },\n    {\n      \"name\": \"Local vs. Average Convection Coefficients\",\n      \"explanation\": \"Distinguishing between point-specific and overall heat/mass transfer coefficients.\",\n      \"importance\": \"Essential for accurate calculation of heat and mass transfer rates.\"\n    },\n    {\n      \"name\": \"Laminar vs. Turbulent Flow\",\n      \"explanation\": \"Comparing flow regimes and their impact on boundary layer characteristics.\",\n      \"importance\": \"Determines the efficiency of heat and mass transfer processes.\"\n    },\n    {\n      \"name\": \"Dimensionless Parameters (Re, Pr, Sc, Nu, Sh)\",\n      \"explanation\": \"Key numbers used to characterize and simplify heat and mass transfer problems.\",\n      \"importance\": \"Enables scaling and comparison across different systems.\"\n    },\n    {\n      \"name\": \"Heat and Mass Transfer Analogies\",\n      \"explanation\": \"Leveraging similarities between heat and mass transfer to solve complex problems.\",\n      \"importance\": \"Simplifies analysis by using known heat transfer solutions for mass transfer problems.\"\n    }\n  ],\n  \"general_tip\": [\n    \"Derive equations to understand their physical meaning rather than memorizing them.\",\n    \"Use visual aids like sketches to visualize boundary layers and gradients.\",\n    \"Focus on problems with real-world applications to enhance understanding.\",\n    \"Stick to the 2-hour daily limit to maintain consistent progress.\",\n    \"Collaborate with peers to discuss and reinforce concepts.\"\n  ]\n}\n```\n\nSCHEDULE:\n```json\n{\n  \"daily_schedule\": [\n    {\n      \"day\": 1,\n      \"focus_area\": \"Introduction to Boundary Layers\",\n      \"study_item\": [\n        {\n          \"topic\": \"Velocity Boundary Layer\",\n          \"description\": \"Study velocity boundary layer, including definitions, thickness, shear stress, and friction coefficient (Cf).\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Thermal Boundary Layer\",\n          \"description\": \"Study thermal boundary layer, including temperature gradient, heat flux, and convection coefficient (h).\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Concentration Boundary Layer\",\n          \"description\": \"Study concentration boundary layer, including species transfer, mass flux, and mass transfer coefficient (hm).\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Introduction to boundary layers, covering velocity, thermal, and concentration boundary layers.\",\n      \"learning_goals\": [\n        \"Understand the concept of boundary layers in convection heat transfer.\",\n        \"Differentiate between velocity, thermal, and concentration boundary layers.\"\n      ],\n      \"review_topics\": []\n    },\n    {\n      \"day\": 2,\n      \"focus_area\": \"Local vs. Average Coefficients\",\n      \"study_item\": [\n        {\n          \"topic\": \"Local and Average Coefficients\",\n          \"description\": \"Derive and compare local (hx, hm,x) and average (h, hm) coefficients.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Example 6.1\",\n          \"description\": \"Solve flat plate heat transfer problem.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Example 6.2\",\n          \"description\": \"Solve mass transfer problem with naphthalene.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Understanding local and average coefficients through derivation and problem-solving.\",\n      \"learning_goals\": [\n        \"Derive and understand local and average convection coefficients.\",\n        \"Apply coefficients to solve heat and mass transfer problems.\"\n      ],\n      \"review_topics\": [\n        \"Boundary layer concepts from Day 1.\"\n      ]\n    },\n    {\n      \"day\": 3,\n      \"focus_area\": \"Laminar vs. Turbulent Flow\",\n      \"study_item\": [\n        {\n          \"topic\": \"Laminar and Turbulent Boundary Layers\",\n          \"description\": \"Compare laminar and turbulent boundary layers, focusing on Re, transition, and profiles.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Example 6.4\",\n          \"description\": \"Analyze water flow over a plate.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Problem 6.37\",\n          \"description\": \"Plot boundary layer thickness for air, water, oil, and mercury.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Comparison of laminar and turbulent boundary layers with practical examples.\",\n      \"learning_goals\": [\n        \"Differentiate between laminar and turbulent boundary layers.\",\n        \"Analyze boundary layer behavior in different fluids.\"\n      ],\n      \"review_topics\": [\n        \"Local and average coefficients from Day 2.\"\n      ]\n    },\n    {\n      \"day\": 4,\n      \"focus_area\": \"Boundary Layer Equations\",\n      \"study_item\": [\n        {\n          \"topic\": \"Governing Equations\",\n          \"description\": \"Simplify and interpret governing equations for boundary layers.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Compressibility Effects\",\n          \"description\": \"Study compressibility effects on boundary layers.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Problem 6.26\",\n          \"description\": \"Solve problem comparing turbulent and compressible flow.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Understanding and simplifying boundary layer equations, including compressibility effects.\",\n      \"learning_goals\": [\n        \"Understand the governing equations for boundary layers.\",\n        \"Analyze the impact of compressibility on boundary layers.\"\n      ],\n      \"review_topics\": [\n        \"Laminar vs. turbulent flow from Day 3.\"\n      ]\n    },\n    {\n      \"day\": 5,\n      \"focus_area\": \"Similarity Parameters & Analogies\",\n      \"study_item\": [\n        {\n          \"topic\": \"Dimensionless Numbers\",\n          \"description\": \"Learn about Re, Pr, Sc, Nu, Sh and their significance.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Example 6.5\",\n          \"description\": \"Solve turbine blade heat flux problem.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Heat/Mass Transfer Analogy\",\n          \"description\": \"Apply heat and mass transfer analogy.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Understanding dimensionless numbers and their application in heat and mass transfer.\",\n      \"learning_goals\": [\n        \"Understand and apply dimensionless numbers in convection.\",\n        \"Use heat and mass transfer analogies to solve problems.\"\n      ],\n      \"review_topics\": [\n        \"Boundary layer equations from Day 4.\"\n      ]\n    },\n    {\n      \"day\": 6,\n      \"focus_area\": \"Evaporative Cooling & Reynolds Analogy\",\n      \"study_item\": [\n        {\n          \"topic\": \"Evaporative Cooling\",\n          \"description\": \"Study evaporative cooling and solve example problems.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Reynolds Analogy\",\n          \"description\": \"Derive and understand Reynolds analogy.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Problem 6.45\",\n          \"description\": \"Solve flat plate heat transfer problem.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Exploring evaporative cooling and Reynolds analogy in heat transfer.\",\n      \"learning_goals\": [\n        \"Understand evaporative cooling mechanisms.\",\n        \"Derive and apply Reynolds analogy.\"\n      ],\n      \"review_topics\": [\n        \"Dimensionless numbers from Day 5.\"\n      ]\n    },\n    {\n      \"day\": 7,\n      \"focus_area\": \"Review & Application\",\n      \"study_item\": [\n        {\n          \"topic\": \"Key Concepts Review\",\n          \"description\": \"Summarize key concepts and equations from the week.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Problem 6.51\",\n          \"description\": \"Solve circuit board cooling problem.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Self-Assessment Quiz\",\n          \"description\": \"Test understanding of dimensionless numbers.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Final review of key concepts and application through problem-solving.\",\n      \"learning_goals\": [\n        \"Consolidate understanding of convection heat transfer.\",\n        \"Apply concepts to practical problems.\"\n      ],\n      \"review_topics\": [\n        \"All topics from previous days.\"\n      ]\n    }\n  ]\n}\n```\n\nFORMULAS:\n            {\n  \"overall_goal\": \"Master the fundamental concepts of convection heat transfer, focusing on boundary layer concepts, dimensionless parameters, and practical applications.\",\n  \"total_study_day\": \"7\",\n  \"hour_per_day\": \"2.0\",\n  \"core_concepts\": [\n    {\n      \"name\": \"Velocity Boundary Layer\",\n      \"explanation\": \"The velocity boundary layer is the region near a surface where the fluid velocity changes from zero at the surface to the free-stream velocity. It is characterized by the boundary layer thickness, shear stress, and friction coefficient.\",\n      \"importance\": \"Understanding the velocity boundary layer is crucial for analyzing fluid flow and calculating drag forces on surfaces.\",\n      \"related_concepts\": [\n        \"Thermal Boundary Layer\",\n        \"Concentration Boundary Layer\"\n      ],\n      \"example\": [\n        \"Flow of air over a flat plate\",\n        \"Water flowing over a ship hull\"\n      ],\n      \"difficulty_level\": \"basic\"\n    },\n    {\n      \"name\": \"Thermal Boundary Layer\",\n      \"explanation\": \"The thermal boundary layer is the region near a surface where the temperature changes from the surface temperature to the free-stream temperature. It is characterized by the temperature gradient and heat flux.\",\n      \"importance\": \"Essential for calculating heat transfer rates between a surface and a fluid.\",\n      \"related_concepts\": [\n        \"Velocity Boundary Layer\",\n        \"Concentration Boundary Layer\"\n      ],\n      \"example\": [\n        \"Cooling of electronic components\",\n        \"Heat exchangers\"\n      ],\n      \"difficulty_level\": \"basic\"\n    },\n    {\n      \"name\": \"Concentration Boundary Layer\",\n      \"explanation\": \"The concentration boundary layer is the region near a surface where the concentration of a species changes from the surface concentration to the free-stream concentration. It is characterized by the species gradient and mass flux.\",\n      \"importance\": \"Important for analyzing mass transfer processes such as evaporation and diffusion.\",\n      \"related_concepts\": [\n        \"Velocity Boundary Layer\",\n        \"Thermal Boundary Layer\"\n      ],\n      \"example\": [\n        \"Evaporation of water into air\",\n        \"Diffusion of pollutants in water\"\n      ],\n      \"difficulty_level\": \"basic\"\n    },\n    {\n      \"name\": \"Laminar vs. Turbulent Flow\",\n      \"explanation\": \"Laminar flow is smooth and orderly, while turbulent flow is chaotic and irregular. The transition between the two is determined by the Reynolds number.\",\n      \"importance\": \"Different flow regimes significantly affect heat and mass transfer rates.\",\n      \"related_concepts\": [\n        \"Reynolds Number\",\n        \"Boundary Layer Thickness\"\n      ],\n      \"example\": [\n        \"Flow of honey (laminar)\",\n        \"Flow of river water (turbulent)\"\n      ],\n      \"difficulty_level\": \"intermediate\"\n    },\n    {\n      \"name\": \"Dimensionless Parameters\",\n      \"explanation\": \"Dimensionless parameters like Reynolds (Re), Prandtl (Pr), Schmidt (Sc), Nusselt (Nu), and Sherwood (Sh) numbers are used to characterize fluid flow, heat, and mass transfer.\",\n      \"importance\": \"These parameters simplify the analysis of complex systems by reducing the number of variables.\",\n      \"related_concepts\": [\n        \"Heat Transfer\",\n        \"Mass Transfer\"\n      ],\n      \"example\": [\n        \"Calculating heat transfer in a pipe\",\n        \"Analyzing mass transfer in a chemical reactor\"\n      ],\n      \"difficulty_level\": \"intermediate\"\n    }\n  ],\n  \"daily_schedule\": [\n    {\n      \"day\": 1,\n      \"date\": null,\n      \"focus_area\": \"Introduction to Boundary Layers\",\n      \"study_item\": [\n        {\n          \"topic\": \"Velocity Boundary Layer\",\n          \"description\": \"Study velocity boundary layer definitions, thickness, shear stress, and friction coefficient.\",\n          \"duration_minutes\": 60,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.1.1\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of velocity boundary layer\",\n            \"Calculate boundary layer thickness and shear stress\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Thermal Boundary Layer\",\n          \"description\": \"Study temperature gradient, heat flux, and convection coefficient.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.1.2\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of thermal boundary layer\",\n            \"Calculate heat flux and convection coefficient\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Concentration Boundary Layer\",\n          \"description\": \"Study species transfer, mass flux, and mass transfer coefficient.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.1.3\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of concentration boundary layer\",\n            \"Calculate mass flux and mass transfer coefficient\"\n          ],\n          \"priority\": \"high\"\n        }\n      ],\n      \"summary\": \"Introduced the concepts of velocity, thermal, and concentration boundary layers.\",\n      \"learning_goals\": [\n        \"Understand the definitions and significance of boundary layers\",\n        \"Calculate key parameters like shear stress, heat flux, and mass flux\"\n      ],\n      \"review_topics\": []\n    },\n    {\n      \"day\": 2,\n      \"date\": null,\n      \"focus_area\": \"Local vs. Average Coefficients\",\n      \"study_item\": [\n        {\n          \"topic\": \"Local and Average Coefficients\",\n          \"description\": \"Derive and compare local and average convection and mass transfer coefficients.\",\n          \"duration_minutes\": 60,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.2\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the difference between local and average coefficients\",\n            \"Derive expressions for h and hm\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Example 6.1\",\n          \"description\": \"Solve flat plate heat transfer problem.\",\n          \"duration_minutes\": 30,\n",
+  "error": {
+    "error": "Failed to validate structured plan",
+    "details": "10 validation errors for StructuredStudyPlan\nkey_formulas.0.formula\n  Field required [type=missing, input_value={'name': 'Velocity Bounda...ficulty_level': 'basic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.0.description\n  Field required [type=missing, input_value={'name': 'Velocity Bounda...ficulty_level': 'basic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.1.formula\n  Field required [type=missing, input_value={'name': 'Thermal Boundar...ficulty_level': 'basic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.1.description\n  Field required [type=missing, input_value={'name': 'Thermal Boundar...ficulty_level': 'basic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.2.formula\n  Field required [type=missing, input_value={'name': 'Concentration B...ficulty_level': 'basic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.2.description\n  Field required [type=missing, input_value={'name': 'Concentration B...ficulty_level': 'basic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.3.formula\n  Field required [type=missing, input_value={'name': 'Laminar vs. Tur..._level': 'intermediate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.3.description\n  Field required [type=missing, input_value={'name': 'Laminar vs. Tur..._level': 'intermediate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.4.formula\n  Field required [type=missing, input_value={'name': 'Dimensionless P..._level': 'intermediate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing\nkey_formulas.4.description\n  Field required [type=missing, input_value={'name': 'Dimensionless P..._level': 'intermediate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing",
+    "parsed_json": {
+      "overall_goal": "Master the fundamental concepts of convection heat transfer, focusing on boundary layer theory, dimensionless parameters, and practical applications.",
+      "total_study_day": 7,
+      "hour_per_day": 2.0,
+      "core_concepts": [
+        {
+          "name": "Velocity, Thermal, and Concentration Boundary Layers",
+          "explanation": "Understanding the layers where velocity, temperature, and concentration gradients exist near a surface.",
+          "importance": "Critical for analyzing heat and mass transfer in fluid flows."
+        },
+        {
+          "name": "Local vs. Average Convection Coefficients",
+          "explanation": "Distinguishing between point-specific and overall heat/mass transfer coefficients.",
+          "importance": "Essential for accurate calculation of heat and mass transfer rates."
+        },
+        {
+          "name": "Laminar vs. Turbulent Flow",
+          "explanation": "Comparing flow regimes and their impact on boundary layer characteristics.",
+          "importance": "Determines the efficiency of heat and mass transfer processes."
+        },
+        {
+          "name": "Dimensionless Parameters (Re, Pr, Sc, Nu, Sh)",
+          "explanation": "Key numbers used to characterize and simplify heat and mass transfer problems.",
+          "importance": "Enables scaling and comparison across different systems."
+        },
+        {
+          "name": "Heat and Mass Transfer Analogies",
+          "explanation": "Leveraging similarities between heat and mass transfer to solve complex problems.",
+          "importance": "Simplifies analysis by using known heat transfer solutions for mass transfer problems."
+        }
+      ],
+      "general_tip": [
+        "Derive equations to understand their physical meaning rather than memorizing them.",
+        "Use visual aids like sketches to visualize boundary layers and gradients.",
+        "Focus on problems with real-world applications to enhance understanding.",
+        "Stick to the 2-hour daily limit to maintain consistent progress.",
+        "Collaborate with peers to discuss and reinforce concepts."
+      ],
+      "daily_schedule": [
+        {
+          "day": 1,
+          "focus_area": "Introduction to Boundary Layers",
+          "study_item": [
+            {
+              "topic": "Velocity Boundary Layer",
+              "description": "Study velocity boundary layer, including definitions, thickness, shear stress, and friction coefficient (Cf).",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Thermal Boundary Layer",
+              "description": "Study thermal boundary layer, including temperature gradient, heat flux, and convection coefficient (h).",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Concentration Boundary Layer",
+              "description": "Study concentration boundary layer, including species transfer, mass flux, and mass transfer coefficient (hm).",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Introduction to boundary layers, covering velocity, thermal, and concentration boundary layers.",
+          "learning_goals": [
+            "Understand the concept of boundary layers in convection heat transfer.",
+            "Differentiate between velocity, thermal, and concentration boundary layers."
+          ],
+          "review_topics": []
+        },
+        {
+          "day": 2,
+          "focus_area": "Local vs. Average Coefficients",
+          "study_item": [
+            {
+              "topic": "Local and Average Coefficients",
+              "description": "Derive and compare local (hx, hm,x) and average (h, hm) coefficients.",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Example 6.1",
+              "description": "Solve flat plate heat transfer problem.",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Example 6.2",
+              "description": "Solve mass transfer problem with naphthalene.",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Understanding local and average coefficients through derivation and problem-solving.",
+          "learning_goals": [
+            "Derive and understand local and average convection coefficients.",
+            "Apply coefficients to solve heat and mass transfer problems."
+          ],
+          "review_topics": [
+            "Boundary layer concepts from Day 1."
+          ]
+        },
+        {
+          "day": 3,
+          "focus_area": "Laminar vs. Turbulent Flow",
+          "study_item": [
+            {
+              "topic": "Laminar and Turbulent Boundary Layers",
+              "description": "Compare laminar and turbulent boundary layers, focusing on Re, transition, and profiles.",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Example 6.4",
+              "description": "Analyze water flow over a plate.",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Problem 6.37",
+              "description": "Plot boundary layer thickness for air, water, oil, and mercury.",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Comparison of laminar and turbulent boundary layers with practical examples.",
+          "learning_goals": [
+            "Differentiate between laminar and turbulent boundary layers.",
+            "Analyze boundary layer behavior in different fluids."
+          ],
+          "review_topics": [
+            "Local and average coefficients from Day 2."
+          ]
+        },
+        {
+          "day": 4,
+          "focus_area": "Boundary Layer Equations",
+          "study_item": [
+            {
+              "topic": "Governing Equations",
+              "description": "Simplify and interpret governing equations for boundary layers.",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Compressibility Effects",
+              "description": "Study compressibility effects on boundary layers.",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Problem 6.26",
+              "description": "Solve problem comparing turbulent and compressible flow.",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Understanding and simplifying boundary layer equations, including compressibility effects.",
+          "learning_goals": [
+            "Understand the governing equations for boundary layers.",
+            "Analyze the impact of compressibility on boundary layers."
+          ],
+          "review_topics": [
+            "Laminar vs. turbulent flow from Day 3."
+          ]
+        },
+        {
+          "day": 5,
+          "focus_area": "Similarity Parameters & Analogies",
+          "study_item": [
+            {
+              "topic": "Dimensionless Numbers",
+              "description": "Learn about Re, Pr, Sc, Nu, Sh and their significance.",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Example 6.5",
+              "description": "Solve turbine blade heat flux problem.",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Heat/Mass Transfer Analogy",
+              "description": "Apply heat and mass transfer analogy.",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Understanding dimensionless numbers and their application in heat and mass transfer.",
+          "learning_goals": [
+            "Understand and apply dimensionless numbers in convection.",
+            "Use heat and mass transfer analogies to solve problems."
+          ],
+          "review_topics": [
+            "Boundary layer equations from Day 4."
+          ]
+        },
+        {
+          "day": 6,
+          "focus_area": "Evaporative Cooling & Reynolds Analogy",
+          "study_item": [
+            {
+              "topic": "Evaporative Cooling",
+              "description": "Study evaporative cooling and solve example problems.",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Reynolds Analogy",
+              "description": "Derive and understand Reynolds analogy.",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Problem 6.45",
+              "description": "Solve flat plate heat transfer problem.",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Exploring evaporative cooling and Reynolds analogy in heat transfer.",
+          "learning_goals": [
+            "Understand evaporative cooling mechanisms.",
+            "Derive and apply Reynolds analogy."
+          ],
+          "review_topics": [
+            "Dimensionless numbers from Day 5."
+          ]
+        },
+        {
+          "day": 7,
+          "focus_area": "Review & Application",
+          "study_item": [
+            {
+              "topic": "Key Concepts Review",
+              "description": "Summarize key concepts and equations from the week.",
+              "duration_minutes": 60
+            },
+            {
+              "topic": "Problem 6.51",
+              "description": "Solve circuit board cooling problem.",
+              "duration_minutes": 30
+            },
+            {
+              "topic": "Self-Assessment Quiz",
+              "description": "Test understanding of dimensionless numbers.",
+              "duration_minutes": 30
+            }
+          ],
+          "summary": "Final review of key concepts and application through problem-solving.",
+          "learning_goals": [
+            "Consolidate understanding of convection heat transfer.",
+            "Apply concepts to practical problems."
+          ],
+          "review_topics": [
+            "All topics from previous days."
+          ]
+        }
+      ],
+      "key_formulas": [
+        {
+          "name": "Velocity Boundary Layer",
+          "explanation": "The velocity boundary layer is the region near a surface where the fluid velocity changes from zero at the surface to the free-stream velocity. It is characterized by the boundary layer thickness, shear stress, and friction coefficient.",
+          "importance": "Understanding the velocity boundary layer is crucial for analyzing fluid flow and calculating drag forces on surfaces.",
+          "related_concepts": [
+            "Thermal Boundary Layer",
+            "Concentration Boundary Layer"
+          ],
+          "example": [
+            "Flow of air over a flat plate",
+            "Water flowing over a ship hull"
+          ],
+          "difficulty_level": "basic"
+        },
+        {
+          "name": "Thermal Boundary Layer",
+          "explanation": "The thermal boundary layer is the region near a surface where the temperature changes from the surface temperature to the free-stream temperature. It is characterized by the temperature gradient and heat flux.",
+          "importance": "Essential for calculating heat transfer rates between a surface and a fluid.",
+          "related_concepts": [
+            "Velocity Boundary Layer",
+            "Concentration Boundary Layer"
+          ],
+          "example": [
+            "Cooling of electronic components",
+            "Heat exchangers"
+          ],
+          "difficulty_level": "basic"
+        },
+        {
+          "name": "Concentration Boundary Layer",
+          "explanation": "The concentration boundary layer is the region near a surface where the concentration of a species changes from the surface concentration to the free-stream concentration. It is characterized by the species gradient and mass flux.",
+          "importance": "Important for analyzing mass transfer processes such as evaporation and diffusion.",
+          "related_concepts": [
+            "Velocity Boundary Layer",
+            "Thermal Boundary Layer"
+          ],
+          "example": [
+            "Evaporation of water into air",
+            "Diffusion of pollutants in water"
+          ],
+          "difficulty_level": "basic"
+        },
+        {
+          "name": "Laminar vs. Turbulent Flow",
+          "explanation": "Laminar flow is smooth and orderly, while turbulent flow is chaotic and irregular. The transition between the two is determined by the Reynolds number.",
+          "importance": "Different flow regimes significantly affect heat and mass transfer rates.",
+          "related_concepts": [
+            "Reynolds Number",
+            "Boundary Layer Thickness"
+          ],
+          "example": [
+            "Flow of honey (laminar)",
+            "Flow of river water (turbulent)"
+          ],
+          "difficulty_level": "intermediate"
+        },
+        {
+          "name": "Dimensionless Parameters",
+          "explanation": "Dimensionless parameters like Reynolds (Re), Prandtl (Pr), Schmidt (Sc), Nusselt (Nu), and Sherwood (Sh) numbers are used to characterize fluid flow, heat, and mass transfer.",
+          "importance": "These parameters simplify the analysis of complex systems by reducing the number of variables.",
+          "related_concepts": [
+            "Heat Transfer",
+            "Mass Transfer"
+          ],
+          "example": [
+            "Calculating heat transfer in a pipe",
+            "Analyzing mass transfer in a chemical reactor"
+          ],
+          "difficulty_level": "intermediate"
+        }
+      ]
+    },
+    "raw_response": "CORE:\n```json\n{\n  \"overall_goal\": \"Master the fundamental concepts of convection heat transfer, focusing on boundary layer theory, dimensionless parameters, and practical applications.\",\n  \"total_study_day\": \"7\",\n  \"hour_per_day\": \"2.0\",\n  \"core_concepts\": [\n    {\n      \"name\": \"Velocity, Thermal, and Concentration Boundary Layers\",\n      \"explanation\": \"Understanding the layers where velocity, temperature, and concentration gradients exist near a surface.\",\n      \"importance\": \"Critical for analyzing heat and mass transfer in fluid flows.\"\n    },\n    {\n      \"name\": \"Local vs. Average Convection Coefficients\",\n      \"explanation\": \"Distinguishing between point-specific and overall heat/mass transfer coefficients.\",\n      \"importance\": \"Essential for accurate calculation of heat and mass transfer rates.\"\n    },\n    {\n      \"name\": \"Laminar vs. Turbulent Flow\",\n      \"explanation\": \"Comparing flow regimes and their impact on boundary layer characteristics.\",\n      \"importance\": \"Determines the efficiency of heat and mass transfer processes.\"\n    },\n    {\n      \"name\": \"Dimensionless Parameters (Re, Pr, Sc, Nu, Sh)\",\n      \"explanation\": \"Key numbers used to characterize and simplify heat and mass transfer problems.\",\n      \"importance\": \"Enables scaling and comparison across different systems.\"\n    },\n    {\n      \"name\": \"Heat and Mass Transfer Analogies\",\n      \"explanation\": \"Leveraging similarities between heat and mass transfer to solve complex problems.\",\n      \"importance\": \"Simplifies analysis by using known heat transfer solutions for mass transfer problems.\"\n    }\n  ],\n  \"general_tip\": [\n    \"Derive equations to understand their physical meaning rather than memorizing them.\",\n    \"Use visual aids like sketches to visualize boundary layers and gradients.\",\n    \"Focus on problems with real-world applications to enhance understanding.\",\n    \"Stick to the 2-hour daily limit to maintain consistent progress.\",\n    \"Collaborate with peers to discuss and reinforce concepts.\"\n  ]\n}\n```\n\nSCHEDULE:\n```json\n{\n  \"daily_schedule\": [\n    {\n      \"day\": 1,\n      \"focus_area\": \"Introduction to Boundary Layers\",\n      \"study_item\": [\n        {\n          \"topic\": \"Velocity Boundary Layer\",\n          \"description\": \"Study velocity boundary layer, including definitions, thickness, shear stress, and friction coefficient (Cf).\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Thermal Boundary Layer\",\n          \"description\": \"Study thermal boundary layer, including temperature gradient, heat flux, and convection coefficient (h).\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Concentration Boundary Layer\",\n          \"description\": \"Study concentration boundary layer, including species transfer, mass flux, and mass transfer coefficient (hm).\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Introduction to boundary layers, covering velocity, thermal, and concentration boundary layers.\",\n      \"learning_goals\": [\n        \"Understand the concept of boundary layers in convection heat transfer.\",\n        \"Differentiate between velocity, thermal, and concentration boundary layers.\"\n      ],\n      \"review_topics\": []\n    },\n    {\n      \"day\": 2,\n      \"focus_area\": \"Local vs. Average Coefficients\",\n      \"study_item\": [\n        {\n          \"topic\": \"Local and Average Coefficients\",\n          \"description\": \"Derive and compare local (hx, hm,x) and average (h, hm) coefficients.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Example 6.1\",\n          \"description\": \"Solve flat plate heat transfer problem.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Example 6.2\",\n          \"description\": \"Solve mass transfer problem with naphthalene.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Understanding local and average coefficients through derivation and problem-solving.\",\n      \"learning_goals\": [\n        \"Derive and understand local and average convection coefficients.\",\n        \"Apply coefficients to solve heat and mass transfer problems.\"\n      ],\n      \"review_topics\": [\n        \"Boundary layer concepts from Day 1.\"\n      ]\n    },\n    {\n      \"day\": 3,\n      \"focus_area\": \"Laminar vs. Turbulent Flow\",\n      \"study_item\": [\n        {\n          \"topic\": \"Laminar and Turbulent Boundary Layers\",\n          \"description\": \"Compare laminar and turbulent boundary layers, focusing on Re, transition, and profiles.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Example 6.4\",\n          \"description\": \"Analyze water flow over a plate.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Problem 6.37\",\n          \"description\": \"Plot boundary layer thickness for air, water, oil, and mercury.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Comparison of laminar and turbulent boundary layers with practical examples.\",\n      \"learning_goals\": [\n        \"Differentiate between laminar and turbulent boundary layers.\",\n        \"Analyze boundary layer behavior in different fluids.\"\n      ],\n      \"review_topics\": [\n        \"Local and average coefficients from Day 2.\"\n      ]\n    },\n    {\n      \"day\": 4,\n      \"focus_area\": \"Boundary Layer Equations\",\n      \"study_item\": [\n        {\n          \"topic\": \"Governing Equations\",\n          \"description\": \"Simplify and interpret governing equations for boundary layers.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Compressibility Effects\",\n          \"description\": \"Study compressibility effects on boundary layers.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Problem 6.26\",\n          \"description\": \"Solve problem comparing turbulent and compressible flow.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Understanding and simplifying boundary layer equations, including compressibility effects.\",\n      \"learning_goals\": [\n        \"Understand the governing equations for boundary layers.\",\n        \"Analyze the impact of compressibility on boundary layers.\"\n      ],\n      \"review_topics\": [\n        \"Laminar vs. turbulent flow from Day 3.\"\n      ]\n    },\n    {\n      \"day\": 5,\n      \"focus_area\": \"Similarity Parameters & Analogies\",\n      \"study_item\": [\n        {\n          \"topic\": \"Dimensionless Numbers\",\n          \"description\": \"Learn about Re, Pr, Sc, Nu, Sh and their significance.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Example 6.5\",\n          \"description\": \"Solve turbine blade heat flux problem.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Heat/Mass Transfer Analogy\",\n          \"description\": \"Apply heat and mass transfer analogy.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Understanding dimensionless numbers and their application in heat and mass transfer.\",\n      \"learning_goals\": [\n        \"Understand and apply dimensionless numbers in convection.\",\n        \"Use heat and mass transfer analogies to solve problems.\"\n      ],\n      \"review_topics\": [\n        \"Boundary layer equations from Day 4.\"\n      ]\n    },\n    {\n      \"day\": 6,\n      \"focus_area\": \"Evaporative Cooling & Reynolds Analogy\",\n      \"study_item\": [\n        {\n          \"topic\": \"Evaporative Cooling\",\n          \"description\": \"Study evaporative cooling and solve example problems.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Reynolds Analogy\",\n          \"description\": \"Derive and understand Reynolds analogy.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Problem 6.45\",\n          \"description\": \"Solve flat plate heat transfer problem.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Exploring evaporative cooling and Reynolds analogy in heat transfer.\",\n      \"learning_goals\": [\n        \"Understand evaporative cooling mechanisms.\",\n        \"Derive and apply Reynolds analogy.\"\n      ],\n      \"review_topics\": [\n        \"Dimensionless numbers from Day 5.\"\n      ]\n    },\n    {\n      \"day\": 7,\n      \"focus_area\": \"Review & Application\",\n      \"study_item\": [\n        {\n          \"topic\": \"Key Concepts Review\",\n          \"description\": \"Summarize key concepts and equations from the week.\",\n          \"duration_minutes\": 60\n        },\n        {\n          \"topic\": \"Problem 6.51\",\n          \"description\": \"Solve circuit board cooling problem.\",\n          \"duration_minutes\": 30\n        },\n        {\n          \"topic\": \"Self-Assessment Quiz\",\n          \"description\": \"Test understanding of dimensionless numbers.\",\n          \"duration_minutes\": 30\n        }\n      ],\n      \"summary\": \"Final review of key concepts and application through problem-solving.\",\n      \"learning_goals\": [\n        \"Consolidate understanding of convection heat transfer.\",\n        \"Apply concepts to practical problems.\"\n      ],\n      \"review_topics\": [\n        \"All topics from previous days.\"\n      ]\n    }\n  ]\n}\n```\n\nFORMULAS:\n            {\n  \"overall_goal\": \"Master the fundamental concepts of convection heat transfer, focusing on boundary layer concepts, dimensionless parameters, and practical applications.\",\n  \"total_study_day\": \"7\",\n  \"hour_per_day\": \"2.0\",\n  \"core_concepts\": [\n    {\n      \"name\": \"Velocity Boundary Layer\",\n      \"explanation\": \"The velocity boundary layer is the region near a surface where the fluid velocity changes from zero at the surface to the free-stream velocity. It is characterized by the boundary layer thickness, shear stress, and friction coefficient.\",\n      \"importance\": \"Understanding the velocity boundary layer is crucial for analyzing fluid flow and calculating drag forces on surfaces.\",\n      \"related_concepts\": [\n        \"Thermal Boundary Layer\",\n        \"Concentration Boundary Layer\"\n      ],\n      \"example\": [\n        \"Flow of air over a flat plate\",\n        \"Water flowing over a ship hull\"\n      ],\n      \"difficulty_level\": \"basic\"\n    },\n    {\n      \"name\": \"Thermal Boundary Layer\",\n      \"explanation\": \"The thermal boundary layer is the region near a surface where the temperature changes from the surface temperature to the free-stream temperature. It is characterized by the temperature gradient and heat flux.\",\n      \"importance\": \"Essential for calculating heat transfer rates between a surface and a fluid.\",\n      \"related_concepts\": [\n        \"Velocity Boundary Layer\",\n        \"Concentration Boundary Layer\"\n      ],\n      \"example\": [\n        \"Cooling of electronic components\",\n        \"Heat exchangers\"\n      ],\n      \"difficulty_level\": \"basic\"\n    },\n    {\n      \"name\": \"Concentration Boundary Layer\",\n      \"explanation\": \"The concentration boundary layer is the region near a surface where the concentration of a species changes from the surface concentration to the free-stream concentration. It is characterized by the species gradient and mass flux.\",\n      \"importance\": \"Important for analyzing mass transfer processes such as evaporation and diffusion.\",\n      \"related_concepts\": [\n        \"Velocity Boundary Layer\",\n        \"Thermal Boundary Layer\"\n      ],\n      \"example\": [\n        \"Evaporation of water into air\",\n        \"Diffusion of pollutants in water\"\n      ],\n      \"difficulty_level\": \"basic\"\n    },\n    {\n      \"name\": \"Laminar vs. Turbulent Flow\",\n      \"explanation\": \"Laminar flow is smooth and orderly, while turbulent flow is chaotic and irregular. The transition between the two is determined by the Reynolds number.\",\n      \"importance\": \"Different flow regimes significantly affect heat and mass transfer rates.\",\n      \"related_concepts\": [\n        \"Reynolds Number\",\n        \"Boundary Layer Thickness\"\n      ],\n      \"example\": [\n        \"Flow of honey (laminar)\",\n        \"Flow of river water (turbulent)\"\n      ],\n      \"difficulty_level\": \"intermediate\"\n    },\n    {\n      \"name\": \"Dimensionless Parameters\",\n      \"explanation\": \"Dimensionless parameters like Reynolds (Re), Prandtl (Pr), Schmidt (Sc), Nusselt (Nu), and Sherwood (Sh) numbers are used to characterize fluid flow, heat, and mass transfer.\",\n      \"importance\": \"These parameters simplify the analysis of complex systems by reducing the number of variables.\",\n      \"related_concepts\": [\n        \"Heat Transfer\",\n        \"Mass Transfer\"\n      ],\n      \"example\": [\n        \"Calculating heat transfer in a pipe\",\n        \"Analyzing mass transfer in a chemical reactor\"\n      ],\n      \"difficulty_level\": \"intermediate\"\n    }\n  ],\n  \"daily_schedule\": [\n    {\n      \"day\": 1,\n      \"date\": null,\n      \"focus_area\": \"Introduction to Boundary Layers\",\n      \"study_item\": [\n        {\n          \"topic\": \"Velocity Boundary Layer\",\n          \"description\": \"Study velocity boundary layer definitions, thickness, shear stress, and friction coefficient.\",\n          \"duration_minutes\": 60,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.1.1\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of velocity boundary layer\",\n            \"Calculate boundary layer thickness and shear stress\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Thermal Boundary Layer\",\n          \"description\": \"Study temperature gradient, heat flux, and convection coefficient.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.1.2\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of thermal boundary layer\",\n            \"Calculate heat flux and convection coefficient\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Concentration Boundary Layer\",\n          \"description\": \"Study species transfer, mass flux, and mass transfer coefficient.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.1.3\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of concentration boundary layer\",\n            \"Calculate mass flux and mass transfer coefficient\"\n          ],\n          \"priority\": \"high\"\n        }\n      ],\n      \"summary\": \"Introduced the concepts of velocity, thermal, and concentration boundary layers.\",\n      \"learning_goals\": [\n        \"Understand the definitions and significance of boundary layers\",\n        \"Calculate key parameters like shear stress, heat flux, and mass flux\"\n      ],\n      \"review_topics\": []\n    },\n    {\n      \"day\": 2,\n      \"date\": null,\n      \"focus_area\": \"Local vs. Average Coefficients\",\n      \"study_item\": [\n        {\n          \"topic\": \"Local and Average Coefficients\",\n          \"description\": \"Derive and compare local and average convection and mass transfer coefficients.\",\n          \"duration_minutes\": 60,\n          \"resource\": [\n            {\n              \"title\": \"Convection Heat Transfer Textbook\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Section 6.2\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the difference between local and average coefficients\",\n            \"Derive expressions for h and hm\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Example 6.1\",\n          \"description\": \"Solve flat plate heat transfer problem.\",\n          \"duration_minutes\": 30,\n"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "overallGoal": "To develop a comprehensive understanding of crystal structures and quantum mechanics, focusing on the Kronig-Penney model and band structure diagrams, over a 5-day study plan.",
+  "totalStudyDays": "5",
+  "hoursPerDay": "3",
+  "keyConcepts": [
+    {
+      "concept": "Crystal Structure",
+      "explanation": "The arrangement of atoms in a crystalline material."
+    },
+    {
+      "concept": "Quantum Mechanics",
+      "explanation": "The branch of physics dealing with the behavior of particles at atomic and subatomic levels."
+    },
+    {
+      "concept": "Kronig-Penney Model",
+      "explanation": "A simplified model to explain the behavior of electrons in a periodic potential."
+    }
+  ],
+  "dailyBreakdown": [
+    {
+      "day": 1,
+      "daySummary": "Learned about crystal lattices, unit cells, and Bravais lattices.",
+      "focusArea": "Introduction to Crystal Structures",
+      "learningGoals": [
+        "Grasp the basic concepts of crystal structures.",
+        "Identify different types of unit cells and lattices."
+      ],
+      "reviewTopics": [],
+      "items": [
+        {
+          "topic": "Crystal Lattice",
+          "details": "Definition and types of crystal lattices.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of crystal structures."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the definition of a crystal lattice.",
+            "Identify different types of crystal lattices."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Unit Cell",
+          "details": "Primitive and non-primitive unit cells.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of crystal structures."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Differentiate between primitive and non-primitive unit cells.",
+            "Understand the significance of unit cells in crystal structures."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Bravais Lattice",
+          "details": "14 Bravais lattices and symmetry operations.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of crystal structures."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "List the 14 Bravais lattices.",
+            "Understand symmetry operations in Bravais lattices."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned about crystal lattices, unit cells, and Bravais lattices.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Grasp the basic concepts of crystal structures.",
+            "Identify different types of unit cells and lattices."
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "daySummary": "Learned about wave-particle duality, Schr\u00f6dinger equation, and quantum states.",
+      "focusArea": "Quantum Mechanics Basics",
+      "learningGoals": [
+        "Grasp the basic concepts of quantum mechanics.",
+        "Understand the Schr\u00f6dinger equation and its implications."
+      ],
+      "reviewTopics": [
+        "Crystal Structure"
+      ],
+      "items": [
+        {
+          "topic": "Wave-particle duality",
+          "details": "De Broglie wavelength and double-slit experiment.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Quantum Mechanics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of quantum mechanics."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the concept of wave-particle duality.",
+            "Explain the double-slit experiment."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Schr\u00f6dinger equation",
+          "details": "Time-independent equation and wave function.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Quantum Mechanics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of quantum mechanics."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the time-independent Schr\u00f6dinger equation.",
+            "Interpret the wave function."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Quantum states",
+          "details": "Eigenstates and superposition.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Quantum Mechanics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of quantum mechanics."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Define eigenstates and superposition.",
+            "Understand the significance of quantum states."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned about wave-particle duality, Schr\u00f6dinger equation, and quantum states.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Grasp the basic concepts of quantum mechanics.",
+            "Understand the Schr\u00f6dinger equation and its implications."
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "daySummary": "Learned about the Kronig-Penney model, energy bands, and forbidden gaps.",
+      "focusArea": "Kronig-Penney Model",
+      "learningGoals": [
+        "Understand the Kronig-Penney model and its implications.",
+        "Grasp the concepts of energy bands and forbidden gaps."
+      ],
+      "reviewTopics": [
+        "Quantum Mechanics Basics"
+      ],
+      "items": [
+        {
+          "topic": "Periodic potential",
+          "details": "Definition and mathematical formulation of periodic potential.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers the Kronig-Penney model and band theory."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Define periodic potential.",
+            "Understand its mathematical formulation."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Energy bands",
+          "details": "Formation of energy bands and band gap.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers the Kronig-Penney model and band theory."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand how energy bands form.",
+            "Explain the concept of band gap."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Forbidden gaps",
+          "details": "Origin and impact on conductivity.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers the Kronig-Penney model and band theory."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the origin of forbidden gaps.",
+            "Explain their impact on material conductivity."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned about the Kronig-Penney model, energy bands, and forbidden gaps.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the Kronig-Penney model and its implications.",
+            "Grasp the concepts of energy bands and forbidden gaps."
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "daySummary": "Learned about conduction band, valence band, and Fermi level.",
+      "focusArea": "Band Structure Diagrams",
+      "learningGoals": [
+        "Understand the concepts of conduction and valence bands.",
+        "Grasp the significance of the Fermi level."
+      ],
+      "reviewTopics": [
+        "Kronig-Penney Model"
+      ],
+      "items": [
+        {
+          "topic": "Conduction band",
+          "details": "Electron mobility and effective mass.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers band structure and electronic properties."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand electron mobility in the conduction band.",
+            "Define effective mass."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Valence band",
+          "details": "Hole mobility and band filling.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers band structure and electronic properties."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand hole mobility in the valence band.",
+            "Explain band filling."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Fermi level",
+          "details": "Definition and position in semiconductors.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers band structure and electronic properties."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Define the Fermi level.",
+            "Understand its position in semiconductors."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned about conduction band, valence band, and Fermi level.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the concepts of conduction and valence bands.",
+            "Grasp the significance of the Fermi level."
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "daySummary": "Reviewed key concepts and applied them to problems and real-world scenarios.",
+      "focusArea": "Review and Application",
+      "learningGoals": [
+        "Apply learned concepts to solve problems.",
+        "Understand real-world applications of the studied topics."
+      ],
+      "reviewTopics": [
+        "Band Structure Diagrams"
+      ],
+      "items": [
+        {
+          "topic": "Problem solving",
+          "details": "Kronig-Penney model problems and band structure calculations.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Problem Book",
+              "type": "textbook",
+              "url": null,
+              "description": "Contains problems related to crystal structures and quantum mechanics."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Solve problems related to the Kronig-Penney model.",
+            "Perform band structure calculations."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Real-world applications",
+          "details": "Semiconductors and insulators.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Applied Solid State Physics",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers real-world applications of solid state physics."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand applications in semiconductors.",
+            "Understand applications in insulators."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Key takeaways and further reading.",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Solid State Physics Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Covers fundamental concepts of solid state physics."
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Summarize key concepts learned.",
+            "Identify resources for further reading."
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Summary",
+          "details": "Reviewed key concepts and applied them to problems and real-world scenarios.",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply learned concepts to solve problems.",
+            "Understand real-world applications of the studied topics."
+          ],
+          "priority": "high"
+        }
+      ]
+    }
+  ],
+  "generalTips": [
+    "Break down complex topics into smaller, manageable parts.",
+    "Use diagrams and visual aids to understand abstract concepts.",
+    "Regularly review previous topics to reinforce understanding."
+  ],
+  "keyFormulas": [
+    {
+      "formula_name": "Schr\u00f6dinger equation",
+      "formula": "H\u03c8 = E\u03c8",
+      "description": "Describes the quantum state of a system.",
+      "usage_context": "Calculating electron energy levels in atoms.",
+      "variables": {
+        "H": "Hamiltonian operator",
+        "\u03c8": "Wave function",
+        "E": "Energy eigenvalue"
+      },
+      "examples": [
+        "Solving for electron orbitals in hydrogen atom.",
+        "Determining energy levels in quantum wells."
+      ]
+    },
+    {
+      "formula_name": "Kronig-Penney potential",
+      "formula": "V(x) = V0 \u2211 \u03b4(x - na)",
+      "description": "Models periodic potential in a crystal.",
+      "usage_context": "Determining energy bands in solids.",
+      "variables": {
+        "V0": "Potential strength",
+        "\u03b4": "Dirac delta function",
+        "a": "Lattice constant",
+        "n": "Integer"
+      },
+      "examples": [
+        "Calculating allowed energy bands in a 1D crystal.",
+        "Determining band gaps in semiconductors."
+      ]
+    },
+    {
+      "formula_name": "Bloch theorem",
+      "formula": "\u03c8(x + a) = e^(ika) \u03c8(x)",
+      "description": "Describes wave functions in periodic potentials.",
+      "usage_context": "Understanding electron behavior in crystals.",
+      "variables": {
+        "\u03c8": "Wave function",
+        "a": "Lattice constant",
+        "k": "Wave vector"
+      },
+      "examples": [
+        "Analyzing electron states in a periodic lattice.",
+        "Understanding band structure formation."
+      ]
+    },
+    {
+      "formula_name": "Energy band gap",
+      "formula": "Eg = Ec - Ev",
+      "description": "Difference between conduction and valence bands.",
+      "usage_context": "Classifying materials as conductors, semiconductors, or insulators.",
+      "variables": {
+        "Ec": "Conduction band energy",
+        "Ev": "Valence band energy"
+      },
+      "examples": [
+        "Determining the band gap of silicon.",
+        "Classifying materials based on band gap values."
+      ]
+    }
+  ]
+}

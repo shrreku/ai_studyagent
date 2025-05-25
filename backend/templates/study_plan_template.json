@@ -1,0 +1,104 @@
+{
+  "overall_goal": "Master the fundamental concepts of [SUBJECT], focusing on [KEY_AREA_1], [KEY_AREA_2], and [KEY_AREA_3].",
+  "total_study_day": "[TOTAL_STUDY_DAYS]",
+  "hour_per_day": "[HOURS_PER_DAY]",
+  "core_concepts": [
+    {
+      "name": "[CONCEPT_NAME]",
+      "explanation": "[DETAILED_EXPLANATION_OF_CONCEPT]",
+      "importance": "[WHY_THIS_CONCEPT_IS_IMPORTANT]",
+      "related_concepts": [
+        "[RELATED_CONCEPT_1]",
+        "[RELATED_CONCEPT_2]"
+      ],
+      "examples": [
+        "[EXAMPLE_1_ILLUSTRATING_CONCEPT]",
+        "[EXAMPLE_2_ILLUSTRATING_CONCEPT]"
+      ],
+      "difficulty_level": "basic"  
+    }
+  ],
+  "daily_schedule": [
+    {
+      "day": 1,
+      "date": null,
+      "focus_area": "[MAIN_FOCUS_FOR_DAY_1]",
+      "study_item": [
+        {
+          "topic": "[SPECIFIC_TOPIC_TO_STUDY]",
+          "description": "[DETAILED_DESCRIPTION_OF_WHAT_TO_STUDY]",
+          "duration_minutes": 30,
+          "resource": [
+            {
+              "title": "[RESOURCE_TITLE]",
+              "type": "textbook",
+              "url": null,
+              "description": "[RESOURCE_DESCRIPTION]"
+            }
+          ],
+          "is_completed": false,
+          "learning_objectives": [
+            "[SPECIFIC_LEARNING_OBJECTIVE_1]",
+            "[SPECIFIC_LEARNING_OBJECTIVE_2]"
+          ],
+          "priority": "high"
+        }
+      ],
+      "summary": "[SUMMARY_OF_DAY'S_LEARNING]",
+      "learning_goals": [
+        "[LEARNING_GOAL_1_FOR_DAY]",
+        "[LEARNING_GOAL_2_FOR_DAY]"
+      ],
+      "review_topics": [
+        "[TOPIC_TO_REVIEW_FROM_PREVIOUS_DAYS]"
+      ]
+    }
+  ],
+  "general_tip": [
+    "[GENERAL_STUDY_TIP_1]",
+    "[GENERAL_STUDY_TIP_2]",
+    "[GENERAL_STUDY_TIP_3]"
+  ],
+  "key_formulas": [
+    {
+      "name": "[FORMULA_NAME]",
+      "formula": "[ACTUAL_FORMULA_EXPRESSION]",
+      "description": "[WHAT_THE_FORMULA_REPRESENTS]",
+      "usage_context": "[WHEN_AND_HOW_TO_USE_FORMULA]",
+      "variables": {
+        "[VARIABLE_1]": "[DEFINITION_OF_VARIABLE_1]",
+        "[VARIABLE_2]": "[DEFINITION_OF_VARIABLE_2]"
+      },
+      "examples": [
+        "[EXAMPLE_APPLICATION_OF_FORMULA_1]",
+        "[EXAMPLE_APPLICATION_OF_FORMULA_2]"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "[GENERAL_RESOURCE_TITLE]",
+      "type": "[RESOURCE_TYPE]",
+      "url": "[RESOURCE_URL]",
+      "description": "[RESOURCE_DESCRIPTION]",
+      "relevance": "[RELEVANCE_TO_STUDY_PLAN]"
+    }
+  ],
+  "assessments": [
+    {
+      "name": "[ASSESSMENT_NAME]",
+      "description": "[ASSESSMENT_DESCRIPTION]",
+      "type": "[ASSESSMENT_TYPE]",
+      "topics_covered": [
+        "[TOPIC_1]",
+        "[TOPIC_2]"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "[PREREQUISITE_1]",
+    "[PREREQUISITE_2]"
+  ],
+  "difficulty_level": "intermediate",
+  "estimated_completion_time": 14.0
+}

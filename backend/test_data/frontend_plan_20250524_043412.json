@@ -1,0 +1,277 @@
+{
+  "overallGoal": "Master the fundamental concepts of convection heat and mass transfer, focusing on boundary layer fundamentals, convection coefficients, dimensionless parameters, and analogies.",
+  "totalStudyDays": 6,
+  "hoursPerDay": 2.0,
+  "keyConcepts": [
+    {
+      "concept": "Boundary Layer Fundamentals",
+      "explanation": "Understanding the development of velocity, thermal, and concentration boundary layers, including their significance in convection processes."
+    },
+    {
+      "concept": "Convection Coefficients",
+      "explanation": "Local vs. average convection coefficients and their role in heat and mass transfer rate equations."
+    },
+    {
+      "concept": "Dimensionless Parameters",
+      "explanation": "Key dimensionless numbers (Reynolds, Prandtl, Schmidt, Nusselt, Sherwood) and their roles in heat and mass transfer."
+    },
+    {
+      "concept": "Boundary Layer Analogies",
+      "explanation": "Relationships between heat and mass transfer processes, including Reynolds analogy and evaporative cooling applications."
+    }
+  ],
+  "dailyBreakdown": [
+    {
+      "day": 1,
+      "daySummary": "Introduction to boundary layers, their development, and significance in convection processes. Includes working through example problems and visualizing concepts.",
+      "items": [
+        {
+          "topic": "Velocity boundary layer development",
+          "details": "Study the formation and characteristics of velocity boundary layers in convective flows.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null,
+            null
+          ]
+        },
+        {
+          "topic": "Thermal and concentration boundary layers",
+          "details": "Explore the analogous development of thermal and concentration boundary layers.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Boundary layer significance",
+          "details": "Examine why boundary layers are crucial in convection analysis.",
+          "estimatedTimeHours": 0.3333333333333333,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Example 6.1",
+          "details": "Work through the example problem calculating average heat transfer coefficients.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "daySummary": "Detailed examination of convection coefficients and flow regime characteristics, including practical problem solving.",
+      "items": [
+        {
+          "topic": "Local vs. average convection coefficients",
+          "details": "Study the differences between local and average convection coefficients.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Laminar and turbulent flow characteristics",
+          "details": "Compare laminar and turbulent flow regimes and their effects on convection.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Example 6.4",
+          "details": "Work through the example comparing laminar and turbulent coefficients.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Practice Problems 6.35-6.37",
+          "details": "Solve practice problems related to convection coefficients and flow regimes.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "daySummary": "In-depth study of boundary layer equations, including simplifications, normalization, and practical applications.",
+      "items": [
+        {
+          "topic": "Governing equations for boundary layers",
+          "details": "Study the fundamental equations describing boundary layer behavior.",
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Simplifications and approximations",
+          "details": "Learn about common simplifications made in boundary layer analysis.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Normalization process",
+          "details": "Study the normalization of boundary layer equations.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Problem 6.26",
+          "details": "Solve problem involving compressibility criterion.",
+          "estimatedTimeHours": 0.3333333333333333,
+          "resources": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "daySummary": "Comprehensive study of dimensionless parameters, their physical interpretations, and applications to problem solving.",
+      "items": [
+        {
+          "topic": "Reynolds, Prandtl, and Schmidt numbers",
+          "details": "Study key dimensionless parameters and their physical meanings.",
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            null,
+            null
+          ]
+        },
+        {
+          "topic": "Nusselt and Sherwood numbers",
+          "details": "Study dimensionless numbers related to heat and mass transfer coefficients.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Example 6.5",
+          "details": "Work through example applying similarity parameters.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Practice Problems 6.38-6.40",
+          "details": "Solve problems involving dimensionless parameters.",
+          "estimatedTimeHours": 0.3333333333333333,
+          "resources": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "daySummary": "Study of important analogies in heat and mass transfer, including practical applications and problem solving.",
+      "items": [
+        {
+          "topic": "Heat-mass transfer analogy",
+          "details": "Study the analogy between heat and mass transfer processes.",
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Reynolds analogy",
+          "details": "Study the Reynolds analogy between momentum and heat transfer.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Examples 6.7 and 6.8",
+          "details": "Work through examples applying analogies.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Problems 6.45-6.47",
+          "details": "Solve problems involving analogies.",
+          "estimatedTimeHours": 0.3333333333333333,
+          "resources": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "daySummary": "Comprehensive review of all concepts, application to challenging problems, and creation of summary materials.",
+      "items": [
+        {
+          "topic": "Comprehensive concept review",
+          "details": "Review all key concepts covered in previous days.",
+          "estimatedTimeHours": 0.6666666666666666,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Challenging problems",
+          "details": "Solve challenging problems covering all topics.",
+          "estimatedTimeHours": 0.8333333333333334,
+          "resources": [
+            null
+          ]
+        },
+        {
+          "topic": "Summary sheets",
+          "details": "Create summary sheets of key equations and concepts.",
+          "estimatedTimeHours": 0.5,
+          "resources": [
+            null
+          ]
+        }
+      ]
+    }
+  ],
+  "generalTips": [
+    "Visualize boundary layer development using online simulations or flow visualization videos.",
+    "Create comparison tables showing how coefficients vary with flow regime and position.",
+    "Use dimensional analysis to verify the form of boundary layer equations.",
+    "Create flashcards for dimensionless parameters with definitions and physical meanings.",
+    "Develop concept maps showing relationships between different analogies.",
+    "Form a study group to discuss challenging concepts and solve problems collaboratively."
+  ],
+  "keyFormulas": [
+    {
+      "formula_name": "Reynolds Number",
+      "description": "Re = \u03c1vL/\u03bc",
+      "usage_context": "Ratio of inertial forces to viscous forces in a flow"
+    },
+    {
+      "formula_name": "Prandtl Number",
+      "description": "Pr = \u03bd/\u03b1",
+      "usage_context": "Ratio of momentum diffusivity to thermal diffusivity"
+    },
+    {
+      "formula_name": "Nusselt Number",
+      "description": "Nu = hL/k",
+      "usage_context": "Dimensionless heat transfer coefficient"
+    },
+    {
+      "formula_name": "Sherwood Number",
+      "description": "Sh = hmL/D",
+      "usage_context": "Dimensionless mass transfer coefficient"
+    }
+  ]
+}

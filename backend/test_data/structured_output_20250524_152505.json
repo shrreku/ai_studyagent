@@ -1,0 +1,113 @@
+{
+  "raw_response": "CORE:\n```json\n{\n  \"overall_goal\": \"Master the fundamental concepts of Convection Heat Transfer, focusing on Boundary Layer Fundamentals, Dimensionless Parameters, and Analogies.\",\n  \"total_study_day\": 7,\n  \"hour_per_day\": 2.0,\n  \"core_concepts\": [\n    {\n      \"name\": \"Boundary Layer Fundamentals\",\n      \"explanation\": \"Covers velocity, thermal, and concentration boundary layers, including laminar vs turbulent flow characteristics and boundary layer thickness relationships.\",\n      \"importance\": \"Essential for understanding how heat and mass transfer occur near surfaces in fluid flow.\",\n      \"related_concepts\": [\n        \"Reynolds number\",\n        \"Prandtl number\"\n      ],\n      \"examples\": [\n        \"Velocity boundary layer development over a flat plate\",\n        \"Thermal boundary layer in air vs water\"\n      ],\n      \"difficulty_level\": \"intermediate\"\n    },\n    {\n      \"name\": \"Dimensionless Parameters\",\n      \"explanation\": \"Includes Reynolds, Prandtl, Schmidt, and Nusselt numbers, which are crucial for scaling and similarity analysis in convection problems.\",\n      \"importance\": \"Allows for the generalization of experimental results and simplification of complex problems.\",\n      \"related_concepts\": [\n        \"Boundary layer thickness\",\n        \"Heat transfer coefficients\"\n      ],\n      \"examples\": [\n        \"Calculating Reynolds number for pipe flow\",\n        \"Using Prandtl number to compare heat vs momentum diffusion\"\n      ],\n      \"difficulty_level\": \"intermediate\"\n    },\n    {\n      \"name\": \"Analogies\",\n      \"explanation\": \"Includes heat-mass transfer analogy, Reynolds analogy, and Chilton-Colburn analogies that relate different transport phenomena.\",\n      \"importance\": \"Provides powerful tools to solve complex problems by leveraging similarities between different transport processes.\",\n      \"related_concepts\": [\n        \"Stanton number\",\n        \"Lewis number\"\n      ],\n      \"examples\": [\n        \"Using heat transfer data to predict mass transfer rates\",\n        \"Relating friction factors to heat transfer coefficients\"\n      ],\n      \"difficulty_level\": \"advanced\"\n    }\n  ],\n  \"general_tip\": [\n    \"Sketch boundary layer profiles for different fluids to visualize concepts.\",\n    \"Always identify boundary layer type, relevant dimensionless parameters, and applicable analogies before solving problems.\",\n    \"Use mnemonic devices to remember common Prandtl numbers (e.g., 'Gases~1, Water~10, Oils>100, Liquid metals<<1').\"\n  ]\n}\n```\n\nSCHEDULE:\n```json\n{\n  \"daily_schedule\": [\n    {\n      \"day\": 1,\n      \"focus_area\": \"Boundary Layer Fundamentals\",\n      \"study_item\": [\n        {\n          \"topic\": \"Velocity Boundary Layer Development\",\n          \"description\": \"Study the development of velocity boundary layer and its characteristics.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Figures 6.1, 6.6-6.8\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand the concept of velocity boundary layer\",\n            \"Analyze boundary layer thickness\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Thermal/Concentration Boundary Layer\",\n          \"description\": \"Study thermal and concentration boundary layers and their significance.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Figures 6.2-6.3\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Differentiate between thermal and concentration boundary layers\",\n            \"Understand their applications\"\n          ],\n          \"priority\": \"medium\"\n        },\n        {\n          \"topic\": \"Boundary Layer Equations\",\n          \"description\": \"Study key equations related to boundary layers (6.1-6.9, 6.23-6.24).\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Equations 6.1-6.9, 6.23-6.24\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Apply boundary layer equations to solve problems\",\n            \"Derive convection coefficients\"\n          ],\n          \"priority\": \"high\"\n        }\n      ],\n      \"summary\": \"Day 1 focused on understanding the fundamentals of boundary layers, including velocity, thermal, and concentration boundary layers, and their equations.\",\n      \"learning_goals\": [\n        \"Grasp the concept of boundary layers\",\n        \"Apply boundary layer equations to solve problems\"\n      ],\n      \"review_topics\": []\n    },\n    {\n      \"day\": 2,\n      \"focus_area\": \"Dimensionless Parameters\",\n      \"study_item\": [\n        {\n          \"topic\": \"Normalized Equations\",\n          \"description\": \"Study normalized equations and their significance.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Table 6.1\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand normalized equations\",\n            \"Analyze their physical meaning\"\n          ],\n          \"priority\": \"medium\"\n        },\n        {\n          \"topic\": \"Boundary Layer Thickness Ratios\",\n          \"description\": \"Study boundary layer thickness ratios (6.55-6.58).\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Equations 6.55-6.58\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Calculate boundary layer thickness ratios\",\n            \"Understand their applications\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Temperature Dependence Analysis\",\n          \"description\": \"Analyze temperature dependence in boundary layers.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Example 6.4\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Analyze temperature effects on boundary layers\",\n            \"Calculate local vs average coefficients\"\n          ],\n          \"priority\": \"medium\"\n        }\n      ],\n      \"summary\": \"Day 2 focused on understanding dimensionless parameters and their applications in boundary layer analysis.\",\n      \"learning_goals\": [\n        \"Grasp the significance of dimensionless parameters\",\n        \"Analyze temperature dependence in boundary layers\"\n      ],\n      \"review_topics\": [\n        \"Boundary Layer Fundamentals\"\n      ]\n    },\n    {\n      \"day\": 3,\n      \"focus_area\": \"Heat-Mass Transfer Analogy\",\n      \"study_item\": [\n        {\n          \"topic\": \"Functional Relationships\",\n          \"description\": \"Study functional relationships in heat-mass transfer.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Table 6.3\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand functional relationships\",\n            \"Apply them to solve problems\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Nu/Sh Relationships\",\n          \"description\": \"Study Nu/Sh relationships (6.59-6.60).\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Equations 6.59-6.60\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Understand Nu/Sh relationships\",\n            \"Apply them to solve problems\"\n          ],\n          \"priority\": \"high\"\n        },\n        {\n          \"topic\": \"Evaporative Cooling\",\n          \"description\": \"Solve evaporative cooling problems.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Examples 6.7-6.8\"\n            }\n          ],\n          \"is_completed\": false,\n          \"learning_objectives\": [\n            \"Convert heat to mass transfer solutions\",\n            \"Solve evaporative cooling problems\"\n          ],\n          \"priority\": \"medium\"\n        }\n      ],\n      \"summary\": \"Day 3 focused on understanding heat-mass transfer analogy and its applications in solving problems.\",\n      \"learning_goals\": [\n        \"Grasp the concept of heat-mass transfer analogy\",\n        \"Apply it to solve evaporative cooling problems\"\n      ],\n      \"review_topics\": [\n        \"Dimensionless Parameters\"\n      ]\n    },\n    {\n      \"day\": 4,\n      \"focus_area\": \"Reynolds Analogy\",\n      \"study_item\": [\n        {\n          \"topic\": \"Stanton Number\",\n          \"description\": \"Study Stanton number and its significance.\",\n          \"duration_minutes\": 30,\n          \"resource\": [\n            {\n              \"title\": \"Heat Transfer Fundamentals\",\n              \"type\": \"textbook\",\n              \"url\": null,\n              \"description\": \"Chapter 6, Equations 6.66-6.71\"\n            }\n          ],\n\n\nFORMULAS:\n```json\n{\n  \"key_formulas\": [\n    {\n      \"name\": \"Reynolds Number\",\n      \"formula\": \"Re = (\u03c1 * u * L) / \u03bc\",\n      \"description\": \"Dimensionless quantity that predicts flow patterns in different fluid flow situations.\",\n      \"usage_context\": \"Used to determine whether flow is laminar or turbulent. Critical for boundary layer analysis.\"\n    },\n    {\n      \"name\": \"Prandtl Number\",\n      \"formula\": \"Pr = (\u03bc * cp) / k\",\n      \"description\": \"Ratio of momentum diffusivity to thermal diffusivity.\",\n      \"usage_context\": \"Important for determining relative thickness of velocity vs thermal boundary layers.\"\n    },\n    {\n      \"name\": \"Nusselt Number\",\n      \"formula\": \"Nu = (h * L) / k\",\n      \"description\": \"Ratio of convective to conductive heat transfer at a boundary.\",\n      \"usage_context\": \"Used to calculate convection heat transfer coefficients in forced convection problems.\"\n    },\n    {\n      \"name\": \"Stanton Number\",\n      \"description\": \"Dimensionless heat transfer coefficient.\",\n      \"formula\": \"St = Nu / (Re * Pr)\",\n      \"usage_context\": \"Central to Reynolds analogy, relating friction factor to heat transfer.\"\n    },\n    {\n      \"name\": \"Chilton-Colburn Analogy\",\n      \"formula\": \"St * Pr^(2/3) = Cf/2\",\n      \"description\": \"Modified Reynolds analogy for heat and mass transfer.\",\n      \"usage_context\": \"Used when Pr \u2260 1 to relate skin friction to heat transfer coefficient.\"\n    },\n    {\n      \"name\": \"Boundary Layer Thickness\",\n      \"formula\": \"\u03b4 \u2248 5x / \u221aRe_x\",\n      \"description\": \"Approximate thickness of velocity boundary layer for laminar flow.\",\n      \"usage_context\": \"Flat plate laminar flow calculations, valid for Re < 5\u00d710^5.\"\n    }\n  ]\n}\n```",
+  "structured_output": {
+    "overall_goal": "Master the fundamental concepts of Convection Heat Transfer, focusing on Boundary Layer Fundamentals, Dimensionless Parameters, and Analogies.",
+    "total_study_day": 7,
+    "hour_per_day": 2.0,
+    "core_concepts": [
+      {
+        "name": "Boundary Layer Fundamentals",
+        "explanation": "Covers velocity, thermal, and concentration boundary layers, including laminar vs turbulent flow characteristics and boundary layer thickness relationships.",
+        "importance": "Essential for understanding how heat and mass transfer occur near surfaces in fluid flow.",
+        "related_concepts": [
+          "Reynolds number",
+          "Prandtl number"
+        ],
+        "examples": [
+          "Velocity boundary layer development over a flat plate",
+          "Thermal boundary layer in air vs water"
+        ],
+        "difficulty_level": "intermediate"
+      },
+      {
+        "name": "Dimensionless Parameters",
+        "explanation": "Includes Reynolds, Prandtl, Schmidt, and Nusselt numbers, which are crucial for scaling and similarity analysis in convection problems.",
+        "importance": "Allows for the generalization of experimental results and simplification of complex problems.",
+        "related_concepts": [
+          "Boundary layer thickness",
+          "Heat transfer coefficients"
+        ],
+        "examples": [
+          "Calculating Reynolds number for pipe flow",
+          "Using Prandtl number to compare heat vs momentum diffusion"
+        ],
+        "difficulty_level": "intermediate"
+      },
+      {
+        "name": "Analogies",
+        "explanation": "Includes heat-mass transfer analogy, Reynolds analogy, and Chilton-Colburn analogies that relate different transport phenomena.",
+        "importance": "Provides powerful tools to solve complex problems by leveraging similarities between different transport processes.",
+        "related_concepts": [
+          "Stanton number",
+          "Lewis number"
+        ],
+        "examples": [
+          "Using heat transfer data to predict mass transfer rates",
+          "Relating friction factors to heat transfer coefficients"
+        ],
+        "difficulty_level": "advanced"
+      }
+    ],
+    "daily_schedule": [],
+    "general_tip": [
+      "Sketch boundary layer profiles for different fluids to visualize concepts.",
+      "Always identify boundary layer type, relevant dimensionless parameters, and applicable analogies before solving problems.",
+      "Use mnemonic devices to remember common Prandtl numbers (e.g., 'Gases~1, Water~10, Oils>100, Liquid metals<<1')."
+    ],
+    "key_formulas": [
+      {
+        "name": "Reynolds Number",
+        "formula": "Re = (\u03c1 * u * L) / \u03bc",
+        "description": "Dimensionless quantity that predicts flow patterns in different fluid flow situations.",
+        "usage_context": "Used to determine whether flow is laminar or turbulent. Critical for boundary layer analysis.",
+        "variables": null,
+        "examples": null
+      },
+      {
+        "name": "Prandtl Number",
+        "formula": "Pr = (\u03bc * cp) / k",
+        "description": "Ratio of momentum diffusivity to thermal diffusivity.",
+        "usage_context": "Important for determining relative thickness of velocity vs thermal boundary layers.",
+        "variables": null,
+        "examples": null
+      },
+      {
+        "name": "Nusselt Number",
+        "formula": "Nu = (h * L) / k",
+        "description": "Ratio of convective to conductive heat transfer at a boundary.",
+        "usage_context": "Used to calculate convection heat transfer coefficients in forced convection problems.",
+        "variables": null,
+        "examples": null
+      },
+      {
+        "name": "Stanton Number",
+        "formula": "St = Nu / (Re * Pr)",
+        "description": "Dimensionless heat transfer coefficient.",
+        "usage_context": "Central to Reynolds analogy, relating friction factor to heat transfer.",
+        "variables": null,
+        "examples": null
+      },
+      {
+        "name": "Chilton-Colburn Analogy",
+        "formula": "St * Pr^(2/3) = Cf/2",
+        "description": "Modified Reynolds analogy for heat and mass transfer.",
+        "usage_context": "Used when Pr \u2260 1 to relate skin friction to heat transfer coefficient.",
+        "variables": null,
+        "examples": null
+      },
+      {
+        "name": "Boundary Layer Thickness",
+        "formula": "\u03b4 \u2248 5x / \u221aRe_x",
+        "description": "Approximate thickness of velocity boundary layer for laminar flow.",
+        "usage_context": "Flat plate laminar flow calculations, valid for Re < 5\u00d710^5.",
+        "variables": null,
+        "examples": null
+      }
+    ],
+    "resources": null,
+    "assessments": null,
+    "prerequisites": null,
+    "difficulty_level": null,
+    "estimated_completion_time": null
+  }
+}

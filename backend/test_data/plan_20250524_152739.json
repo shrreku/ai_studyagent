@@ -1,0 +1,110 @@
+{
+  "overall_goal": "Master the fundamental concepts of Convection Heat Transfer, focusing on Boundary Layer Fundamentals, Dimensionless Parameters, and Analogies.",
+  "total_study_day": 7,
+  "hour_per_day": 2.0,
+  "core_concepts": [
+    {
+      "name": "Boundary Layer Fundamentals",
+      "explanation": "Covers velocity, thermal, and concentration boundary layers, including laminar vs turbulent flow characteristics and boundary layer thickness relationships.",
+      "importance": "Essential for understanding how heat and mass transfer occur near surfaces in fluid flow.",
+      "related_concepts": [
+        "Reynolds number",
+        "Prandtl number"
+      ],
+      "examples": [
+        "Velocity boundary layer development over a flat plate",
+        "Thermal boundary layer in air vs water"
+      ],
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Dimensionless Parameters",
+      "explanation": "Includes Reynolds, Prandtl, Schmidt, and Nusselt numbers, which are crucial for scaling and similarity analysis in convection problems.",
+      "importance": "Allows for the generalization of experimental results and simplification of complex problems.",
+      "related_concepts": [
+        "Boundary layer thickness",
+        "Heat transfer coefficients"
+      ],
+      "examples": [
+        "Calculating Reynolds number for pipe flow",
+        "Using Prandtl number to compare heat vs momentum diffusion"
+      ],
+      "difficulty_level": "intermediate"
+    },
+    {
+      "name": "Analogies",
+      "explanation": "Includes heat-mass transfer analogy, Reynolds analogy, and Chilton-Colburn analogies that relate different transport phenomena.",
+      "importance": "Provides powerful tools to solve complex problems by leveraging similarities between different transport processes.",
+      "related_concepts": [
+        "Stanton number",
+        "Lewis number"
+      ],
+      "examples": [
+        "Using heat transfer data to predict mass transfer rates",
+        "Relating friction factors to heat transfer coefficients"
+      ],
+      "difficulty_level": "advanced"
+    }
+  ],
+  "daily_schedule": [],
+  "general_tip": [
+    "Sketch boundary layer profiles for different fluids to visualize concepts.",
+    "Always identify boundary layer type, relevant dimensionless parameters, and applicable analogies before solving problems.",
+    "Use mnemonic devices to remember common Prandtl numbers (e.g., 'Gases~1, Water~10, Oils>100, Liquid metals<<1')."
+  ],
+  "key_formulas": [
+    {
+      "name": "Reynolds Number",
+      "formula": "Re = (\u03c1 * u * L) / \u03bc",
+      "description": "Dimensionless quantity that predicts flow patterns in different fluid flow situations.",
+      "usage_context": "Used to determine whether flow is laminar or turbulent. Critical for boundary layer analysis.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Prandtl Number",
+      "formula": "Pr = (\u03bc * cp) / k",
+      "description": "Ratio of momentum diffusivity to thermal diffusivity.",
+      "usage_context": "Important for determining relative thickness of velocity vs thermal boundary layers.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Nusselt Number",
+      "formula": "Nu = (h * L) / k",
+      "description": "Ratio of convective to conductive heat transfer at a boundary.",
+      "usage_context": "Used to calculate convection heat transfer coefficients in forced convection problems.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Stanton Number",
+      "formula": "St = Nu / (Re * Pr)",
+      "description": "Dimensionless heat transfer coefficient.",
+      "usage_context": "Central to Reynolds analogy, relating friction factor to heat transfer.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Chilton-Colburn Analogy",
+      "formula": "St * Pr^(2/3) = Cf/2",
+      "description": "Modified Reynolds analogy for heat and mass transfer.",
+      "usage_context": "Used when Pr \u2260 1 to relate skin friction to heat transfer coefficient.",
+      "variables": null,
+      "examples": null
+    },
+    {
+      "name": "Boundary Layer Thickness",
+      "formula": "\u03b4 \u2248 5x / \u221aRe_x",
+      "description": "Approximate thickness of velocity boundary layer for laminar flow.",
+      "usage_context": "Flat plate laminar flow calculations, valid for Re < 5\u00d710^5.",
+      "variables": null,
+      "examples": null
+    }
+  ],
+  "resources": null,
+  "assessments": null,
+  "prerequisites": null,
+  "difficulty_level": null,
+  "estimated_completion_time": null
+}

@@ -1,49 +1,73 @@
 'use client';
 
 import React, { useState, ChangeEvent, useEffect } from 'react';
-import { Input } from '@/components/ui/input'; // Assuming Shadcn UI structure
-import { Label } from '@/components/ui/label';   // Assuming Shadcn UI structure
-import { Button } from '@/components/ui/button'; // Assuming Shadcn UI structure
-import { useRouter } from 'next/navigation'; // Import useRouter
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { useRouter } from 'next/navigation';
+import axios from 'axios';
+import { useStudyPlan } from "../../../context/StudyPlanContext";
+import { getApiUrl, API_ENDPOINTS } from '@/config/api';
 
-// Define a basic structure for the study plan
 const InputForm: React.FC = () => {
-  const router = useRouter(); // Initialize router
-  const [totalDays, setTotalDays] = useState<string>(''); // Store as string to allow empty input
-  const [hoursPerDay, setHoursPerDay] = useState<string>(''); // Store as string to allow empty input
-  const [studyMaterials, setStudyMaterials] = useState<FileList | null>(null);
+  const router = useRouter();
+  const { setStudyPlan } = useStudyPlan();
+
+  // Form state
+  const [totalDays, setTotalDays] = useState<string>('7'); // Default to 5 days
+  const [hoursPerDay, setHoursPerDay] = useState<string>('2'); // Default to 2 hours per day
+  const [notesFiles, setNotesFiles] = useState<FileList | null>(null);
+  const [questionFiles, setQuestionFiles] = useState<FileList | null>(null);
   const [fileError, setFileError] = useState<string | null>(null);
   const [showPreview, setShowPreview] = useState<boolean>(false);
   const [previewData, setPreviewData] = useState<StudyPlan | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  // Define a basic structure for the study plan
-  interface StudyPlanTopic {
-    name: string;
-    estimatedHours: number;
+  // Constants
+  const MAX_FILE_SIZE_MB = 10; // Maximum file size in MB
+  const ALLOWED_FILE_TYPES = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
+  const ALLOWED_FILE_EXTENSIONS = ['.pdf', '.docx', '.txt'];
+
+  // Define interfaces for the study plan structure
+  interface StudyPlanItem {
+    topic: string;
+    details: string;
+    estimatedTimeHours: number;
     resources: string[];
   }
 
   interface StudyPlanDay {
     day: number;
-    topics: StudyPlanTopic[];
-    dailySummary?: string;
+    daySummary: string;
+    focusArea: string;
+    items: StudyPlanItem[];
+  }
+
+  interface KeyConcept {
+    concept: string;
+    explanation: string;
+  }
+
+  interface KeyFormula {
+    formula_name: string;
+    description: string;
+    usage_context: string;
   }
 
   interface StudyPlan {
     totalStudyDays: number;
     hoursPerDay: number;
     overallGoal: string;
-    schedule: StudyPlanDay[];
-    generalTips?: string[];
+    dailyBreakdown: StudyPlanDay[];
+    keyConcepts: KeyConcept[];
+    generalTips: string[];
+    keyFormulas?: KeyFormula[];
   }
-
-  const ALLOWED_FILE_TYPES = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
-  const MAX_FILE_SIZE_MB = 5;
 
   const handleTotalDaysChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    // Allow empty string or positive integers
-    if (value === '' || (/^\d+$/.test(value) && parseInt(value, 10) >= 1)) {
+    // Allow empty string or positive integers between 1 and 7
+    if (value === '' || (/^\d+$/.test(value) && parseInt(value, 10) >= 1 && parseInt(value, 10) <= 7)) {
       setTotalDays(value);
     }
   };
@@ -56,32 +80,55 @@ const InputForm: React.FC = () => {
     }
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const validateFiles = (files: FileList): { validFiles: File[], invalidFiles: string[] } => {
+    const validFiles: File[] = [];
+    const invalidFiles: string[] = [];
+
+    Array.from(files).forEach(file => {
+      if (!ALLOWED_FILE_TYPES.includes(file.type)) {
+        invalidFiles.push(`${file.name} (type: ${file.type || 'unknown'})`);
+      } else if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
+        invalidFiles.push(`${file.name} (size: ${Math.round(file.size / (1024 * 1024))}MB - exceeds ${MAX_FILE_SIZE_MB}MB)`);
+      } else {
+        validFiles.push(file);
+      }
+    });
+
+    return { validFiles, invalidFiles };
+  };
+
+  const handleNotesFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       setFileError(null); // Clear previous errors
-      const files = e.target.files;
-      const validFiles: File[] = [];
-      const invalidFiles: string[] = [];
-
-      Array.from(files).forEach(file => {
-        if (!ALLOWED_FILE_TYPES.includes(file.type)) {
-          invalidFiles.push(`${file.name} (type: ${file.type || 'unknown'})`);
-        } else if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-          invalidFiles.push(`${file.name} (size: ${Math.round(file.size / (1024 * 1024))}MB - exceeds ${MAX_FILE_SIZE_MB}MB)`);
-        } else {
-          validFiles.push(file);
-        }
-      });
+      const { validFiles, invalidFiles } = validateFiles(e.target.files);
 
       if (invalidFiles.length > 0) {
-        setFileError(`Invalid file(s): ${invalidFiles.join(', ')}. Allowed types: PDF, DOCX, TXT. Max size: ${MAX_FILE_SIZE_MB}MB.`);
+        setFileError(`Invalid notes file(s): ${invalidFiles.join(', ')}. Allowed types: PDF, DOCX, TXT. Max size: ${MAX_FILE_SIZE_MB}MB.`);
         // Create a new FileList from valid files only, or clear if all are invalid
         const dataTransfer = new DataTransfer();
         validFiles.forEach(file => dataTransfer.items.add(file));
-        setStudyMaterials(dataTransfer.files.length > 0 ? dataTransfer.files : null);
+        setNotesFiles(dataTransfer.files.length > 0 ? dataTransfer.files : null);
         e.target.value = ''; // Clear the input field to allow re-selection of the same file if needed after error
       } else {
-        setStudyMaterials(files);
+        setNotesFiles(e.target.files);
+      }
+    }
+  };
+
+  const handleQuestionFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      setFileError(null); // Clear previous errors
+      const { validFiles, invalidFiles } = validateFiles(e.target.files);
+
+      if (invalidFiles.length > 0) {
+        setFileError(`Invalid question file(s): ${invalidFiles.join(', ')}. Allowed types: PDF, DOCX, TXT. Max size: ${MAX_FILE_SIZE_MB}MB.`);
+        // Create a new FileList from valid files only, or clear if all are invalid
+        const dataTransfer = new DataTransfer();
+        validFiles.forEach(file => dataTransfer.items.add(file));
+        setQuestionFiles(dataTransfer.files.length > 0 ? dataTransfer.files : null);
+        e.target.value = ''; // Clear the input field to allow re-selection of the same file if needed after error
+      } else {
+        setQuestionFiles(e.target.files);
       }
     }
   };
@@ -95,62 +142,125 @@ const InputForm: React.FC = () => {
     return 0;
   };
 
-  const handlePreview = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault(); // Prevent form submission if it's part of a form
-    // Basic validation before showing preview
-    if (!totalDays || !hoursPerDay) {
-      alert('Please fill in Total Study Days and Hours Per Day before previewing.');
-      return;
-    }
-    if (fileError) {
-      alert('Please resolve file errors before previewing.');
-      return;
-    }
-    setShowPreview(true);
-    // Later, this will trigger fetching/generating the plan
-    // For now, let's set some mock data for preview
-    const numTotalDays = parseInt(totalDays, 10) || 0;
-    const numHoursPerDay = parseInt(hoursPerDay, 10) || 0;
-
-    const mockPlan: StudyPlan = {
-      totalStudyDays: numTotalDays,
-      hoursPerDay: numHoursPerDay,
-      overallGoal: "Successfully master the provided study materials.",
-      schedule: [
-        {
-          day: 1,
-          topics: [
-            { name: "Introduction to Topic A", estimatedHours: numHoursPerDay > 0 ? numHoursPerDay / 2 : 0, resources: ["Chapter 1 of PDF1.pdf"] },
-            { name: "Deep Dive into Topic B", estimatedHours: numHoursPerDay > 0 ? numHoursPerDay / 2 : 0, resources: ["Section 2 of Notes.docx"] },
-          ],
-          dailySummary: "Covered foundational concepts and an initial deep dive."
-        },
-        // Add more days as needed for a more complete mock preview
-      ],
-      generalTips: ["Take regular breaks.", "Review notes daily."]
-    };
-    setPreviewData(mockPlan);
-  };
-
-  const handleStartSession = () => {
-    // Basic validation before attempting to start session
+  // Function to prepare form data for submission
+  const prepareFormData = async (): Promise<FormData | null> => {
     if (!totalDays || !hoursPerDay) {
       alert('Please fill in Total Study Days and Hours Per Day.');
-      return;
+      return null;
     }
+
     if (fileError) {
-      alert('Please resolve file errors before starting a session.');
-      return;
+      alert('Please resolve file errors before continuing.');
+      return null;
     }
-    if (!previewData) {
-      alert('Please preview the plan before starting a session.');
-      return;
+
+    if (!notesFiles || notesFiles.length === 0) {
+      alert('Please upload at least one notes file.');
+      return null;
     }
-    // Later, this will handle form submission to backend and navigation
-    // alert('Form submitted (mock)! Navigating to study session page (mock)...');
-    // Example: router.push('/study-session'); // Requires Next.js router
-    // For now, we'll just navigate to a placeholder route
-    router.push('/study-session-active'); // Navigate to the new page
+
+    const formData = new FormData();
+    
+    // Convert string values to integers for the backend
+    formData.append('study_duration_days', parseInt(totalDays, 10).toString());
+    formData.append('study_hours_per_day', parseInt(hoursPerDay, 10).toString());
+
+    // Add notes files
+    Array.from(notesFiles).forEach(file => {
+      formData.append('notes', file);
+    });
+
+    // Add question files if any
+    if (questionFiles && questionFiles.length > 0) {
+      Array.from(questionFiles).forEach(file => {
+        formData.append('questions', file);
+      });
+    }
+
+    return formData;
+  };
+
+  // Handle preview button click - generate a plan preview and redirect to preview page
+  const handlePreview = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    const formData = await prepareFormData();
+    if (!formData) return;
+
+    try {
+      setIsLoading(true);
+      
+      console.log('Generating study plan preview from backend...');
+      console.log('Form data:', {
+        study_duration_days: formData.get('study_duration_days'),
+        study_hours_per_day: formData.get('study_hours_per_day'),
+        notes: formData.getAll('notes').map((file: any) => file.name)
+      });
+      
+      // Call the preview endpoint to generate a study plan preview
+      const response = await axios.post(getApiUrl(API_ENDPOINTS.PREVIEW), formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      
+      console.log('Response received:', response.data);
+      
+      if (response.data && response.data.raw_plan) {
+        console.log('Preview generated successfully');
+        
+        // Store the raw plan in localStorage for the preview page to access
+        localStorage.setItem('rawStudyPlanResponse', response.data.raw_plan);
+        
+        // Navigate to the preview page
+        router.push('/study-plan-preview');
+      } else {
+        throw new Error('No raw plan returned from backend');
+      }
+    } catch (error) {
+      console.error('Error generating preview:', error);
+      let errorMessage = 'Failed to generate preview. Please try again.';
+      
+      if (axios.isAxiosError(error) && error.response) {
+        errorMessage = `Error: ${error.response.data?.detail || error.message}`;
+      }
+      
+      alert(errorMessage);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Handle direct start session button click - upload files, generate plan, and go directly to study session
+  const handleStartSession = async () => {
+    const formData = await prepareFormData();
+    if (!formData) return;
+    
+    try {
+      setIsLoading(true);
+      
+      // Upload files and generate complete study plan
+      const response = await axios.post('http://localhost:8000/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      
+      if (response.data && response.data.frontend_plan) {
+        // Save the study plan to context
+        setStudyPlan(response.data.frontend_plan);
+        
+        // Navigate directly to the active study session page
+        router.push('/study-session-active');
+      } else {
+        throw new Error('Invalid response from server');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Failed to generate study plan. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -165,6 +275,7 @@ const InputForm: React.FC = () => {
             value={totalDays}
             onChange={handleTotalDaysChange}
             min="1"
+            max="7"
             placeholder="e.g., 7"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             required
@@ -186,25 +297,57 @@ const InputForm: React.FC = () => {
           />
         </div>
       </div>
-      <div>
-        <Label htmlFor="studyMaterials" className="block text-sm font-medium text-gray-700 mb-1">Study Materials (Optional)</Label>
-        <Input
-          type="file"
-          id="studyMaterials"
-          name="studyMaterials"
-          onChange={handleFileChange}
-          multiple
-          className="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-        />
+      <div className="space-y-4">
+        <div>
+          <Label htmlFor="notesFiles" className="block text-sm font-medium text-gray-700 mb-1">Study Notes (Required)</Label>
+          <Input
+            type="file"
+            id="notesFiles"
+            name="notesFiles"
+            onChange={handleNotesFilesChange}
+            multiple
+            className="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+            required
+          />
+          <p className="text-xs text-gray-500 mt-1">Upload your study materials (PDF, DOCX, TXT). Max size: {MAX_FILE_SIZE_MB}MB per file.</p>
+        </div>
+
+        <div>
+          <Label htmlFor="questionFiles" className="block text-sm font-medium text-gray-700 mb-1">Practice Questions (Optional)</Label>
+          <Input
+            type="file"
+            id="questionFiles"
+            name="questionFiles"
+            onChange={handleQuestionFilesChange}
+            multiple
+            className="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+          />
+          <p className="text-xs text-gray-500 mt-1">Upload practice questions or exercises (PDF, DOCX, TXT). Max size: {MAX_FILE_SIZE_MB}MB per file.</p>
+        </div>
+
         {fileError && (
           <p className="mt-2 text-xs text-red-600">{fileError}</p>
         )}
-        {studyMaterials && studyMaterials.length > 0 && !fileError && (
-          <div className="mt-2 text-xs text-gray-500">
-            <p>{studyMaterials.length} file(s) selected:</p>
-            <ul>
-              {Array.from(studyMaterials).map((file, index) => (
-                <li key={index}>- {file.name} ({Math.round(file.size / 1024)} KB)</li>
+
+        {/* Display selected notes files */}
+        {notesFiles && notesFiles.length > 0 && !fileError && (
+          <div className="mt-2 text-xs text-gray-500 p-2 bg-gray-50 rounded">
+            <p className="font-medium">Study Notes ({notesFiles.length} file{notesFiles.length !== 1 ? 's' : ''}):</p>
+            <ul className="list-disc pl-5 mt-1">
+              {Array.from(notesFiles).map((file, index) => (
+                <li key={`notes-${index}`}>- {file.name} ({Math.round(file.size / 1024)} KB)</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Display selected question files */}
+        {questionFiles && questionFiles.length > 0 && !fileError && (
+          <div className="mt-2 text-xs text-gray-500 p-2 bg-gray-50 rounded">
+            <p className="font-medium">Practice Questions ({questionFiles.length} file{questionFiles.length !== 1 ? 's' : ''}):</p>
+            <ul className="list-disc pl-5 mt-1">
+              {Array.from(questionFiles).map((file, index) => (
+                <li key={`questions-${index}`}>- {file.name} ({Math.round(file.size / 1024)} KB)</li>
               ))}
             </ul>
           </div>
@@ -227,64 +370,7 @@ const InputForm: React.FC = () => {
           Preview Plan
         </button>
       </div>
-      {showPreview && previewData && (
-        <div className="mt-8 p-4 border border-gray-200 rounded-md bg-gray-50">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Study Plan Preview:</h3>
-          
-          <div className="space-y-3 text-sm">
-            <p><span className="font-semibold">Overall Goal:</span> {previewData.overallGoal}</p>
-            <p><span className="font-semibold">Total Study Days:</span> {previewData.totalStudyDays}</p>
-            <p><span className="font-semibold">Hours Per Day:</span> {previewData.hoursPerDay}</p>
-          </div>
 
-          <div className="mt-6">
-            <h4 className="text-md font-semibold text-gray-700 mb-2">Daily Schedule:</h4>
-            {previewData.schedule.map((dayPlan) => (
-              <div key={dayPlan.day} className="mb-4 p-3 border border-gray-300 rounded-md bg-white">
-                <h5 className="font-semibold text-gray-700">Day {dayPlan.day}</h5>
-                <ul className="list-disc list-inside ml-4 mt-1 space-y-1 text-xs text-gray-600">
-                  {dayPlan.topics.map((topic, index) => (
-                    <li key={index}>
-                      {topic.name} ({topic.estimatedHours} hrs)
-                      {topic.resources && topic.resources.length > 0 && (
-                        <ul className="list-circle list-inside ml-4 text-gray-500">
-                          {topic.resources.map((resource, rIndex) => (
-                            <li key={rIndex}>{resource}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-                {dayPlan.dailySummary && (
-                  <p className="mt-2 text-xs italic text-gray-500">Summary: {dayPlan.dailySummary}</p>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {previewData.generalTips && previewData.generalTips.length > 0 && (
-            <div className="mt-6">
-              <h4 className="text-md font-semibold text-gray-700 mb-2">General Tips:</h4>
-              <ul className="list-disc list-inside ml-4 space-y-1 text-sm text-gray-600">
-                {previewData.generalTips.map((tip, index) => (
-                  <li key={index}>{tip}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <div className="mt-6">
-            <button
-              type="button" // Or type="submit" if this button submits the form
-              onClick={handleStartSession}
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50"
-              disabled={!previewData} // Disabled until plan is previewed
-            >
-              Start Study Session
-            </button>
-          </div>
-        </div>
-      )}
     </form>
   );
 };

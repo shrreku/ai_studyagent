@@ -1,0 +1,426 @@
+{
+  "overallGoal": "Master fundamental heat transfer concepts including conduction, convection, and radiation, and apply them to solve practical engineering problems",
+  "totalStudyDays": "4",
+  "hoursPerDay": "5",
+  "keyConcepts": [
+    {
+      "concept": "Heat Conduction",
+      "explanation": "Transfer of heat through solids without bulk motion of material"
+    },
+    {
+      "concept": "Convection",
+      "explanation": "Heat transfer between a surface and a moving fluid"
+    },
+    {
+      "concept": "Radiation",
+      "explanation": "Heat transfer via electromagnetic waves"
+    }
+  ],
+  "dailyBreakdown": [
+    {
+      "day": 1,
+      "daySummary": "Learned the fundamentals of heat transfer including conduction and thermal conductivity",
+      "focusArea": "Fundamentals of Heat Transfer",
+      "learningGoals": [
+        "Understand basic heat transfer modes",
+        "Apply Fourier's Law to simple problems"
+      ],
+      "reviewTopics": [],
+      "items": [
+        {
+          "topic": "Introduction to Heat Transfer",
+          "details": "Modes of Heat Transfer and Applications",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 1: Introduction to Heat Transfer"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand the three modes of heat transfer",
+            "Identify real-world applications of heat transfer"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Conduction",
+          "details": "Fourier's Law and 1D Steady State Conduction",
+          "durationMinutes": 120,
+          "estimatedTimeHours": 2.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 2: Heat Conduction"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply Fourier's Law to solve conduction problems",
+            "Analyze 1D steady state conduction"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Thermal Conductivity",
+          "details": "Definition and Thermal Resistance",
+          "durationMinutes": 120,
+          "estimatedTimeHours": 2.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 2: Thermal Properties"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Define thermal conductivity",
+            "Calculate thermal resistance"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Summary",
+          "details": "Learned the fundamentals of heat transfer including conduction and thermal conductivity",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand basic heat transfer modes",
+            "Apply Fourier's Law to simple problems"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "daySummary": "Studied convection and radiation fundamentals and their combined applications",
+      "focusArea": "Convection and Radiation",
+      "learningGoals": [
+        "Understand convective heat transfer",
+        "Apply radiation principles to problems"
+      ],
+      "reviewTopics": [
+        "Heat Conduction"
+      ],
+      "items": [
+        {
+          "topic": "Convection Fundamentals",
+          "details": "Newton's Law of Cooling and Forced vs Natural Convection",
+          "durationMinutes": 120,
+          "estimatedTimeHours": 2.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 3: Convection"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply Newton's Law of Cooling",
+            "Differentiate between forced and natural convection"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Radiation Basics",
+          "details": "Stefan-Boltzmann Law and Black Body Radiation",
+          "durationMinutes": 120,
+          "estimatedTimeHours": 2.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 4: Radiation"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand black body radiation",
+            "Apply Stefan-Boltzmann Law"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Combined Modes",
+          "details": "Simultaneous Heat Transfer and Practical Applications",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 5: Combined Modes"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Analyze problems with multiple heat transfer modes",
+            "Apply concepts to practical scenarios"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Summary",
+          "details": "Studied convection and radiation fundamentals and their combined applications",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand convective heat transfer",
+            "Apply radiation principles to problems"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "daySummary": "Explored practical applications of heat transfer including heat exchangers and transient conduction",
+      "focusArea": "Heat Transfer Applications",
+      "learningGoals": [
+        "Understand heat exchanger analysis",
+        "Solve transient conduction problems"
+      ],
+      "reviewTopics": [
+        "Convection",
+        "Radiation"
+      ],
+      "items": [
+        {
+          "topic": "Heat Exchangers",
+          "details": "Types and Analysis Methods",
+          "durationMinutes": 120,
+          "estimatedTimeHours": 2.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 6: Heat Exchangers"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Identify different types of heat exchangers",
+            "Apply analysis methods to heat exchanger problems"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Transient Heat Conduction",
+          "details": "Lumped System Analysis and Heisler Charts",
+          "durationMinutes": 120,
+          "estimatedTimeHours": 2.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 7: Transient Conduction"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply lumped system analysis",
+            "Use Heisler charts for transient problems"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Extended Surfaces",
+          "details": "Fins and Fin Efficiency",
+          "durationMinutes": 60,
+          "estimatedTimeHours": 1.0,
+          "resources": [
+            {
+              "title": "Heat Transfer Textbook",
+              "type": "textbook",
+              "url": null,
+              "description": "Chapter 8: Extended Surfaces"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand fin theory",
+            "Calculate fin efficiency"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Summary",
+          "details": "Explored practical applications of heat transfer including heat exchangers and transient conduction",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Understand heat exchanger analysis",
+            "Solve transient conduction problems"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "daySummary": "Practiced problem-solving and reviewed key concepts",
+      "focusArea": "Problem Solving and Review",
+      "learningGoals": [
+        "Apply all concepts to solve problems",
+        "Identify areas needing improvement"
+      ],
+      "reviewTopics": [
+        "All previous topics"
+      ],
+      "items": [
+        {
+          "topic": "Numerical Problems",
+          "details": "Conduction and Convection Problems",
+          "durationMinutes": 180,
+          "estimatedTimeHours": 3.0,
+          "resources": [
+            {
+              "title": "Problem Set",
+              "type": "practice",
+              "url": null,
+              "description": "Collection of heat transfer problems"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply concepts to solve numerical problems",
+            "Develop problem-solving strategies"
+          ],
+          "priority": "high"
+        },
+        {
+          "topic": "Concept Review",
+          "details": "Key Concepts and Common Mistakes",
+          "durationMinutes": 90,
+          "estimatedTimeHours": 1.5,
+          "resources": [
+            {
+              "title": "Summary Notes",
+              "type": "review",
+              "url": null,
+              "description": "Key concepts and common pitfalls"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Review fundamental concepts",
+            "Identify and avoid common mistakes"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Practice Questions",
+          "details": "Sample Problems and Solution Techniques",
+          "durationMinutes": 90,
+          "estimatedTimeHours": 1.5,
+          "resources": [
+            {
+              "title": "Practice Exam",
+              "type": "assessment",
+              "url": null,
+              "description": "Sample test questions"
+            }
+          ],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Test understanding through practice",
+            "Develop exam strategies"
+          ],
+          "priority": "medium"
+        },
+        {
+          "topic": "Summary",
+          "details": "Practiced problem-solving and reviewed key concepts",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": [
+            "Apply all concepts to solve problems",
+            "Identify areas needing improvement"
+          ],
+          "priority": "high"
+        }
+      ]
+    }
+  ],
+  "generalTips": [
+    "Focus on understanding the physical meaning behind each equation rather than just memorizing them",
+    "Draw diagrams to visualize heat transfer processes and boundary conditions",
+    "Solve practice problems regularly to reinforce concepts",
+    "Create summary sheets of key formulas and their applications",
+    "Relate theoretical concepts to real-world applications to improve retention"
+  ],
+  "keyFormulas": [
+    {
+      "formula_name": "Fourier's Law",
+      "formula": "q = -kA(dT/dx)",
+      "description": "Heat conduction rate through a material",
+      "usage_context": "Calculating heat transfer through walls",
+      "variables": {
+        "q": "Heat transfer rate",
+        "k": "Thermal conductivity",
+        "A": "Cross-sectional area",
+        "dT/dx": "Temperature gradient"
+      },
+      "examples": [
+        "Calculating heat loss through a wall",
+        "Determining insulation requirements"
+      ]
+    },
+    {
+      "formula_name": "Newton's Law of Cooling",
+      "formula": "q = hA(T_s - T_inf)",
+      "description": "Convective heat transfer rate",
+      "usage_context": "Cooling of hot surfaces",
+      "variables": {
+        "q": "Heat transfer rate",
+        "h": "Convective heat transfer coefficient",
+        "A": "Surface area",
+        "T_s": "Surface temperature",
+        "T_inf": "Fluid temperature"
+      },
+      "examples": [
+        "Calculating cooling rate of a hot plate",
+        "Designing cooling systems"
+      ]
+    },
+    {
+      "formula_name": "Stefan-Boltzmann Law",
+      "formula": "E = \u03b5\u03c3T^4",
+      "description": "Radiative heat emission",
+      "usage_context": "Heat transfer from stars",
+      "variables": {
+        "E": "Radiative heat flux",
+        "\u03b5": "Emissivity",
+        "\u03c3": "Stefan-Boltzmann constant",
+        "T": "Absolute temperature"
+      },
+      "examples": [
+        "Calculating solar radiation",
+        "Designing thermal protection systems"
+      ]
+    }
+  ]
+}

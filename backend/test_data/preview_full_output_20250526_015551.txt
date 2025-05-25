@@ -1,0 +1,143 @@
+```json
+{
+  "overall_goal": "Master fundamental heat transfer concepts including conduction, convection, and radiation, and apply them to solve practical engineering problems",
+  "core_concepts": [
+    {
+      "name": "Heat Conduction",
+      "explanation": "Transfer of heat through solids without bulk motion of material",
+      "importance": "High",
+      "related_concepts": ["Fourier's Law", "Thermal Conductivity"],
+      "example": "Heat transfer through a metal rod"
+    },
+    {
+      "name": "Convection",
+      "explanation": "Heat transfer between a surface and a moving fluid",
+      "importance": "High",
+      "related_concepts": ["Newton's Law of Cooling", "Nusselt Number"],
+      "example": "Cooling of a hot plate by air flow"
+    },
+    {
+      "name": "Radiation",
+      "explanation": "Heat transfer via electromagnetic waves",
+      "importance": "High",
+      "related_concepts": ["Stefan-Boltzmann Law", "Black Body Radiation"],
+      "example": "Heat from the sun reaching Earth"
+    },
+    {
+      "name": "Thermal Resistance",
+      "explanation": "Resistance to heat flow in materials",
+      "importance": "Medium",
+      "related_concepts": ["Composite Walls", "Overall Heat Transfer Coefficient"],
+      "example": "Insulation in buildings"
+    },
+    {
+      "name": "Heat Exchangers",
+      "explanation": "Devices for efficient heat transfer between fluids",
+      "importance": "Medium",
+      "related_concepts": ["Log Mean Temperature Difference", "Effectiveness-NTU Method"],
+      "example": "Car radiator"
+    }
+  ],
+  "daily_focus": [
+    {
+      "day": 1,
+      "focus_area": "Fundamentals of Heat Transfer",
+      "topics": ["Introduction to Heat Transfer", "Conduction", "Thermal Conductivity"],
+      "subtopics": {
+        "Introduction to Heat Transfer": ["Modes of Heat Transfer", "Applications"],
+        "Conduction": ["Fourier's Law", "1D Steady State Conduction"],
+        "Thermal Conductivity": ["Definition", "Thermal Resistance"]
+      },
+      "time_allocation": {
+        "Introduction to Heat Transfer": 60,
+        "Conduction": 120,
+        "Thermal Conductivity": 120
+      }
+    },
+    {
+      "day": 2,
+      "focus_area": "Convection and Radiation",
+      "topics": ["Convection Fundamentals", "Radiation Basics", "Combined Modes"],
+      "subtopics": {
+        "Convection Fundamentals": ["Newton's Law of Cooling", "Forced vs Natural Convection"],
+        "Radiation Basics": ["Stefan-Boltzmann Law", "Black Body Radiation"],
+        "Combined Modes": ["Simultaneous Heat Transfer", "Practical Applications"]
+      },
+      "time_allocation": {
+        "Convection Fundamentals": 120,
+        "Radiation Basics": 120,
+        "Combined Modes": 60
+      }
+    },
+    {
+      "day": 3,
+      "focus_area": "Heat Transfer Applications",
+      "topics": ["Heat Exchangers", "Transient Heat Conduction", "Extended Surfaces"],
+      "subtopics": {
+        "Heat Exchangers": ["Types", "Analysis Methods"],
+        "Transient Heat Conduction": ["Lumped System Analysis", "Heisler Charts"],
+        "Extended Surfaces": ["Fins", "Fin Efficiency"]
+      },
+      "time_allocation": {
+        "Heat Exchangers": 120,
+        "Transient Heat Conduction": 120,
+        "Extended Surfaces": 60
+      }
+    },
+    {
+      "day": 4,
+      "focus_area": "Problem Solving and Review",
+      "topics": ["Numerical Problems", "Concept Review", "Practice Questions"],
+      "subtopics": {
+        "Numerical Problems": ["Conduction Problems", "Convection Problems"],
+        "Concept Review": ["Key Concepts", "Common Mistakes"],
+        "Practice Questions": ["Sample Problems", "Solution Techniques"]
+      },
+      "time_allocation": {
+        "Numerical Problems": 180,
+        "Concept Review": 90,
+        "Practice Questions": 90
+      }
+    }
+  ],
+  "key_formulas": [
+    {
+      "name": "Fourier's Law",
+      "formula": "q = -kA(dT/dx)",
+      "description": "Heat conduction rate through a material",
+      "application": "Calculating heat transfer through walls"
+    },
+    {
+      "name": "Newton's Law of Cooling",
+      "formula": "q = hA(T_s - T_inf)",
+      "description": "Convective heat transfer rate",
+      "application": "Cooling of hot surfaces"
+    },
+    {
+      "name": "Stefan-Boltzmann Law",
+      "formula": "E = εσT^4",
+      "description": "Radiative heat emission",
+      "application": "Heat transfer from stars"
+    },
+    {
+      "name": "Log Mean Temperature Difference",
+      "formula": "ΔT_lm = (ΔT1 - ΔT2)/ln(ΔT1/ΔT2)",
+      "description": "Effective temperature difference in heat exchangers",
+      "application": "Heat exchanger design"
+    },
+    {
+      "name": "Thermal Resistance",
+      "formula": "R = L/(kA)",
+      "description": "Resistance to heat flow",
+      "application": "Insulation calculations"
+    }
+  ],
+  "study_tips": [
+    "Focus on understanding the physical meaning behind each equation rather than just memorizing them",
+    "Draw diagrams to visualize heat transfer processes and boundary conditions",
+    "Solve practice problems regularly to reinforce concepts",
+    "Create summary sheets of key formulas and their applications",
+    "Relate theoretical concepts to real-world applications to improve retention"
+  ]
+}
+```

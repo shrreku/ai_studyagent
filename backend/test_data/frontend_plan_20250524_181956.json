@@ -1,0 +1,1785 @@
+{
+  "overallGoal": "## Overview  \nThis 7-day study plan is designed to help you master the fundamental concepts of convection heat and mass transfer, including boundary layer theory, dimensional analysis, and practical applications. Each day includes 2.0 hours of focused study, ensuring comprehensive coverage of the material.",
+  "totalStudyDays": 7,
+  "hoursPerDay": 2.0,
+  "keyConcepts": [
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "Boundary Layer Theory",
+      "explanation": "Boundary Layer Theory"
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "Velocity, thermal, and concentration boundary layers",
+      "explanation": "Velocity, thermal, and concentration boundary layers"
+    },
+    {
+      "concept": "Laminar vs. turbulent flow",
+      "explanation": "Laminar vs. turbulent flow"
+    },
+    {
+      "concept": "Boundary layer equations",
+      "explanation": "Boundary layer equations"
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "Dimensionless Parameters",
+      "explanation": "Dimensionless Parameters"
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "Reynolds, Prandtl, and Schmidt numbers",
+      "explanation": "Reynolds, Prandtl, and Schmidt numbers"
+    },
+    {
+      "concept": "Nusselt and Sherwood numbers",
+      "explanation": "Nusselt and Sherwood numbers"
+    },
+    {
+      "concept": "Heat and mass transfer analogies",
+      "explanation": "Heat and mass transfer analogies"
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "Practical Applications",
+      "explanation": "Practical Applications"
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "",
+      "explanation": ""
+    },
+    {
+      "concept": "Forced convection over flat plates and other geometries",
+      "explanation": "Forced convection over flat plates and other geometries"
+    },
+    {
+      "concept": "Evaporative cooling",
+      "explanation": "Evaporative cooling"
+    },
+    {
+      "concept": "Reynolds analogy",
+      "explanation": "Reynolds analogy"
+    }
+  ],
+  "dailyBreakdown": [
+    {
+      "day": 1,
+      "daySummary": "Day 1: Introduction to Boundary Layers",
+      "focusArea": "Introduction to Boundary Layers",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Understand the development of velocity, thermal, and concentration boundary layers.",
+          "details": ": Understand the development of velocity, thermal, and concentration boundary layers.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Definition and significance of boundary layers",
+          "details": "Definition and significance of boundary layers",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Boundary layer thickness and profiles",
+          "details": "Boundary layer thickness and profiles",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Read and summarize Section",
+          "details": "Read and summarize Section",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "1 of the material.",
+          "details": "1 of the material.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Solve Example",
+          "details": "Solve Example",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "1 to practice calculating boundary layer parameters.",
+          "details": "1 to practice calculating boundary layer parameters.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 1: Introduction to Boundary Layers",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "daySummary": "Day 2: Laminar and Turbulent Flow",
+      "focusArea": "Laminar and Turbulent Flow",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Differentiate between laminar and turbulent boundary layers.",
+          "details": ": Differentiate between laminar and turbulent boundary layers.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Characteristics of laminar and turbulent flow",
+          "details": "Characteristics of laminar and turbulent flow",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Transition to turbulence",
+          "details": "Transition to turbulence",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Critical Reynolds number",
+          "details": "Critical Reynolds number",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Study Section",
+          "details": "Study Section",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "3 and Example",
+          "details": "3 and Example",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Plot velocity and thermal boundary layer thicknesses for different fluids.",
+          "details": "Plot velocity and thermal boundary layer thicknesses for different fluids.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 2: Laminar and Turbulent Flow",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "daySummary": "Day 3: Boundary Layer Equations",
+      "focusArea": "Boundary Layer Equations",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Derive and interpret the boundary layer equations.",
+          "details": ": Derive and interpret the boundary layer equations.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Continuity, momentum, energy, and species conservation equations",
+          "details": "Continuity, momentum, energy, and species conservation equations",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Simplifications for boundary layer flow",
+          "details": "Simplifications for boundary layer flow",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Review Section",
+          "details": "Review Section",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "4 and Appendix E.",
+          "details": "4 and Appendix E.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Practice simplifying the governing equations for specific cases.",
+          "details": "Practice simplifying the governing equations for specific cases.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 3: Boundary Layer Equations",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "daySummary": "Day 4: Dimensionless Parameters and Similarity",
+      "focusArea": "Dimensionless Parameters and Similarity",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Learn how to use dimensionless parameters for analysis.",
+          "details": ": Learn how to use dimensionless parameters for analysis.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Reynolds, Prandtl, and Schmidt numbers",
+          "details": "Reynolds, Prandtl, and Schmidt numbers",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Nusselt and Sherwood numbers",
+          "details": "Nusselt and Sherwood numbers",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Study Section",
+          "details": "Study Section",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "5 and Example",
+          "details": "5 and Example",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Solve problems involving dimensionless groups.",
+          "details": "Solve problems involving dimensionless groups.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 4: Dimensionless Parameters and Similarity",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "daySummary": "Day 5: Heat and Mass Transfer Analogies",
+      "focusArea": "Heat and Mass Transfer Analogies",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Apply analogies between heat and mass transfer.",
+          "details": ": Apply analogies between heat and mass transfer.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Heat and mass transfer coefficients",
+          "details": "Heat and mass transfer coefficients",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Lewis number and evaporative cooling",
+          "details": "Lewis number and evaporative cooling",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Review Section",
+          "details": "Review Section",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "7 and Example",
+          "details": "7 and Example",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Solve problems using the heat and mass transfer analogy.",
+          "details": "Solve problems using the heat and mass transfer analogy.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 5: Heat and Mass Transfer Analogies",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "daySummary": "Day 6: Reynolds Analogy",
+      "focusArea": "Reynolds Analogy",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Understand and apply the Reynolds analogy.",
+          "details": ": Understand and apply the Reynolds analogy.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Relationship between friction, heat, and mass transfer",
+          "details": "Relationship between friction, heat, and mass transfer",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Modified Reynolds analogies (Colburn j",
+          "details": "Modified Reynolds analogies (Colburn j",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "factors)",
+          "details": "factors)",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Study Section",
+          "details": "Study Section",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "3 and Example",
+          "details": "3 and Example",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Solve problems involving the Reynolds analogy.",
+          "details": "Solve problems involving the Reynolds analogy.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 6: Reynolds Analogy",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "daySummary": "Day 7: Review and Practice",
+      "focusArea": "Review and Practice",
+      "learningGoals": null,
+      "reviewTopics": null,
+      "items": [
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Objective",
+          "details": "Objective",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ": Consolidate knowledge and practice problem",
+          "details": ": Consolidate knowledge and practice problem",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "solving.",
+          "details": "solving.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Topics",
+          "details": "Topics",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Review all key concepts from Days 1\u2013",
+          "details": "Review all key concepts from Days 1\u2013",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Focus on weak areas.",
+          "details": "Focus on weak areas.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Activities",
+          "details": "Activities",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "",
+          "details": "",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": ":",
+          "details": ":",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Solve additional problems from the end of the chapter.",
+          "details": "Solve additional problems from the end of the chapter.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summarize key takeaways in a study journal.",
+          "details": "Summarize key takeaways in a study journal.",
+          "durationMinutes": 30,
+          "estimatedTimeHours": 0.5,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": null
+        },
+        {
+          "topic": "Summary",
+          "details": "Day 7: Review and Practice",
+          "durationMinutes": 10,
+          "estimatedTimeHours": 0.16666666666666666,
+          "resources": [],
+          "isCompleted": false,
+          "learningObjectives": null,
+          "priority": "high"
+        }
+      ]
+    }
+  ],
+  "generalTips": [
+    "Active Learning",
+    ": Engage with the material by solving problems and summarizing concepts in your own words.",
+    "Visual Aids",
+    ": Use diagrams to visualize boundary layer development and flow regimes.",
+    "Time Management",
+    ": Stick to the",
+    "0",
+    "hour daily schedule to ensure consistent progress.",
+    "Practice Problems",
+    ": Reinforce understanding by working through examples and end",
+    "of",
+    "chapter problems.",
+    "Group Study",
+    ": Discuss challenging topics with peers to gain different perspectives.  \n\nThis plan ensures a thorough understanding of convection heat and mass transfer in exactly 7 days, with",
+    "0 hours of study each day."
+  ]
+}
