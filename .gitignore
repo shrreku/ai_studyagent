@@ -29,6 +29,12 @@ venv.bak
 
 # Operating System files
 .DS_Store
+
+# Test data and backups
+/backend/test_data/
+/docs/
+/temp_backup/
+/logs/
 Thumbs.db
 
 # Build artifacts
