@@ -115,7 +115,9 @@ def create_study_plan_generation_task(agent: Agent, study_plan_template: str, to
             f"Your goal is to replace placeholders in the template (like '[Topic 1]', '[Total Hours]', '[Primary focus...]', etc.) "
             f"with relevant information derived from this JSON data. The final output MUST be only the populated template as Markdown text. "
             f"Do not include any extra explanations, apologies, or conversational text outside of the generated plan itself. "
-            f"Ensure the output is well-formatted Markdown text."
+            f"Ensure the output is well-formatted Markdown text.\n\n"
+            f"It is crucial that the generated plan strictly adheres to the {total_days} days and {hours_per_day} hours per day specified. "
+            f"Do not default to any other duration or daily hours."
         ),
         expected_output=(
             "A beatifully formatted fully populated study plan in Markdown format. "
@@ -140,6 +142,10 @@ def run_study_plan_crew(study_materials_text: str, study_duration_days: str, stu
     except Exception as e:
         logger.error(f"Error reading template file {template_file_path}: {str(e)}", exc_info=True)
         return {"error": "File reading error", "details": f"Could not read template: {str(e)}"}
+
+    if 'study_plan_template_content' not in locals() or not study_plan_template_content or not study_plan_template_content.strip():
+        logger.error("Critical: study_plan_template_content is undefined or empty after load attempt. This indicates a problem in template loading or error handling logic.")
+        return {"error": "Internal Configuration error", "details": "Failed to load study plan template content correctly."}
 
     if not os.getenv("OPENROUTER_API_KEY") or not os.getenv("DEEPSEEK_MODEL_NAME"):
         error_message = "Error: API keys (OPENROUTER_API_KEY or DEEPSEEK_MODEL_NAME) not configured in .env file."
