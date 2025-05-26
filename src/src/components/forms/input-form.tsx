@@ -194,7 +194,8 @@ const InputForm: React.FC = () => {
       console.log('Form data:', {
         study_duration_days: formData.get('study_duration_days'),
         study_hours_per_day: formData.get('study_hours_per_day'),
-        notes: formData.getAll('notes').map((file: any) => file.name)
+        notes: formData.getAll('notes').map((file: any) => file.name),
+        questions: formData.getAll('questions')?.map((file: any) => file.name) || []
       });
       
       // Call the preview endpoint to generate a study plan preview
@@ -239,8 +240,15 @@ const InputForm: React.FC = () => {
     try {
       setIsLoading(true);
       
+      console.log('Starting study session with form data:', {
+        study_duration_days: formData.get('study_duration_days'),
+        study_hours_per_day: formData.get('study_hours_per_day'),
+        notes: formData.getAll('notes').map((file: any) => file.name),
+        questions: formData.getAll('questions')?.map((file: any) => file.name) || []
+      });
+      
       // Upload files and generate complete study plan
-      const response = await axios.post('http://localhost:8000/upload', formData, {
+      const response = await axios.post(getApiUrl(API_ENDPOINTS.UPLOAD), formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
