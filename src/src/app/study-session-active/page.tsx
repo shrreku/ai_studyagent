@@ -6,12 +6,12 @@ import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { TaskList } from '@/components/ui/task-list';
 import KeyFormulasDisplay from '@/components/ui/key-formulas-display';
-import DebugPanel from '@/components/ui/debug-utils';
+import { DebugPanel } from '@/components/ui/debug-utils';
 import axios from 'axios';
 // Import API configuration
 import { getApiUrl, API_ENDPOINTS } from '@/config/api';
 // Import the sample plan for testing
-import samplePlanData from '../../data/sample_plan.json';
+import { samplePlan } from '@/utils/sample-data-utils';
 
 interface ChatMessage {
   id?: string;
@@ -459,7 +459,22 @@ const StudySessionActivePage = () => {
             <div className="flex space-x-2">
               <Button
                 variant="outline"
-                onClick={() => router.push('/load-sample-data')}
+                onClick={() => {
+                  // Use the sample data directly instead of navigating
+                  setStudyPlan(samplePlan);
+                  // Reset to first day
+                  setActiveDay(0);
+                  setActiveTopic(0);
+                  // Add a message indicating sample data was loaded
+                  setChatMessages(prev => [
+                    ...prev,
+                    {
+                      sender: 'ai',
+                      message: 'Sample study plan loaded successfully! You can now continue your session with this data.',
+                      timestamp: new Date()
+                    }
+                  ]);
+                }}
                 className="text-blue-300 border-blue-500/30 hover:bg-blue-900/20"
               >
                 Load Sample Data

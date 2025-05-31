@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useStudyPlan } from '../../../context/StudyPlanContext';
 import { Loader2 } from 'lucide-react';
+import { DebugPanel } from '../ui/debug-utils';
 import axios from 'axios';
 
 const STORAGE_KEY = 'intelliStudy_studyPlan';
@@ -120,6 +121,10 @@ const StudySessionLoading: React.FC = () => {
         <div className="text-center text-destructive">
           <p className="text-lg font-medium">{error}</p>
           <p className="text-sm mt-2">Redirecting to home page...</p>
+        </div>
+        <div className="mt-8">
+          <p className="text-center mb-4">Or try our sample study plan instead:</p>
+          <DebugPanel showText={true} variant="full" />
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useStudyPlan } from '../../../context/StudyPlanContext';
 import { Button } from '@/components/ui/button';
 import LoadingScreen from '@/components/ui/loading-screen';
+import { DebugPanel } from '@/components/ui/debug-utils';
 import axios from 'axios';
 import { getApiUrl, API_ENDPOINTS } from '@/config/api';
 
@@ -110,21 +111,28 @@ const StudyPlanPreviewPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex space-x-4 justify-end">
-            <Button
-              onClick={handleBackToForm}
-              variant="outline"
-              className="border-slate-500 text-slate-300 hover:bg-slate-700"
-            >
-              Back to Form
-            </Button>
-            <Button
-              onClick={handleStartStructuring}
-              className="bg-blue-600 hover:bg-blue-700 text-white"
-              disabled={!rawPlanResponse}
-            >
-              Structure Plan & Start Session
-            </Button>
+          <div className="space-y-6">
+            <div className="border-t border-slate-700 pt-4">
+              <p className="text-slate-300 mb-4">Not happy with this plan? Try our sample study plan instead:</p>
+              <DebugPanel showText={true} variant="full" />
+            </div>
+            
+            <div className="flex space-x-4 justify-end">
+              <Button
+                onClick={handleBackToForm}
+                variant="outline"
+                className="border-slate-500 text-slate-300 hover:bg-slate-700"
+              >
+                Back to Form
+              </Button>
+              <Button
+                onClick={handleStartStructuring}
+                className="bg-blue-600 hover:bg-blue-700 text-white"
+                disabled={!rawPlanResponse}
+              >
+                Structure Plan & Start Session
+              </Button>
+            </div>
           </div>
         </div>
       </div>

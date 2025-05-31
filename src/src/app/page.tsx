@@ -1,6 +1,6 @@
 import Image from "next/image";
-
 import InputForm from '@/components/forms/input-form';
+import { DebugPanel } from '@/components/ui/debug-utils';
 
 export default function Home() {
   return (
@@ -11,6 +11,11 @@ export default function Home() {
           <p className="mt-2 text-lg text-gray-600">Tell us about your study needs, and we'll generate a personalized plan for you.</p>
         </header>
         <InputForm />
+        
+        <div className="mt-8 text-center">
+          <p className="text-gray-500 mb-2">Don't want to upload files?</p>
+          <DebugPanel showText={true} variant="full" />
+        </div>
       </div>
     </main>
   );
