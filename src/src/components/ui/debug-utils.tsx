@@ -22,7 +22,7 @@ export const DebugPanel: React.FC = () => {
       setStudyPlan(sampleData);
       
       // Also store in localStorage for persistence
-      localStorage.setItem('studyAgent_studyPlan', JSON.stringify(sampleData));
+      localStorage.setItem('intelliStudy_studyPlan', JSON.stringify(sampleData));
       
       alert('Sample study plan loaded successfully!');
     } catch (error: unknown) {

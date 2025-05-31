@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import { useStudyPlan } from "../../../context/StudyPlanContext";
 import { getApiUrl, API_ENDPOINTS } from '@/config/api';
+import PreviewGenerationAnimation from "../loading/PreviewGenerationAnimation";
 
 const InputForm: React.FC = () => {
   const router = useRouter();
@@ -272,23 +273,25 @@ const InputForm: React.FC = () => {
   };
 
   return (
-    <form className="space-y-8 p-4 md:p-8 bg-white shadow-lg rounded-lg max-w-lg mx-auto">
-      <div className="space-y-4">
-        <div>
-          <Label htmlFor="totalDays" className="block text-sm font-medium text-gray-700 mb-1">Total Study Days</Label>
-          <Input
-            type="number"
-            id="totalDays"
-            name="totalDays"
-            value={totalDays}
-            onChange={handleTotalDaysChange}
-            min="1"
-            max="7"
-            placeholder="e.g., 7"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-            required
-          />
-        </div>
+    <>
+      {isLoading && <PreviewGenerationAnimation />}
+      <form className="space-y-8 p-4 md:p-8 bg-white shadow-lg rounded-lg max-w-lg mx-auto">
+        <div className="space-y-4">
+          <div>
+            <Label htmlFor="totalDays" className="block text-sm font-medium text-gray-700 mb-1">Total Study Days</Label>
+            <Input
+              type="number"
+              id="totalDays"
+              name="totalDays"
+              value={totalDays}
+              onChange={handleTotalDaysChange}
+              min="1"
+              max="7"
+              placeholder="e.g., 7"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              required
+            />
+          </div>
         <div>
           <Label htmlFor="hoursPerDay" className="block text-sm font-medium text-gray-700 mb-1">Hours Per Day</Label>
           <Input
@@ -380,6 +383,7 @@ const InputForm: React.FC = () => {
       </div>
 
     </form>
+    </>
   );
 };
 

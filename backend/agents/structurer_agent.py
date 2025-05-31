@@ -42,7 +42,7 @@ class StructurerAgent:
             temperature=temperature,  # Use the provided temperature for more creative responses
             openai_api_base="https://openrouter.ai/api/v1",
             openai_api_key=openrouter_api_key,
-            max_tokens=4000  # Reduced max tokens to avoid truncation issues
+            max_tokens=8000  # Reduced max tokens to avoid truncation issues
         )
         self.output_parser = PydanticOutputParser(pydantic_object=StructuredStudyPlan)
         

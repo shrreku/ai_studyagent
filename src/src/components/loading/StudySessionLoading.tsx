@@ -6,7 +6,7 @@ import { useStudyPlan } from '../../../context/StudyPlanContext';
 import { Loader2 } from 'lucide-react';
 import axios from 'axios';
 
-const STORAGE_KEY = 'studyAgent_studyPlan';
+const STORAGE_KEY = 'intelliStudy_studyPlan';
 
 const StudySessionLoading: React.FC = () => {
   const { studyPlan, setStudyPlan } = useStudyPlan();

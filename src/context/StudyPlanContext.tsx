@@ -66,7 +66,7 @@ export interface StudyPlanContextType {
   setStudyPlan: (plan: StudyPlan | null) => void;
 }
 
-const STORAGE_KEY = 'studyAgent_studyPlan';
+const STORAGE_KEY = 'intelliStudy_studyPlan';
 
 const StudyPlanContext = createContext<StudyPlanContextType | undefined>(undefined);
 

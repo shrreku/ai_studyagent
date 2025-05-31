@@ -15,7 +15,7 @@
         "[EXAMPLE_1_ILLUSTRATING_CONCEPT]",
         "[EXAMPLE_2_ILLUSTRATING_CONCEPT]"
       ],
-      "difficulty_level": "basic"  
+      "difficulty_level": "advanced/basic"  
     }
   ],
   "daily_schedule": [
@@ -41,7 +41,7 @@
             "[SPECIFIC_LEARNING_OBJECTIVE_1]",
             "[SPECIFIC_LEARNING_OBJECTIVE_2]"
           ],
-          "priority": "high"
+          "priority": "high/mid/low"
         }
       ],
       "summary": "[SUMMARY_OF_DAY'S_LEARNING]",
@@ -99,6 +99,6 @@
     "[PREREQUISITE_1]",
     "[PREREQUISITE_2]"
   ],
-  "difficulty_level": "intermediate",
+  "difficulty_level": "advanced/basic",
   "estimated_completion_time": 14.0
 }
