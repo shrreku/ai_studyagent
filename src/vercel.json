@@ -5,7 +5,7 @@
   "outputDirectory": ".next",
   "regions": ["iad1"],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://ai-studyagent.onrender.com",
-    "NEXT_PUBLIC_BACKEND_URL": "https://ai-studyagent.onrender.com"
+    "NEXT_PUBLIC_API_URL": "https://aistudyagent-production.up.railway.app",
+    "NEXT_PUBLIC_BACKEND_URL": "https://aistudyagent-production.up.railway.app"
   }
 }
