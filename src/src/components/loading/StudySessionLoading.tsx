@@ -6,6 +6,7 @@ import { useStudyPlan } from '../../../context/StudyPlanContext';
 import { Loader2 } from 'lucide-react';
 import { DebugPanel } from '../ui/debug-utils';
 import axios from 'axios';
+import { BACKEND_API_URL, API_ENDPOINTS } from '../../config/api';
 
 const STORAGE_KEY = 'intelliStudy_studyPlan';
 
@@ -55,7 +56,7 @@ const StudySessionLoading: React.FC = () => {
         // If we have a raw plan, send it to the structurer
         try {
           console.log('Sending raw plan to structurer...');
-          const response = await axios.post('http://localhost:8000/plan/structure-plan', {
+          const response = await axios.post(`${BACKEND_API_URL}${API_ENDPOINTS.STRUCTURE_PLAN}`, {
             raw_plan: rawPlanResponse
           });
           
