@@ -83,6 +83,19 @@ The project is divided into two main parts:
 
 3. Open your browser and navigate to `http://localhost:3000`
 
+## Deployment
+
+The StudyAgent application is deployed and accessible online:
+
+- **Frontend**: [https://ai-studyagent.vercel.app](https://ai-studyagent.vercel.app)
+- **Backend API**: [https://ai-studyagent.onrender.com](https://ai-studyagent.onrender.com)
+
+You can use the deployed version without setting up the local development environment. The frontend connects to the deployed backend automatically.
+
+### Sample Data
+
+If you want to explore the application without uploading your own materials, you can use the "Load Sample Data" button available on various pages to load pre-configured study plans.
+
 ## License
 
 MIT
