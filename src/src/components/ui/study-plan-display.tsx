@@ -2,7 +2,7 @@
 
 import React from 'react';
 // Correctly import StudyPlan and other necessary types from the context
-import { StudyPlan, StudyPlanCoreConcept, StudyPlanDailySchedule, StudyPlanItem, StudyPlanKeyFormula } from '../../../context/StudyPlanContext';
+import { StudyPlan, StudyPlanCoreConcept, StudyPlanDailySchedule, StudyPlanItem, StudyPlanKeyFormula, StudyPlanResource } from '../../../context/StudyPlanContext';
 
 interface StudyPlanDisplayProps {
   plan: StudyPlan | null; // Use StudyPlan from context
@@ -51,8 +51,12 @@ export const StudyPlanDisplay: React.FC<StudyPlanDisplayProps> = ({ plan }) => {
                       <strong>{item.topic}:</strong> {item.details} (Est: {item.estimatedTimeHours}h)
                       {item.resources && item.resources.length > 0 && (
                         <ul className="list-circle pl-5 text-xs text-gray-600">
-                          {item.resources.map((resource: string, rIndex: number) => (
-                            <li key={`resource-${index}-${itemIndex}-${rIndex}`}>{resource}</li>
+                          {item.resources.map((resource, rIndex: number) => (
+                            <li key={`resource-${index}-${itemIndex}-${rIndex}`}>
+                              {typeof resource === 'string' 
+                                ? resource 
+                                : resource.url ? <a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.title || resource.url}</a> : resource.title}
+                            </li>
                           ))}
                         </ul>
                       )}

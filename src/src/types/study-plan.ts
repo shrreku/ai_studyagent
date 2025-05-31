@@ -74,7 +74,7 @@ export const exampleStudyPlan: StructuredStudyPlan = {
   daily_schedule: [
     {
       day: 1,
-      date: null,
+      date: "",
       focus_area: "Introduction to Boundary Layers",
       study_item: [
         {
@@ -103,7 +103,7 @@ export const exampleStudyPlan: StructuredStudyPlan = {
     },
     {
       day: 2,
-      date: null,
+      date: "",
       focus_area: "Laminar vs. Turbulent Flow",
       study_item: [
         {
