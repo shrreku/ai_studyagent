@@ -8,7 +8,8 @@ app = FastAPI(title="Study Agent API")
 # Get allowed origins from environment or use defaults
 allowed_origins = [
     "http://localhost:3000",  # Local development
-    "https://studyagent-v2.vercel.app",  # Vercel deployment (update with your actual domain)
+    "https://studyagent-v2.vercel.app",  # Previous Vercel deployment
+    "https://ai-studyagent.vercel.app",  # Current Vercel deployment
 ]
 
 # Add custom domain if specified in environment
