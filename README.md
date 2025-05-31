@@ -88,7 +88,9 @@ The project is divided into two main parts:
 The StudyAgent application is deployed and accessible online:
 
 - **Frontend**: [https://ai-studyagent.vercel.app](https://ai-studyagent.vercel.app)
-- **Backend API**: [https://ai-studyagent.onrender.com](https://ai-studyagent.onrender.com)
+- **Backend API**: 
+  - Railway (Primary): [https://aistudyagent-production.up.railway.app](https://aistudyagent-production.up.railway.app)
+  - Render (Backup): [https://ai-studyagent.onrender.com](https://ai-studyagent.onrender.com)
 
 You can use the deployed version without setting up the local development environment. The frontend connects to the deployed backend automatically.
 
